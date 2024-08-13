@@ -11,7 +11,7 @@ class EnumerableCast implements Cast
 {
     public function cast(DataProperty $property, mixed $value, array $properties, CreationContext $context): mixed
     {
-        if(config('data.features.cast_and_transform_iterables')) {
+        if(false) {
             return Uncastable::create();
         }
 

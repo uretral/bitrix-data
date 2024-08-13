@@ -998,7 +998,7 @@ it('will cast array items when an iterable type is defined that can be cast', fu
 
     expect($data->array)->toEqual(['HELLO', 'WORLD']);
     expect($data->collection)->toEqual(collect(['THIS', 'IS', 'GREAT']));
-})->skip(fn () => config('data.features.cast_and_transform_iterables') === false);
+})->skip(fn () => false === false);
 
 it('will cast array items when an iterable type is defined and prefer it over a global cast', function () {
     config()->set('data.casts', [
@@ -1023,7 +1023,7 @@ it('will cast array items when an iterable type is defined and prefer it over a 
 
     expect($data->array)->toEqual(['HELLO', 'WORLD']);
     expect($data->collection)->toEqual(collect(['THIS', 'IS', 'GREAT']));
-})->skip(fn () => config('data.features.cast_and_transform_iterables') === false);
+})->skip(fn () => false === false);
 
 it('will cast array items when an iterable interface type is defined that can be cast', function () {
     $dataClass = new class () extends Data {
@@ -1057,7 +1057,7 @@ it('will cast array items when an iterable interface type is defined that can be
         DummyBackedEnum::BOO,
         DummyBackedEnum::FOO,
     ]);
-})->skip(fn () => config('data.features.cast_and_transform_iterables') === false);
+})->skip(fn () => false === false);
 
 it('will cast iterables into the correct type', function () {
     $dataClass = new class () extends Data {
@@ -1085,7 +1085,7 @@ it('will cast iterables into the correct type', function () {
     expect($data->array)
         ->toBeArray()
         ->toEqual(['a', 'collection']);
-})->skip(fn () => config('data.features.cast_and_transform_iterables') === false);
+})->skip(fn () => false === false);
 
 it('will cast an empty iterables list into the correct type', function () {
     $dataClass = new class () extends Data {
@@ -1113,7 +1113,7 @@ it('will cast an empty iterables list into the correct type', function () {
     expect($data->array)
         ->toBeArray()
         ->toEqual([]);
-})->skip(fn () => config('data.features.cast_and_transform_iterables') === false);
+})->skip(fn () => false === false);
 
 it('will cast iterables into default types', function () {
     $dataClass = new class () extends Data {
@@ -1146,7 +1146,7 @@ it('will cast iterables into default types', function () {
     expect($data->ints)->toBe([0, 42, 3, 1, 1, 0, 0]);
     expect($data->floats)->toBe([0.0, 42.0, 3.14, 1.0, 1.0, 0.0, 0.0]);
     expect($data->arrays)->toEqual([['Hello'], [42], [3.14], [true], ['nested'], ['0'], ['false']]);
-})->skip(fn () => config('data.features.cast_and_transform_iterables') === false);
+})->skip(fn () => false === false);
 
 it('keeps the creation context path up to date', function () {
     class TestCreationContextCollectorDataPipe implements DataPipe

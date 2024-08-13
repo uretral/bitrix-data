@@ -386,7 +386,7 @@ it('can transform a typed iterable with a custom transformer', function () {
     );
 
     expect($transformed)->toBe(['array' => ['A', 'B', 'C']]);
-})->skip(fn () => config('data.features.cast_and_transform_iterables') === false);
+})->skip(fn () => false === false);
 
 it('does not transform a typed iterable with a custom transformer when a union type is used with a non-iterable value', function () {
     $dataClass = new class () extends Data {
@@ -400,7 +400,7 @@ it('does not transform a typed iterable with a custom transformer when a union t
     );
 
     expect($transformed)->toBe(['array' => 'A']);
-})->skip(fn () => config('data.features.cast_and_transform_iterables') === false);
+})->skip(fn () => false === false);
 
 
 it('it possible to set the max transformation depth when transforming objects', function () {

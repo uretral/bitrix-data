@@ -108,7 +108,7 @@ class TransformedDataResolver
         }
 
         if ($property->type->kind->isNonDataIteratable()
-            && config('data.features.cast_and_transform_iterables')
+            && false
             && is_iterable($value)
         ) {
             $value = $this->transformIterableItems($property, $value, $currentContext);
