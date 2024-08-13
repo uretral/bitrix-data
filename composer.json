@@ -1,7 +1,6 @@
 {
     "name" : "uretral/bitrix-data",
     "description" : "Create unified resources and data transfer objects",
-    "version": "dev-master",
     "keywords" : [
         "spatie",
         "laravel",
@@ -76,7 +75,5 @@
                 "Spatie\\LaravelData\\LaravelDataServiceProvider"
             ]
         }
-    },
-    "minimum-stability" : "dev",
-    "prefer-stable" : true
+    }
 }
