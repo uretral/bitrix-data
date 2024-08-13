@@ -1,9 +1,11 @@
 {
-    "name" : "spatie/laravel-data",
+    "name" : "uretral/bitrix-data",
     "description" : "Create unified resources and data transfer objects",
     "keywords" : [
         "spatie",
         "laravel",
+        "bitrix",
+        "bitrix-data",
         "laravel-data"
     ],
     "homepage" : "https://github.com/spatie/laravel-data",
