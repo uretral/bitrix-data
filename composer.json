@@ -10,6 +10,7 @@
     ],
     "homepage" : "https://github.com/spatie/laravel-data",
     "license" : "MIT",
+    "version": "1.0",
     "authors" : [
         {
             "name" : "Ruben Van Assche",
@@ -75,5 +76,6 @@
                 "Spatie\\LaravelData\\LaravelDataServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
