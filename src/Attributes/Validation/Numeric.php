@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 use Attribute;
 

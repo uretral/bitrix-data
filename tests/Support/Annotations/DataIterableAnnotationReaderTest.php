@@ -1,13 +1,13 @@
 <?php
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\Annotations\DataIterableAnnotation;
-use Spatie\LaravelData\Support\Annotations\DataIterableAnnotationReader;
-use Spatie\LaravelData\Tests\Fakes\CollectionDataAnnotationsData;
-use Spatie\LaravelData\Tests\Fakes\CollectionNonDataAnnotationsData;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
-use Spatie\LaravelData\Tests\Fakes\Error;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Support\Annotations\DataIterableAnnotation;
+use Uretral\BitrixData\Support\Annotations\DataIterableAnnotationReader;
+use Uretral\BitrixData\Tests\Fakes\CollectionDataAnnotationsData;
+use Uretral\BitrixData\Tests\Fakes\CollectionNonDataAnnotationsData;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Tests\Fakes\Error;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it(
     'can get the data class for a data collection by annotation',
@@ -230,7 +230,7 @@ it('can get iterable class for a data by method annotation', function () {
 
 it('will always prefer the data version of the annotation in unions', function () {
     $dataClass = new class () extends Data {
-        /** @var array<string|Spatie\LaravelData\Tests\Fakes\SimpleData> */
+        /** @var array<string|Uretral\BitrixData\Tests\Fakes\SimpleData> */
         public array $property;
     };
 

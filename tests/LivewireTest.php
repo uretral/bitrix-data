@@ -5,18 +5,18 @@ use Livewire\LivewireServiceProvider;
 
 use function Pest\Livewire\livewire;
 
-use Spatie\LaravelData\Concerns\WireableData;
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Concerns\WireableData;
+use Uretral\BitrixData\Data;
 
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Support\Livewire\LivewireDataCollectionSynth;
-use Spatie\LaravelData\Support\Livewire\LivewireDataSynth;
-use Spatie\LaravelData\Tests\Fakes\Livewire\ComputedDataComponent;
-use Spatie\LaravelData\Tests\Fakes\Livewire\DataCollectionComponent;
-use Spatie\LaravelData\Tests\Fakes\Livewire\MappedDataComponent;
-use Spatie\LaravelData\Tests\Fakes\Livewire\NestedDataComponent;
-use Spatie\LaravelData\Tests\Fakes\Livewire\SimpleDataComponent;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Support\Livewire\LivewireDataCollectionSynth;
+use Uretral\BitrixData\Support\Livewire\LivewireDataSynth;
+use Uretral\BitrixData\Tests\Fakes\Livewire\ComputedDataComponent;
+use Uretral\BitrixData\Tests\Fakes\Livewire\DataCollectionComponent;
+use Uretral\BitrixData\Tests\Fakes\Livewire\MappedDataComponent;
+use Uretral\BitrixData\Tests\Fakes\Livewire\NestedDataComponent;
+use Uretral\BitrixData\Tests\Fakes\Livewire\SimpleDataComponent;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('works with livewire', function () {
     $class = new class ('') extends Data {

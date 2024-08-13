@@ -15,7 +15,7 @@ This package enables the creation of rich data objects which can be used in vari
 A `laravel-data` specific object is just a regular PHP object that extends from `Data`:
 
 ```php
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Data;
 
 class SongData extends Data
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Factories;
+namespace Uretral\BitrixData\Support\Factories;
 
 use Illuminate\Support\Collection;
 use ReflectionAttribute;
@@ -8,21 +8,21 @@ use ReflectionClass;
 use ReflectionMethod;
 use ReflectionParameter;
 use ReflectionProperty;
-use Spatie\LaravelData\Contracts\AppendableData;
-use Spatie\LaravelData\Contracts\EmptyData;
-use Spatie\LaravelData\Contracts\IncludeableData;
-use Spatie\LaravelData\Contracts\ResponsableData;
-use Spatie\LaravelData\Contracts\TransformableData;
-use Spatie\LaravelData\Contracts\ValidateableData;
-use Spatie\LaravelData\Contracts\WrappableData;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Mappers\ProvidedNameMapper;
-use Spatie\LaravelData\Resolvers\NameMappersResolver;
-use Spatie\LaravelData\Support\Annotations\DataIterableAnnotationReader;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\LazyDataStructureProperty;
+use Uretral\BitrixData\Contracts\AppendableData;
+use Uretral\BitrixData\Contracts\EmptyData;
+use Uretral\BitrixData\Contracts\IncludeableData;
+use Uretral\BitrixData\Contracts\ResponsableData;
+use Uretral\BitrixData\Contracts\TransformableData;
+use Uretral\BitrixData\Contracts\ValidateableData;
+use Uretral\BitrixData\Contracts\WrappableData;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Mappers\ProvidedNameMapper;
+use Uretral\BitrixData\Resolvers\NameMappersResolver;
+use Uretral\BitrixData\Support\Annotations\DataIterableAnnotationReader;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\LazyDataStructureProperty;
 
 class DataClassFactory
 {

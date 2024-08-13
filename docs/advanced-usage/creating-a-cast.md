@@ -37,7 +37,7 @@ A cast like a transformer never receives a `null` value, this is because the pac
 
 ## Castables
 
-You may want to allow your application's value objects to define their own custom casting logic. Instead of attaching the custom cast class to your object, you may alternatively attach a value object class that implements the `Spatie\LaravelData\Casts\Castable` interface:
+You may want to allow your application's value objects to define their own custom casting logic. Instead of attaching the custom cast class to your object, you may alternatively attach a value object class that implements the `Uretral\BitrixData\Casts\Castable` interface:
 
 ```php
 class ForgotPasswordRequest extends Data
@@ -67,12 +67,12 @@ By combining "castables" with PHP's [anonymous classes](https://www.php.net/manu
 
 ```php
 <?php
-namespace Spatie\LaravelData\Tests\Fakes\Castables;
+namespace Uretral\BitrixData\Tests\Fakes\Castables;
 
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Casts\Castable;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Casts\Castable;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataProperty;
 
 class Email implements Castable
 {

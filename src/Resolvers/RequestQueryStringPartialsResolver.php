@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Illuminate\Http\Request;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\BaseDataCollectable;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\Partials\Partial;
-use Spatie\LaravelData\Support\Partials\PartialsCollection;
-use Spatie\LaravelData\Support\Partials\PartialType;
-use Spatie\LaravelData\Support\Partials\Segments\AllPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\FieldsPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\NestedPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\PartialSegment;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseDataCollectable;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\Partials\Partial;
+use Uretral\BitrixData\Support\Partials\PartialsCollection;
+use Uretral\BitrixData\Support\Partials\PartialType;
+use Uretral\BitrixData\Support\Partials\Segments\AllPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\FieldsPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\NestedPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\PartialSegment;
 
 class RequestQueryStringPartialsResolver
 {

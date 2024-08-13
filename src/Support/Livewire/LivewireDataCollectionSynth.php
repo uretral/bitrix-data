@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Livewire;
+namespace Uretral\BitrixData\Support\Livewire;
 
 use Illuminate\Container\Container;
 use Livewire\Mechanisms\HandleComponents\ComponentContext;
 use Livewire\Mechanisms\HandleComponents\Synthesizers\Synth;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Support\DataConfig;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Support\DataConfig;
 
 class LivewireDataCollectionSynth extends Synth
 {

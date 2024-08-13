@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Attributes\MapInputName;
-use Spatie\LaravelData\Attributes\MapName;
-use Spatie\LaravelData\Attributes\MapOutputName;
-use Spatie\LaravelData\Mappers\NameMapper;
-use Spatie\LaravelData\Mappers\ProvidedNameMapper;
+use Uretral\BitrixData\Attributes\MapInputName;
+use Uretral\BitrixData\Attributes\MapName;
+use Uretral\BitrixData\Attributes\MapOutputName;
+use Uretral\BitrixData\Mappers\NameMapper;
+use Uretral\BitrixData\Mappers\ProvidedNameMapper;
 
 class NameMappersResolver
 {
@@ -32,7 +32,7 @@ class NameMappersResolver
     protected function resolveInputNameMapper(
         Collection $attributes
     ): ?NameMapper {
-        /** @var \Spatie\LaravelData\Attributes\MapInputName|\Spatie\LaravelData\Attributes\MapName|null $mapper */
+        /** @var \Uretral\BitrixData\Attributes\MapInputName|\Uretral\BitrixData\Attributes\MapName|null $mapper */
         $mapper = $attributes->first(fn (object $attribute) => $attribute instanceof MapInputName)
             ?? $attributes->first(fn (object $attribute) => $attribute instanceof MapName);
 
@@ -46,7 +46,7 @@ class NameMappersResolver
     protected function resolveOutputNameMapper(
         Collection $attributes
     ): ?NameMapper {
-        /** @var \Spatie\LaravelData\Attributes\MapOutputName|\Spatie\LaravelData\Attributes\MapName|null $mapper */
+        /** @var \Uretral\BitrixData\Attributes\MapOutputName|\Uretral\BitrixData\Attributes\MapName|null $mapper */
         $mapper = $attributes->first(fn (object $attribute) => $attribute instanceof MapOutputName)
             ?? $attributes->first(fn (object $attribute) => $attribute instanceof MapName);
 

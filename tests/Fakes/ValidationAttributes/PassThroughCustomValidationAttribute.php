@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\ValidationAttributes;
+namespace Uretral\BitrixData\Tests\Fakes\ValidationAttributes;
 
 use Attribute;
-use Spatie\LaravelData\Attributes\Validation\CustomValidationAttribute;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Attributes\Validation\CustomValidationAttribute;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 class PassThroughCustomValidationAttribute extends CustomValidationAttribute

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Support\Types\Type;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Support\Types\Type;
 
 class DataType
 {

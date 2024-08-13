@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Contracts;
+namespace Uretral\BitrixData\Contracts;
 
 use Illuminate\Contracts\Database\Eloquent\Castable as EloquentCastable;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use JsonSerializable;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
-use Spatie\LaravelData\Support\Transformation\TransformationContextFactory;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\Transformation\TransformationContextFactory;
 
 interface TransformableData extends JsonSerializable, Jsonable, Arrayable, EloquentCastable, ContextableData
 {

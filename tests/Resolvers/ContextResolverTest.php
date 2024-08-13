@@ -2,7 +2,7 @@
 
 use phpDocumentor\Reflection\Types\Context;
 use phpDocumentor\Reflection\Types\ContextFactory;
-use Spatie\LaravelData\Resolvers\ContextResolver;
+use Uretral\BitrixData\Resolvers\ContextResolver;
 
 it('can resolve context from property', function () {
     $resolver = new ContextResolver();

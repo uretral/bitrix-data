@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Support;
+namespace Uretral\BitrixData\Tests\Fakes\Support;
 
 class FakeInjectable
 {

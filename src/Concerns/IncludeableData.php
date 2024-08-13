@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
-use Spatie\LaravelData\Support\Partials\ForwardsToPartialsDefinition;
+use Uretral\BitrixData\Support\Partials\ForwardsToPartialsDefinition;
 
 trait IncludeableData
 {

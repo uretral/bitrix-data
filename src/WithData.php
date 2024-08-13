@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData;
+namespace Uretral\BitrixData;
 
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Exceptions\InvalidDataClass;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Exceptions\InvalidDataClass;
 
 /**
  * @template T

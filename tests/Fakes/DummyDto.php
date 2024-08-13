@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
 class DummyDto
 {

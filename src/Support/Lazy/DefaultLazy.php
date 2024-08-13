@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Lazy;
+namespace Uretral\BitrixData\Support\Lazy;
 
 use Closure;
 use Laravel\SerializableClosure\SerializableClosure;
-use Spatie\LaravelData\Lazy;
+use Uretral\BitrixData\Lazy;
 
 class DefaultLazy extends Lazy
 {

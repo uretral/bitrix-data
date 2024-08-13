@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Exceptions;
+namespace Uretral\BitrixData\Exceptions;
 
 use Exception;
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Casts\Castable;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Casts\Castable;
 
 class CannotCreateCastAttribute extends Exception
 {

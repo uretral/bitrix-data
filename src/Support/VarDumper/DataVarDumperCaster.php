@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Support\VarDumper;
+namespace Uretral\BitrixData\Support\VarDumper;
 
-use Spatie\LaravelData\Contracts\TransformableData;
+use Uretral\BitrixData\Contracts\TransformableData;
 use Symfony\Component\VarDumper\Cloner\Stub;
 
 class DataVarDumperCaster

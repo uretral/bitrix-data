@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes;
+namespace Uretral\BitrixData\Attributes;
 
 use Attribute;
-use Spatie\LaravelData\Exceptions\CannotCreateTransformerAttribute;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Exceptions\CannotCreateTransformerAttribute;
+use Uretral\BitrixData\Transformers\Transformer;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_PROPERTY)]
 class WithTransformer
@@ -12,7 +12,7 @@ class WithTransformer
     public array $arguments;
 
     public function __construct(
-        /** @var class-string<\Spatie\LaravelData\Transformers\Transformer> $transformerClass */
+        /** @var class-string<\Uretral\BitrixData\Transformers\Transformer> $transformerClass */
         public string $transformerClass,
         mixed ...$arguments
     ) {

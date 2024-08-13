@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Pagination\CursorPaginator as CursorPaginatorContract;
@@ -10,20 +10,20 @@ use Illuminate\Pagination\AbstractPaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Enumerable;
 use Illuminate\Support\LazyCollection;
-use Spatie\LaravelData\CursorPaginatedDataCollection;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\DataPipeline;
-use Spatie\LaravelData\DataPipes\AuthorizedDataPipe;
-use Spatie\LaravelData\DataPipes\CastPropertiesDataPipe;
-use Spatie\LaravelData\DataPipes\DefaultValuesDataPipe;
-use Spatie\LaravelData\DataPipes\FillRouteParameterPropertiesDataPipe;
-use Spatie\LaravelData\DataPipes\MapPropertiesDataPipe;
-use Spatie\LaravelData\DataPipes\ValidatePropertiesDataPipe;
-use Spatie\LaravelData\PaginatedDataCollection;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\DataPipeline;
+use Uretral\BitrixData\DataPipes\AuthorizedDataPipe;
+use Uretral\BitrixData\DataPipes\CastPropertiesDataPipe;
+use Uretral\BitrixData\DataPipes\DefaultValuesDataPipe;
+use Uretral\BitrixData\DataPipes\FillRouteParameterPropertiesDataPipe;
+use Uretral\BitrixData\DataPipes\MapPropertiesDataPipe;
+use Uretral\BitrixData\DataPipes\ValidatePropertiesDataPipe;
+use Uretral\BitrixData\PaginatedDataCollection;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataProperty;
 
 trait BaseData
 {
@@ -64,12 +64,12 @@ trait BaseData
     public static function normalizers(): array
     {
         return  [
-            \Spatie\LaravelData\Normalizers\ModelNormalizer::class,
-            // Spatie\LaravelData\Normalizers\FormRequestNormalizer::class,
-            \Spatie\LaravelData\Normalizers\ArrayableNormalizer::class,
-            \Spatie\LaravelData\Normalizers\ObjectNormalizer::class,
-            \Spatie\LaravelData\Normalizers\ArrayNormalizer::class,
-            \Spatie\LaravelData\Normalizers\JsonNormalizer::class,
+            \Uretral\BitrixData\Normalizers\ModelNormalizer::class,
+            // Uretral\BitrixData\Normalizers\FormRequestNormalizer::class,
+            \Uretral\BitrixData\Normalizers\ArrayableNormalizer::class,
+            \Uretral\BitrixData\Normalizers\ObjectNormalizer::class,
+            \Uretral\BitrixData\Normalizers\ArrayNormalizer::class,
+            \Uretral\BitrixData\Normalizers\JsonNormalizer::class,
         ];
     }
 

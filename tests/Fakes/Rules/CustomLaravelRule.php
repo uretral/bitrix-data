@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Rules;
+namespace Uretral\BitrixData\Tests\Fakes\Rules;
 
 use Illuminate\Contracts\Validation\Rule as RuleContract;
 

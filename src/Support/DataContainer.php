@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
 use Illuminate\Container\Container;
-use Spatie\LaravelData\Resolvers\DataCollectableFromSomethingResolver;
-use Spatie\LaravelData\Resolvers\DataFromSomethingResolver;
-use Spatie\LaravelData\Resolvers\DataValidatorResolver;
-use Spatie\LaravelData\Resolvers\DecoupledPartialResolver;
-use Spatie\LaravelData\Resolvers\RequestQueryStringPartialsResolver;
-use Spatie\LaravelData\Resolvers\TransformedDataCollectableResolver;
-use Spatie\LaravelData\Resolvers\TransformedDataResolver;
-use Spatie\LaravelData\Resolvers\ValidatedPayloadResolver;
-use Spatie\LaravelData\Support\Factories\DataClassFactory;
+use Uretral\BitrixData\Resolvers\DataCollectableFromSomethingResolver;
+use Uretral\BitrixData\Resolvers\DataFromSomethingResolver;
+use Uretral\BitrixData\Resolvers\DataValidatorResolver;
+use Uretral\BitrixData\Resolvers\DecoupledPartialResolver;
+use Uretral\BitrixData\Resolvers\RequestQueryStringPartialsResolver;
+use Uretral\BitrixData\Resolvers\TransformedDataCollectableResolver;
+use Uretral\BitrixData\Resolvers\TransformedDataResolver;
+use Uretral\BitrixData\Resolvers\ValidatedPayloadResolver;
+use Uretral\BitrixData\Support\Factories\DataClassFactory;
 
 
 class DataContainer

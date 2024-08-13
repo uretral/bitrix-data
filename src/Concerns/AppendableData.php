@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
 use Closure;
 

@@ -3,12 +3,12 @@
 use Carbon\Carbon;
 use Carbon\CarbonImmutable;
 use Carbon\CarbonTimeZone;
-use Spatie\LaravelData\Attributes\WithCast;
-use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
-use Spatie\LaravelData\Casts\Uncastable;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Attributes\WithCast;
+use Uretral\BitrixData\Casts\DateTimeInterfaceCast;
+use Uretral\BitrixData\Casts\Uncastable;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
 
 it('can cast date times', function () {
     $caster = new DateTimeInterfaceCast('d-m-Y H:i:s');

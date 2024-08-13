@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Caching;
+namespace Uretral\BitrixData\Support\Caching;
 
-use Spatie\LaravelData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseData;
 use Spatie\StructureDiscoverer\Discover;
 
 class DataClassFinder

@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('can get the empty version of a data object', function () {
     $dataClass = new class () extends Data {

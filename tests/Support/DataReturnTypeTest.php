@@ -5,13 +5,13 @@ use Illuminate\Contracts\Support\CanBeEscapedWhenCastToString;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Enumerable;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Support\DataType;
-use Spatie\LaravelData\Support\Factories\DataReturnTypeFactory;
-use Spatie\LaravelData\Support\Types\NamedType;
-use Spatie\LaravelData\Support\Types\UnionType;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Support\DataType;
+use Uretral\BitrixData\Support\Factories\DataReturnTypeFactory;
+use Uretral\BitrixData\Support\Types\NamedType;
+use Uretral\BitrixData\Support\Types\UnionType;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 class TestReturnTypeSubject
 {
@@ -104,15 +104,15 @@ it('can determine the return type from reflection', function (
         new DataType(
             type: new NamedType(DataCollection::class, false, [
                 Illuminate\Contracts\Support\Responsable::class,
-                Spatie\LaravelData\Contracts\BaseDataCollectable::class,
-                Spatie\LaravelData\Contracts\TransformableData::class,
-                Spatie\LaravelData\Contracts\ResponsableData::class,
-                Spatie\LaravelData\Contracts\IncludeableData::class,
-                Spatie\LaravelData\Contracts\WrappableData::class,
+                Uretral\BitrixData\Contracts\BaseDataCollectable::class,
+                Uretral\BitrixData\Contracts\TransformableData::class,
+                Uretral\BitrixData\Contracts\ResponsableData::class,
+                Uretral\BitrixData\Contracts\IncludeableData::class,
+                Uretral\BitrixData\Contracts\WrappableData::class,
                 IteratorAggregate::class,
                 Countable::class,
                 ArrayAccess::class,
-                Spatie\LaravelData\Contracts\ContextableData::class,
+                Uretral\BitrixData\Contracts\ContextableData::class,
                 Illuminate\Contracts\Database\Eloquent\Castable::class,
                 Illuminate\Contracts\Support\Arrayable::class,
                 Illuminate\Contracts\Support\Jsonable::class,

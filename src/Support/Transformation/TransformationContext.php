@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Transformation;
+namespace Uretral\BitrixData\Support\Transformation;
 
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\BaseDataCollectable;
-use Spatie\LaravelData\Contracts\IncludeableData;
-use Spatie\LaravelData\Support\Partials\Partial;
-use Spatie\LaravelData\Support\Partials\PartialsCollection;
-use Spatie\LaravelData\Support\Wrapping\WrapExecutionType;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseDataCollectable;
+use Uretral\BitrixData\Contracts\IncludeableData;
+use Uretral\BitrixData\Support\Partials\Partial;
+use Uretral\BitrixData\Support\Partials\PartialsCollection;
+use Uretral\BitrixData\Support\Wrapping\WrapExecutionType;
 use Stringable;
 
 class TransformationContext implements Stringable

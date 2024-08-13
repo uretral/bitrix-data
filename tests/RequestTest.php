@@ -9,10 +9,10 @@ use Illuminate\Validation\ValidationException;
 use function Pest\Laravel\handleExceptions;
 use function Pest\Laravel\postJson;
 
-use Spatie\LaravelData\Attributes\WithoutValidation;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithExplicitValidationRuleAttributeData;
+use Uretral\BitrixData\Attributes\WithoutValidation;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithExplicitValidationRuleAttributeData;
 
 beforeEach(function () {
     handleExceptions([

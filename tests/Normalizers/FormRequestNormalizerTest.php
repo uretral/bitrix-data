@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Foundation\Http\FormRequest;
-use Spatie\LaravelData\Normalizers\ArrayNormalizer;
-use Spatie\LaravelData\Normalizers\FormRequestNormalizer;
-use Spatie\LaravelData\Tests\Fakes\DataWithNullable;
+use Uretral\BitrixData\Normalizers\ArrayNormalizer;
+use Uretral\BitrixData\Normalizers\FormRequestNormalizer;
+use Uretral\BitrixData\Tests\Fakes\DataWithNullable;
 
 beforeEach(function () {
     config()->set('data.normalizers', [FormRequestNormalizer::class, ArrayNormalizer::class]);

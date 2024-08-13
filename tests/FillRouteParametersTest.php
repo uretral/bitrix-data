@@ -5,13 +5,13 @@ use Illuminate\Http\Request;
 
 use function Pest\Laravel\mock;
 
-use Spatie\LaravelData\Attributes\FromRouteParameter;
+use Uretral\BitrixData\Attributes\FromRouteParameter;
 
-use Spatie\LaravelData\Attributes\FromRouteParameterProperty;
-use Spatie\LaravelData\Attributes\MapInputName;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Exceptions\CannotFillFromRouteParameterPropertyUsingScalarValue;
-use Spatie\LaravelData\Tests\Fakes\NestedData;
+use Uretral\BitrixData\Attributes\FromRouteParameterProperty;
+use Uretral\BitrixData\Attributes\MapInputName;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Exceptions\CannotFillFromRouteParameterPropertyUsingScalarValue;
+use Uretral\BitrixData\Tests\Fakes\NestedData;
 
 it('can fill data properties with route parameters', function () {
     $dataClass = new class () extends Data {

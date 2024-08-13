@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Support\VarDumper;
+namespace Uretral\BitrixData\Support\VarDumper;
 
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\BaseDataCollectable;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseDataCollectable;
 use Symfony\Component\VarDumper\Cloner\AbstractCloner;
 
 class VarDumperManager

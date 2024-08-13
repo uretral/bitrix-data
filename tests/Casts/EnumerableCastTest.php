@@ -4,9 +4,9 @@
 use Illuminate\Support\Collection;
 use Illuminate\Support\Enumerable;
 use Illuminate\Support\LazyCollection;
-use Spatie\LaravelData\Casts\EnumerableCast;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Casts\EnumerableCast;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('will not cast an object which is already a collection', function () {
     $dataClass = new class () extends Data {

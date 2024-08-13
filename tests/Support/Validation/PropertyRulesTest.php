@@ -1,9 +1,9 @@
 <?php
 
-use Spatie\LaravelData\Attributes\Validation\Min;
-use Spatie\LaravelData\Attributes\Validation\Prohibited;
-use Spatie\LaravelData\Attributes\Validation\Required;
-use Spatie\LaravelData\Support\Validation\PropertyRules;
+use Uretral\BitrixData\Attributes\Validation\Min;
+use Uretral\BitrixData\Attributes\Validation\Prohibited;
+use Uretral\BitrixData\Attributes\Validation\Required;
+use Uretral\BitrixData\Support\Validation\PropertyRules;
 
 it('can add rules', function () {
     $collection = PropertyRules::create()

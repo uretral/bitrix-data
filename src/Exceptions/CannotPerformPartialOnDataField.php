@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Exceptions;
+namespace Uretral\BitrixData\Exceptions;
 
 use ErrorException;
 use Exception;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\Partials\PartialType;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\Partials\PartialType;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
 
 class CannotPerformPartialOnDataField extends Exception
 {

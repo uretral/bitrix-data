@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Support\TypeScriptTransformer;
+namespace Uretral\BitrixData\Support\TypeScriptTransformer;
 
 use ReflectionClass;
-use Spatie\LaravelData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseData;
 use Spatie\TypeScriptTransformer\Collectors\Collector;
 use Spatie\TypeScriptTransformer\Structures\TransformedType;
 

@@ -1,15 +1,15 @@
 <?php
 
 use Carbon\Carbon;
-use Spatie\LaravelData\Attributes\Validation\Required;
-use Spatie\LaravelData\Attributes\Validation\Rule;
-use Spatie\LaravelData\Support\Validation\RuleDenormalizer;
-use Spatie\LaravelData\Support\Validation\RuleNormalizer;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
-use Spatie\LaravelData\Support\Validation\ValidationRule;
-use Spatie\LaravelData\Tests\Fakes\Rules\CustomInvokableLaravelRule;
-use Spatie\LaravelData\Tests\Fakes\Rules\CustomLaravelRule;
-use Spatie\LaravelData\Tests\Fakes\Rules\CustomLaravelValidationRule;
+use Uretral\BitrixData\Attributes\Validation\Required;
+use Uretral\BitrixData\Attributes\Validation\Rule;
+use Uretral\BitrixData\Support\Validation\RuleDenormalizer;
+use Uretral\BitrixData\Support\Validation\RuleNormalizer;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\Validation\ValidationRule;
+use Uretral\BitrixData\Tests\Fakes\Rules\CustomInvokableLaravelRule;
+use Uretral\BitrixData\Tests\Fakes\Rules\CustomLaravelRule;
+use Uretral\BitrixData\Tests\Fakes\Rules\CustomLaravelValidationRule;
 use Spatie\TestTime\TestTime;
 
 beforeEach(function () {

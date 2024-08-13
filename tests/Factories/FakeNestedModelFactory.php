@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Factories;
+namespace Uretral\BitrixData\Tests\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Spatie\LaravelData\Tests\Fakes\Models\FakeModel;
-use Spatie\LaravelData\Tests\Fakes\Models\FakeNestedModel;
+use Uretral\BitrixData\Tests\Fakes\Models\FakeModel;
+use Uretral\BitrixData\Tests\Fakes\Models\FakeNestedModel;
 
 class FakeNestedModelFactory extends Factory
 {

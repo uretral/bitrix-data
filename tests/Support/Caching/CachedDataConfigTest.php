@@ -3,12 +3,12 @@
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cache;
 use Mockery\MockInterface;
-use Spatie\LaravelData\Support\Caching\CachedDataConfig;
-use Spatie\LaravelData\Support\Caching\DataStructureCache;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Support\Caching\CachedDataConfig;
+use Uretral\BitrixData\Support\Caching\DataStructureCache;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 function ensureDataWillBeCached()
 {

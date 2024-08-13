@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Attributes\Validation\Email;
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Attributes\Validation\Email;
+use Uretral\BitrixData\Data;
 
 class SimpleDataWithExplicitValidationRuleAttributeData extends Data
 {

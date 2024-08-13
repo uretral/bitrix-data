@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Validation\References;
+namespace Uretral\BitrixData\Support\Validation\References;
 
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 class FieldReference
 {

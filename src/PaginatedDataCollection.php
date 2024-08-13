@@ -1,26 +1,26 @@
 <?php
 
-namespace Spatie\LaravelData;
+namespace Uretral\BitrixData;
 
 use Closure;
 use Countable;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Contracts\Support\Responsable;
 use IteratorAggregate;
-use Spatie\LaravelData\Concerns\BaseDataCollectable;
-use Spatie\LaravelData\Concerns\ContextableData;
-use Spatie\LaravelData\Concerns\IncludeableData;
-use Spatie\LaravelData\Concerns\ResponsableData;
-use Spatie\LaravelData\Concerns\TransformableData;
-use Spatie\LaravelData\Concerns\WrappableData;
-use Spatie\LaravelData\Contracts\BaseDataCollectable as BaseDataCollectableContract;
-use Spatie\LaravelData\Contracts\IncludeableData as IncludeableDataContract;
-use Spatie\LaravelData\Contracts\ResponsableData as ResponsableDataContract;
-use Spatie\LaravelData\Contracts\TransformableData as TransformableDataContract;
-use Spatie\LaravelData\Contracts\WrappableData as WrappableDataContract;
-use Spatie\LaravelData\Exceptions\CannotCastData;
-use Spatie\LaravelData\Exceptions\PaginatedCollectionIsAlwaysWrapped;
-use Spatie\LaravelData\Support\EloquentCasts\DataCollectionEloquentCast;
+use Uretral\BitrixData\Concerns\BaseDataCollectable;
+use Uretral\BitrixData\Concerns\ContextableData;
+use Uretral\BitrixData\Concerns\IncludeableData;
+use Uretral\BitrixData\Concerns\ResponsableData;
+use Uretral\BitrixData\Concerns\TransformableData;
+use Uretral\BitrixData\Concerns\WrappableData;
+use Uretral\BitrixData\Contracts\BaseDataCollectable as BaseDataCollectableContract;
+use Uretral\BitrixData\Contracts\IncludeableData as IncludeableDataContract;
+use Uretral\BitrixData\Contracts\ResponsableData as ResponsableDataContract;
+use Uretral\BitrixData\Contracts\TransformableData as TransformableDataContract;
+use Uretral\BitrixData\Contracts\WrappableData as WrappableDataContract;
+use Uretral\BitrixData\Exceptions\CannotCastData;
+use Uretral\BitrixData\Exceptions\PaginatedCollectionIsAlwaysWrapped;
+use Uretral\BitrixData\Support\EloquentCasts\DataCollectionEloquentCast;
 
 /**
  * @template TKey of array-key
@@ -35,7 +35,7 @@ class PaginatedDataCollection implements Responsable, BaseDataCollectableContrac
     use WrappableData;
     use TransformableData;
 
-    /** @use \Spatie\LaravelData\Concerns\BaseDataCollectable<TKey, TValue> */
+    /** @use \Uretral\BitrixData\Concerns\BaseDataCollectable<TKey, TValue> */
     use BaseDataCollectable;
     use ContextableData;
 

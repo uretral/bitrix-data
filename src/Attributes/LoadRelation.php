@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes;
+namespace Uretral\BitrixData\Attributes;
 
 use Attribute;
 

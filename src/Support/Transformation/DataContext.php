@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Transformation;
+namespace Uretral\BitrixData\Support\Transformation;
 
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\BaseDataCollectable;
-use Spatie\LaravelData\Support\DataContainer;
-use Spatie\LaravelData\Support\Partials\PartialsCollection;
-use Spatie\LaravelData\Support\Wrapping\Wrap;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseDataCollectable;
+use Uretral\BitrixData\Support\DataContainer;
+use Uretral\BitrixData\Support\Partials\PartialsCollection;
+use Uretral\BitrixData\Support\Wrapping\Wrap;
 
 class DataContext
 {

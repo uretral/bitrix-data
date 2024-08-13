@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Validation;
+namespace Uretral\BitrixData\Support\Validation;
 
 use Illuminate\Validation\NestedRules;
 
 class DataRules
 {
     /**
-     * @param array<array|\Spatie\LaravelData\Support\Validation\PropertyRules|NestedRules> $rules
+     * @param array<array|\Uretral\BitrixData\Support\Validation\PropertyRules|NestedRules> $rules
      */
     public function __construct(
         public array $rules = [],

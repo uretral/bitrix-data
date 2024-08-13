@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 use Attribute;
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
 
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 class CurrentPassword extends StringValidationAttribute

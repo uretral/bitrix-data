@@ -5,12 +5,12 @@ use Illuminate\Testing\TestResponse;
 
 use function Pest\Laravel\postJson;
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Tests\Fakes\MultiNestedData;
-use Spatie\LaravelData\Tests\Fakes\NestedData;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithWrap;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Tests\Fakes\MultiNestedData;
+use Uretral\BitrixData\Tests\Fakes\NestedData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithWrap;
 
 function performRequest(string $string): TestResponse
 {

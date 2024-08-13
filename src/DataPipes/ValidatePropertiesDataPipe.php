@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\DataPipes;
+namespace Uretral\BitrixData\DataPipes;
 
 use Illuminate\Http\Request;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\Creation\ValidationStrategy;
-use Spatie\LaravelData\Support\DataClass;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\Creation\ValidationStrategy;
+use Uretral\BitrixData\Support\DataClass;
 
 class ValidatePropertiesDataPipe implements DataPipe
 {

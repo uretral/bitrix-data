@@ -88,7 +88,7 @@ Global casts are not defined on the data object but in your `data.php` config fi
 
 ```php
 'casts' => [
-    DateTimeInterface::class => Spatie\LaravelData\Casts\DateTimeInterfaceCast::class,
+    DateTimeInterface::class => Uretral\BitrixData\Casts\DateTimeInterfaceCast::class,
 ],
 ```
 

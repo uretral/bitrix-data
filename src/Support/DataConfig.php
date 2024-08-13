@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
 use Illuminate\Container\Container;
 use ReflectionClass;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\RuleInferrers\RuleInferrer;
-use Spatie\LaravelData\Support\Creation\GlobalCastsCollection;
-use Spatie\LaravelData\Support\Transformation\GlobalTransformersCollection;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\RuleInferrers\RuleInferrer;
+use Uretral\BitrixData\Support\Creation\GlobalCastsCollection;
+use Uretral\BitrixData\Support\Transformation\GlobalTransformersCollection;
 
 class DataConfig
 {

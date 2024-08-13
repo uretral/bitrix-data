@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Exceptions;
+namespace Uretral\BitrixData\Exceptions;
 
 use Exception;
-use Spatie\LaravelData\Attributes\FromRouteParameterProperty;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Attributes\FromRouteParameterProperty;
+use Uretral\BitrixData\Support\DataProperty;
 
 class CannotFillFromRouteParameterPropertyUsingScalarValue extends Exception
 {

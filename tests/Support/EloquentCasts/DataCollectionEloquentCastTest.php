@@ -4,18 +4,18 @@ use Illuminate\Support\Facades\DB;
 
 use function Pest\Laravel\assertDatabaseHas;
 
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Tests\Fakes\AbstractData\AbstractData;
-use Spatie\LaravelData\Tests\Fakes\AbstractData\AbstractDataA;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Tests\Fakes\AbstractData\AbstractData;
+use Uretral\BitrixData\Tests\Fakes\AbstractData\AbstractDataA;
 
-use Spatie\LaravelData\Tests\Fakes\AbstractData\AbstractDataB;
+use Uretral\BitrixData\Tests\Fakes\AbstractData\AbstractDataB;
 
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCasts;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCasts;
 
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCustomCollectionCasts;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithDefaultCasts;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataCollection;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCustomCollectionCasts;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithDefaultCasts;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataCollection;
 
 beforeEach(function () {
     DummyModelWithCasts::migrate();
@@ -77,7 +77,7 @@ it('can load a data object', function () {
         ]),
     ]);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCasts $model */
+    /** @var \Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCasts $model */
     $model = DummyModelWithCasts::first();
 
     expect($model->data_collection)->toEqual(new DataCollection(SimpleData::class, [
@@ -101,7 +101,7 @@ it('can load null as a value', function () {
         'data_collection' => null,
     ]);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCasts $model */
+    /** @var \Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCasts $model */
     $model = DummyModelWithCasts::first();
 
     expect($model->data_collection)->toBeNull();
@@ -131,7 +131,7 @@ it('retrieves custom data collection', function () {
         ]),
     ]);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCustomCollectionCasts $model */
+    /** @var \Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCustomCollectionCasts $model */
     $model = DummyModelWithCustomCollectionCasts::first();
 
     expect($model->data_collection)->toEqual(new SimpleDataCollection(
@@ -148,7 +148,7 @@ it('loads a custom data collection when nullable argument used and value is null
         'data' => null,
     ]);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithDefaultCasts $model */
+    /** @var \Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithDefaultCasts $model */
     $model = DummyModelWithDefaultCasts::first();
 
     expect($model->data_collection)

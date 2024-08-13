@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers\Concerns;
+namespace Uretral\BitrixData\Resolvers\Concerns;
 
-use Spatie\LaravelData\Exceptions\MaxTransformationDepthReached;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Exceptions\MaxTransformationDepthReached;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
 
 trait ChecksTransformationDepth
 {

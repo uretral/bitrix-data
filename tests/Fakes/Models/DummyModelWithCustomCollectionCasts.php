@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Models;
+namespace Uretral\BitrixData\Tests\Fakes\Models;
 
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataCollection;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataCollection;
 
 class DummyModelWithCustomCollectionCasts extends DummyModelWithCasts
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Creation;
+namespace Uretral\BitrixData\Support\Creation;
 
 use ArrayIterator;
 use Generator;
 use IteratorAggregate;
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Casts\IterableItemCast;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Types\Storage\AcceptedTypesStorage;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Casts\IterableItemCast;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Types\Storage\AcceptedTypesStorage;
 use Traversable;
 
 class GlobalCastsCollection implements IteratorAggregate

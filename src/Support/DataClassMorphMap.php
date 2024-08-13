@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
-use Spatie\LaravelData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseData;
 
 class DataClassMorphMap
 {

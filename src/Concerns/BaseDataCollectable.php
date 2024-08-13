@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
 use ArrayIterator;
-use Spatie\LaravelData\Support\Transformation\DataContext;
-use Spatie\LaravelData\Support\Transformation\TransformationContextFactory;
+use Uretral\BitrixData\Support\Transformation\DataContext;
+use Uretral\BitrixData\Support\Transformation\TransformationContextFactory;
 
 /**
  * @template TKey of array-key

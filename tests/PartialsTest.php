@@ -2,29 +2,29 @@
 
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Resolvers\RequestQueryStringPartialsResolver;
-use Spatie\LaravelData\Support\Partials\Partial;
-use Spatie\LaravelData\Support\Partials\PartialsCollection;
-use Spatie\LaravelData\Support\Partials\PartialType;
-use Spatie\LaravelData\Tests\Fakes\CircData;
-use Spatie\LaravelData\Tests\Fakes\DefaultLazyData;
-use Spatie\LaravelData\Tests\Fakes\DummyDto;
-use Spatie\LaravelData\Tests\Fakes\ExceptData;
-use Spatie\LaravelData\Tests\Fakes\LazyData;
-use Spatie\LaravelData\Tests\Fakes\Models\FakeModel;
-use Spatie\LaravelData\Tests\Fakes\MultiData;
-use Spatie\LaravelData\Tests\Fakes\MultiLazyData;
-use Spatie\LaravelData\Tests\Fakes\NestedLazyData;
-use Spatie\LaravelData\Tests\Fakes\OnlyData;
-use Spatie\LaravelData\Tests\Fakes\PartialClassConditionalData;
-use Spatie\LaravelData\Tests\Fakes\SimpleChildDataWithMappedOutputName;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithMappedOutputName;
-use Spatie\LaravelData\Tests\Fakes\UlarData;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Resolvers\RequestQueryStringPartialsResolver;
+use Uretral\BitrixData\Support\Partials\Partial;
+use Uretral\BitrixData\Support\Partials\PartialsCollection;
+use Uretral\BitrixData\Support\Partials\PartialType;
+use Uretral\BitrixData\Tests\Fakes\CircData;
+use Uretral\BitrixData\Tests\Fakes\DefaultLazyData;
+use Uretral\BitrixData\Tests\Fakes\DummyDto;
+use Uretral\BitrixData\Tests\Fakes\ExceptData;
+use Uretral\BitrixData\Tests\Fakes\LazyData;
+use Uretral\BitrixData\Tests\Fakes\Models\FakeModel;
+use Uretral\BitrixData\Tests\Fakes\MultiData;
+use Uretral\BitrixData\Tests\Fakes\MultiLazyData;
+use Uretral\BitrixData\Tests\Fakes\NestedLazyData;
+use Uretral\BitrixData\Tests\Fakes\OnlyData;
+use Uretral\BitrixData\Tests\Fakes\PartialClassConditionalData;
+use Uretral\BitrixData\Tests\Fakes\SimpleChildDataWithMappedOutputName;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithMappedOutputName;
+use Uretral\BitrixData\Tests\Fakes\UlarData;
 
 /**
  * @note these are more "special" partial tests, like including via request, conditions, ...
@@ -1489,7 +1489,7 @@ it('handles partials when not transforming values by copying them to lazy data c
 
 it('handles partials when not transforming values by copying them to a lazy array of data objects', function () {
     $dataClass = new class () extends Data {
-        /** @var array<Spatie\LaravelData\Tests\Fakes\NestedLazyData> */
+        /** @var array<Uretral\BitrixData\Tests\Fakes\NestedLazyData> */
         public Lazy|array $collection;
 
         public function __construct()

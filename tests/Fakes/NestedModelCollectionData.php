@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
 
 class NestedModelCollectionData extends Data
 {
     public function __construct(
-        /** @var \Spatie\LaravelData\Tests\Fakes\ModelData[] */
+        /** @var \Uretral\BitrixData\Tests\Fakes\ModelData[] */
         public DataCollection $models
     ) {
     }

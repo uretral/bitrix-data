@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Factories;
+namespace Uretral\BitrixData\Support\Factories;
 
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
-use Spatie\LaravelData\Support\DataType;
+use Uretral\BitrixData\Support\DataType;
 
 class DataReturnTypeFactory
 {

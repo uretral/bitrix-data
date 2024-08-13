@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 abstract class StringValidationAttribute extends ValidationAttribute
 {

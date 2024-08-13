@@ -1,39 +1,39 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\DataCollection;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\DataCollection;
 
 /**
- * @property DataCollection<\Spatie\LaravelData\Tests\Fakes\SimpleData> $propertyN
- * @property \Spatie\LaravelData\Tests\Fakes\SimpleData[] $propertyO
+ * @property DataCollection<\Uretral\BitrixData\Tests\Fakes\SimpleData> $propertyN
+ * @property \Uretral\BitrixData\Tests\Fakes\SimpleData[] $propertyO
  * @property DataCollection<SimpleData> $propertyP
- * @property array<\Spatie\LaravelData\Tests\Fakes\SimpleData> $propertyQ
- * @property \Spatie\LaravelData\Tests\Fakes\SimpleData[] $propertyR
+ * @property array<\Uretral\BitrixData\Tests\Fakes\SimpleData> $propertyQ
+ * @property \Uretral\BitrixData\Tests\Fakes\SimpleData[] $propertyR
  * @property array<SimpleData> $propertyS
- * @property \Illuminate\Support\Collection<\Spatie\LaravelData\Tests\Fakes\SimpleData>|null $propertyT
+ * @property \Illuminate\Support\Collection<\Uretral\BitrixData\Tests\Fakes\SimpleData>|null $propertyT
  */
 class CollectionDataAnnotationsData
 {
-    /** @var \Spatie\LaravelData\Tests\Fakes\SimpleData[] */
+    /** @var \Uretral\BitrixData\Tests\Fakes\SimpleData[] */
     public array $propertyA;
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\SimpleData[]|null */
+    /** @var \Uretral\BitrixData\Tests\Fakes\SimpleData[]|null */
     public ?array $propertyB;
 
-    /** @var null|\Spatie\LaravelData\Tests\Fakes\SimpleData[] */
+    /** @var null|\Uretral\BitrixData\Tests\Fakes\SimpleData[] */
     public ?array $propertyC;
 
-    /** @var ?\Spatie\LaravelData\Tests\Fakes\SimpleData[] */
+    /** @var ?\Uretral\BitrixData\Tests\Fakes\SimpleData[] */
     public array $propertyD;
 
-    /** @var \Spatie\LaravelData\DataCollection<\Spatie\LaravelData\Tests\Fakes\SimpleData> */
+    /** @var \Uretral\BitrixData\DataCollection<\Uretral\BitrixData\Tests\Fakes\SimpleData> */
     public DataCollection $propertyE;
 
-    /** @var ?\Spatie\LaravelData\DataCollection<\Spatie\LaravelData\Tests\Fakes\SimpleData> */
+    /** @var ?\Uretral\BitrixData\DataCollection<\Uretral\BitrixData\Tests\Fakes\SimpleData> */
     public ?DataCollection $propertyF;
 
     /** @var SimpleData[] */
@@ -47,13 +47,13 @@ class CollectionDataAnnotationsData
 
     public DataCollection $propertyJ;
 
-    /** @var array<\Spatie\LaravelData\Tests\Fakes\SimpleData> */
+    /** @var array<\Uretral\BitrixData\Tests\Fakes\SimpleData> */
     public array $propertyK;
 
-    /** @var LengthAwarePaginator<\Spatie\LaravelData\Tests\Fakes\SimpleData> */
+    /** @var LengthAwarePaginator<\Uretral\BitrixData\Tests\Fakes\SimpleData> */
     public LengthAwarePaginator $propertyL;
 
-    /** @var \Illuminate\Support\Collection<\Spatie\LaravelData\Tests\Fakes\SimpleData> */
+    /** @var \Illuminate\Support\Collection<\Uretral\BitrixData\Tests\Fakes\SimpleData> */
     public Collection $propertyM;
 
     public DataCollection $propertyN;
@@ -70,21 +70,21 @@ class CollectionDataAnnotationsData
 
     public ?array $propertyT;
 
-    /** @var \Illuminate\Support\Collection<\Spatie\LaravelData\Tests\Fakes\SimpleData>|null */
+    /** @var \Illuminate\Support\Collection<\Uretral\BitrixData\Tests\Fakes\SimpleData>|null */
     public ?array $propertyU;
 
     /**
-     * @param \Spatie\LaravelData\Tests\Fakes\SimpleData[]|null $paramA
-     * @param null|\Spatie\LaravelData\Tests\Fakes\SimpleData[] $paramB
-     * @param  ?\Spatie\LaravelData\Tests\Fakes\SimpleData[] $paramC
-     * @param ?\Spatie\LaravelData\Tests\Fakes\SimpleData[] $paramD
-     * @param \Spatie\LaravelData\DataCollection<\Spatie\LaravelData\Tests\Fakes\SimpleData> $paramE
-     * @param ?\Spatie\LaravelData\DataCollection<\Spatie\LaravelData\Tests\Fakes\SimpleData> $paramF
+     * @param \Uretral\BitrixData\Tests\Fakes\SimpleData[]|null $paramA
+     * @param null|\Uretral\BitrixData\Tests\Fakes\SimpleData[] $paramB
+     * @param  ?\Uretral\BitrixData\Tests\Fakes\SimpleData[] $paramC
+     * @param ?\Uretral\BitrixData\Tests\Fakes\SimpleData[] $paramD
+     * @param \Uretral\BitrixData\DataCollection<\Uretral\BitrixData\Tests\Fakes\SimpleData> $paramE
+     * @param ?\Uretral\BitrixData\DataCollection<\Uretral\BitrixData\Tests\Fakes\SimpleData> $paramF
      * @param SimpleData[] $paramG
      * @param array<SimpleData> $paramH
      * @param array<int,SimpleData> $paramJ
      * @param array<int, SimpleData> $paramI
-     * @param \Spatie\LaravelData\DataCollection<\Spatie\LaravelData\Tests\Fakes\SimpleData>|null $paramK
+     * @param \Uretral\BitrixData\DataCollection<\Uretral\BitrixData\Tests\Fakes\SimpleData>|null $paramK
      */
     public function method(
         array $paramA,

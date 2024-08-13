@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 use Carbon\Carbon;
 use Illuminate\Container\Container;
-use Spatie\LaravelData\Support\Validation\References\FieldReference;
-use Spatie\LaravelData\Support\Validation\RuleDenormalizer;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
-use Spatie\LaravelData\Support\Validation\ValidationRule;
+use Uretral\BitrixData\Support\Validation\References\FieldReference;
+use Uretral\BitrixData\Support\Validation\RuleDenormalizer;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\Validation\ValidationRule;
 use Stringable;
 
 abstract class ValidationAttribute extends ValidationRule implements Stringable

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Casts;
+namespace Uretral\BitrixData\Casts;
 
 interface Castable
 {

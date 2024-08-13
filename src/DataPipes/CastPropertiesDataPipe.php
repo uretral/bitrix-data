@@ -1,20 +1,20 @@
 <?php
 
-namespace Spatie\LaravelData\DataPipes;
+namespace Uretral\BitrixData\DataPipes;
 
 use Illuminate\Support\Enumerable;
-use Spatie\LaravelData\Casts\BuiltinTypeCast;
-use Spatie\LaravelData\Casts\IterableItemCast;
-use Spatie\LaravelData\Casts\Uncastable;
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Exceptions\CannotCreateData;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Types\CombinationType;
+use Uretral\BitrixData\Casts\BuiltinTypeCast;
+use Uretral\BitrixData\Casts\IterableItemCast;
+use Uretral\BitrixData\Casts\Uncastable;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Exceptions\CannotCreateData;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Types\CombinationType;
 
 class CastPropertiesDataPipe implements DataPipe
 {

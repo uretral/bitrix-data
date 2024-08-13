@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Factories;
+namespace Uretral\BitrixData\Support\Factories;
 
 use ReflectionClass;
 use ReflectionParameter;
-use Spatie\LaravelData\Support\DataParameter;
+use Uretral\BitrixData\Support\DataParameter;
 
 class DataParameterFactory
 {

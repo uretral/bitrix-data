@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\AbstractData;
+namespace Uretral\BitrixData\Tests\Fakes\AbstractData;
 
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Data;
 
 abstract class AbstractData extends Data
 {

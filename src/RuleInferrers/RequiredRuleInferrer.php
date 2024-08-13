@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelData\RuleInferrers;
+namespace Uretral\BitrixData\RuleInferrers;
 
-use Spatie\LaravelData\Attributes\Validation\BooleanType;
-use Spatie\LaravelData\Attributes\Validation\Nullable;
-use Spatie\LaravelData\Attributes\Validation\Present;
-use Spatie\LaravelData\Attributes\Validation\Required;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Validation\PropertyRules;
-use Spatie\LaravelData\Support\Validation\RequiringRule;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Attributes\Validation\BooleanType;
+use Uretral\BitrixData\Attributes\Validation\Nullable;
+use Uretral\BitrixData\Attributes\Validation\Present;
+use Uretral\BitrixData\Attributes\Validation\Required;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Validation\PropertyRules;
+use Uretral\BitrixData\Support\Validation\RequiringRule;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
 
 class RequiredRuleInferrer implements RuleInferrer
 {

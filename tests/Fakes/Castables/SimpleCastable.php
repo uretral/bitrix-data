@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Castables;
+namespace Uretral\BitrixData\Tests\Fakes\Castables;
 
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Casts\Castable;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Casts\Castable;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataProperty;
 
 class SimpleCastable implements Castable
 {

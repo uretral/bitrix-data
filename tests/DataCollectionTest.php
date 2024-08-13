@@ -5,13 +5,13 @@ use Illuminate\Pagination\CursorPaginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\LazyCollection;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\PaginatedDataCollection;
-use Spatie\LaravelData\Tests\Fakes\Collections\CustomCollection;
-use Spatie\LaravelData\Tests\Fakes\DummyDto;
-use Spatie\LaravelData\Tests\Fakes\LazyData;
-use Spatie\LaravelData\Tests\Fakes\MultiLazyData;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\PaginatedDataCollection;
+use Uretral\BitrixData\Tests\Fakes\Collections\CustomCollection;
+use Uretral\BitrixData\Tests\Fakes\DummyDto;
+use Uretral\BitrixData\Tests\Fakes\LazyData;
+use Uretral\BitrixData\Tests\Fakes\MultiLazyData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('can filter a collection', function () {
     $collection = new DataCollection(SimpleData::class, ['A', 'B']);

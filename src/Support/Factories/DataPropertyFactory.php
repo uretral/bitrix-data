@@ -1,20 +1,20 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Factories;
+namespace Uretral\BitrixData\Support\Factories;
 
 use ReflectionAttribute;
 use ReflectionClass;
 use ReflectionProperty;
-use Spatie\LaravelData\Attributes\Computed;
-use Spatie\LaravelData\Attributes\GetsCast;
-use Spatie\LaravelData\Attributes\Hidden;
-use Spatie\LaravelData\Attributes\WithCastAndTransformer;
-use Spatie\LaravelData\Attributes\WithoutValidation;
-use Spatie\LaravelData\Attributes\WithTransformer;
-use Spatie\LaravelData\Mappers\NameMapper;
-use Spatie\LaravelData\Resolvers\NameMappersResolver;
-use Spatie\LaravelData\Support\Annotations\DataIterableAnnotation;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Attributes\Computed;
+use Uretral\BitrixData\Attributes\GetsCast;
+use Uretral\BitrixData\Attributes\Hidden;
+use Uretral\BitrixData\Attributes\WithCastAndTransformer;
+use Uretral\BitrixData\Attributes\WithoutValidation;
+use Uretral\BitrixData\Attributes\WithTransformer;
+use Uretral\BitrixData\Mappers\NameMapper;
+use Uretral\BitrixData\Resolvers\NameMappersResolver;
+use Uretral\BitrixData\Support\Annotations\DataIterableAnnotation;
+use Uretral\BitrixData\Support\DataProperty;
 
 class DataPropertyFactory
 {

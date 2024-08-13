@@ -1,11 +1,11 @@
 <?php
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Support\DataType;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Support\DataType;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('can create a data parameter', function () {
     $class = new class ('', '', '', CreationContextFactory::createFromConfig(SimpleData::class)->get()) extends Data {

@@ -1,23 +1,23 @@
 <?php
 
-use Spatie\LaravelData\Attributes\Computed;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\Hidden;
-use Spatie\LaravelData\Attributes\MapInputName;
-use Spatie\LaravelData\Attributes\MapOutputName;
-use Spatie\LaravelData\Attributes\WithCast;
-use Spatie\LaravelData\Attributes\WithCastAndTransformer;
-use Spatie\LaravelData\Attributes\WithoutValidation;
-use Spatie\LaravelData\Attributes\WithTransformer;
-use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Factories\DataPropertyFactory;
-use Spatie\LaravelData\Tests\Fakes\CastTransformers\FakeCastTransformer;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModel;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Transformers\DateTimeInterfaceTransformer;
+use Uretral\BitrixData\Attributes\Computed;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\Hidden;
+use Uretral\BitrixData\Attributes\MapInputName;
+use Uretral\BitrixData\Attributes\MapOutputName;
+use Uretral\BitrixData\Attributes\WithCast;
+use Uretral\BitrixData\Attributes\WithCastAndTransformer;
+use Uretral\BitrixData\Attributes\WithoutValidation;
+use Uretral\BitrixData\Attributes\WithTransformer;
+use Uretral\BitrixData\Casts\DateTimeInterfaceCast;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Factories\DataPropertyFactory;
+use Uretral\BitrixData\Tests\Fakes\CastTransformers\FakeCastTransformer;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModel;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Transformers\DateTimeInterfaceTransformer;
 
 function resolveHelper(
     object $class,

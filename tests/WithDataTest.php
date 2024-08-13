@@ -3,8 +3,8 @@
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\FormRequest;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\WithData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\WithData;
 
 it('can add the WithData trait to a model', function () {
     $model = new class () extends Model {

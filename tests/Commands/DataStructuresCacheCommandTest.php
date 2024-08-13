@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\App;
-use Spatie\LaravelData\Support\Caching\CachedDataConfig;
-use Spatie\LaravelData\Support\Caching\DataStructureCache;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Support\Caching\CachedDataConfig;
+use Uretral\BitrixData\Support\Caching\DataStructureCache;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('can cache data structures', function () {
     // Ensure we cache
@@ -21,7 +21,7 @@ it('can cache data structures', function () {
     ]);
 
     config()->set('data.structure_caching.reflection_discovery.base_path', __DIR__.'/../Fakes');
-    config()->set('data.structure_caching.reflection_discovery.root_namespace', 'Spatie\LaravelData\Tests\Fakes');
+    config()->set('data.structure_caching.reflection_discovery.root_namespace', 'Uretral\BitrixData\Tests\Fakes');
 
     $this->artisan('data:cache-structures')->assertExitCode(0);
 

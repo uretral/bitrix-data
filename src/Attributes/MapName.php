@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes;
+namespace Uretral\BitrixData\Attributes;
 
 use Attribute;
-use Spatie\LaravelData\Mappers\NameMapper;
+use Uretral\BitrixData\Mappers\NameMapper;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_PROPERTY)]
 class MapName

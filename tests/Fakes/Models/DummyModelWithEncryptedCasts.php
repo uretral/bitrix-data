@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Models;
+namespace Uretral\BitrixData\Tests\Fakes\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Tests\Fakes\AbstractData\AbstractData;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataCollection;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Tests\Fakes\AbstractData\AbstractData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataCollection;
 
 class DummyModelWithEncryptedCasts extends Model
 {

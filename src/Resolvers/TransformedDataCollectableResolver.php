@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Closure;
 use Exception;
@@ -9,18 +9,18 @@ use Illuminate\Pagination\CursorPaginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Enumerable;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\TransformableData;
-use Spatie\LaravelData\Contracts\WrappableData;
-use Spatie\LaravelData\CursorPaginatedDataCollection;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\PaginatedDataCollection;
-use Spatie\LaravelData\Resolvers\Concerns\ChecksTransformationDepth;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
-use Spatie\LaravelData\Support\Wrapping\Wrap;
-use Spatie\LaravelData\Support\Wrapping\WrapExecutionType;
-use Spatie\LaravelData\Support\Wrapping\WrapType;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\TransformableData;
+use Uretral\BitrixData\Contracts\WrappableData;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\PaginatedDataCollection;
+use Uretral\BitrixData\Resolvers\Concerns\ChecksTransformationDepth;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\Wrapping\Wrap;
+use Uretral\BitrixData\Support\Wrapping\WrapExecutionType;
+use Uretral\BitrixData\Support\Wrapping\WrapType;
 
 class TransformedDataCollectableResolver
 {

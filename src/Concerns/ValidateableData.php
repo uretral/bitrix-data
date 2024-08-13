@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Validation\Validator;
-use Spatie\LaravelData\Resolvers\DataValidationRulesResolver;
-use Spatie\LaravelData\Support\DataContainer;
-use Spatie\LaravelData\Support\Validation\DataRules;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Resolvers\DataValidationRulesResolver;
+use Uretral\BitrixData\Support\DataContainer;
+use Uretral\BitrixData\Support\Validation\DataRules;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 /**
  * @method static array rules(ValidationContext $context)

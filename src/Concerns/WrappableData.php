@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
-use Spatie\LaravelData\Support\Wrapping\Wrap;
-use Spatie\LaravelData\Support\Wrapping\WrapType;
+use Uretral\BitrixData\Support\Wrapping\Wrap;
+use Uretral\BitrixData\Support\Wrapping\WrapType;
 
 trait WrappableData
 {

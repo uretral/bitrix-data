@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Exceptions;
+namespace Uretral\BitrixData\Exceptions;
 
 use Exception;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Support\DataProperty;
 
 class CannotSetComputedValue extends Exception
 {

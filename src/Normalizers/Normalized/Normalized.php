@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Normalizers\Normalized;
+namespace Uretral\BitrixData\Normalizers\Normalized;
 
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Support\DataProperty;
 
 interface Normalized
 {

@@ -166,7 +166,7 @@ look what has changed:
 
 **ValidatePropertiesDataPipe (Likelihood Of Impact: Low)**
 
-If you've used the `ValidatePropertiesDataPipe::allTypes` parameter to validate all types, then please use Spatie\LaravelData\Attributes\Validation\ExcludeIf;use Spatie\LaravelData\Optional;use the new
+If you've used the `ValidatePropertiesDataPipe::allTypes` parameter to validate all types, then please use Uretral\BitrixData\Attributes\Validation\ExcludeIf;use Uretral\BitrixData\Optional;use the new
 context when creating a data object to enable this or update your `data.php` config file with the new default.
 
 **Removal of `withoutMagicalCreationFrom` (Likelihood Of Impact: Low)**

@@ -8,8 +8,8 @@ float: number;
 array: Array<string>;
 lazy?: string;
 closureLazy: string;
-simpleData: {%Spatie\LaravelData\Tests\Fakes\SimpleData%};
-dataCollection: Array<{%Spatie\LaravelData\Tests\Fakes\SimpleData%}>;
-dataCollectionAlternative: Array<{%Spatie\LaravelData\Tests\Fakes\SimpleData%}>;
-dataCollectionWithAttribute: Array<{%Spatie\LaravelData\Tests\Fakes\SimpleData%}>;
+simpleData: {%Uretral\BitrixData\Tests\Fakes\SimpleData%};
+dataCollection: Array<{%Uretral\BitrixData\Tests\Fakes\SimpleData%}>;
+dataCollectionAlternative: Array<{%Uretral\BitrixData\Tests\Fakes\SimpleData%}>;
+dataCollectionWithAttribute: Array<{%Uretral\BitrixData\Tests\Fakes\SimpleData%}>;
 }

@@ -8,14 +8,14 @@ use PhpBench\Attributes\Assert;
 use PhpBench\Attributes\BeforeMethods;
 use PhpBench\Attributes\Iterations;
 use PhpBench\Attributes\Revs;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\LaravelDataServiceProvider;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Tests\Fakes\ComplicatedData;
-use Spatie\LaravelData\Tests\Fakes\NestedData;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\LaravelDataServiceProvider;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Tests\Fakes\ComplicatedData;
+use Uretral\BitrixData\Tests\Fakes\NestedData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 class DataBench
 {

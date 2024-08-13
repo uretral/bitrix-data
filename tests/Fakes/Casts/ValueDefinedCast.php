@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Casts;
+namespace Uretral\BitrixData\Tests\Fakes\Casts;
 
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataProperty;
 
 class ValueDefinedCast implements Cast
 {

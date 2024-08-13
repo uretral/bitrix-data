@@ -7,19 +7,19 @@ use Illuminate\Pagination\CursorPaginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
-use Spatie\LaravelData\CursorPaginatedDataCollection;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\PaginatedDataCollection;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Tests\Fakes\DataCollections\CustomDataCollection;
-use Spatie\LaravelData\Tests\Fakes\DataWithMultipleArgumentCreationMethod;
-use Spatie\LaravelData\Tests\Fakes\DummyDto;
-use Spatie\LaravelData\Tests\Fakes\EnumData;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModel;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCasts;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\PaginatedDataCollection;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Tests\Fakes\DataCollections\CustomDataCollection;
+use Uretral\BitrixData\Tests\Fakes\DataWithMultipleArgumentCreationMethod;
+use Uretral\BitrixData\Tests\Fakes\DummyDto;
+use Uretral\BitrixData\Tests\Fakes\EnumData;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModel;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCasts;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('can create data using a magical method', function () {
     $data = new class ('') extends Data {

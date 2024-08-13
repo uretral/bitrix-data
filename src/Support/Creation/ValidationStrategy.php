@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Creation;
+namespace Uretral\BitrixData\Support\Creation;
 
 enum ValidationStrategy: string
 {

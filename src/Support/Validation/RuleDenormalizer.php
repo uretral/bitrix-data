@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Validation;
+namespace Uretral\BitrixData\Support\Validation;
 
 use BackedEnum;
 use DateTimeInterface;
@@ -8,12 +8,12 @@ use Illuminate\Contracts\Validation\InvokableRule as InvokableRuleContract;
 use Illuminate\Contracts\Validation\Rule as RuleContract;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Spatie\LaravelData\Attributes\Validation\CustomValidationAttribute;
-use Spatie\LaravelData\Attributes\Validation\ObjectValidationAttribute;
-use Spatie\LaravelData\Attributes\Validation\Rule;
-use Spatie\LaravelData\Attributes\Validation\StringValidationAttribute;
-use Spatie\LaravelData\Support\Validation\References\FieldReference;
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Attributes\Validation\CustomValidationAttribute;
+use Uretral\BitrixData\Attributes\Validation\ObjectValidationAttribute;
+use Uretral\BitrixData\Attributes\Validation\Rule;
+use Uretral\BitrixData\Attributes\Validation\StringValidationAttribute;
+use Uretral\BitrixData\Support\Validation\References\FieldReference;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
 
 class RuleDenormalizer
 {

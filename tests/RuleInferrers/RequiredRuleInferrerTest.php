@@ -1,26 +1,26 @@
 <?php
 
 use Illuminate\Validation\Rules\Enum as BaseEnum;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\Validation\ArrayType;
-use Spatie\LaravelData\Attributes\Validation\BooleanType;
-use Spatie\LaravelData\Attributes\Validation\Nullable;
-use Spatie\LaravelData\Attributes\Validation\Present;
-use Spatie\LaravelData\Attributes\Validation\Required;
-use Spatie\LaravelData\Attributes\Validation\RequiredIf;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\RuleInferrers\RequiredRuleInferrer;
-use Spatie\LaravelData\Support\Validation\PropertyRules;
-use Spatie\LaravelData\Support\Validation\RuleDenormalizer;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\Validation\ArrayType;
+use Uretral\BitrixData\Attributes\Validation\BooleanType;
+use Uretral\BitrixData\Attributes\Validation\Nullable;
+use Uretral\BitrixData\Attributes\Validation\Present;
+use Uretral\BitrixData\Attributes\Validation\Required;
+use Uretral\BitrixData\Attributes\Validation\RequiredIf;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\RuleInferrers\RequiredRuleInferrer;
+use Uretral\BitrixData\Support\Validation\PropertyRules;
+use Uretral\BitrixData\Support\Validation\RuleDenormalizer;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 /**
- * @return \Spatie\LaravelData\Support\DataProperty;
+ * @return \Uretral\BitrixData\Support\DataProperty;
  */
 function getProperty(object $class)
 {
@@ -126,7 +126,7 @@ it('has support for rules that cannot be converted to string', function () {
     $rules = $this->inferrer->handle(
         $dataProperty,
         PropertyRules::create()->add(
-            new \Spatie\LaravelData\Attributes\Validation\Enum(new BaseEnum('SomeClass'))
+            new \Uretral\BitrixData\Attributes\Validation\Enum(new BaseEnum('SomeClass'))
         ),
         new ValidationContext([], [], ValidationPath::create(null))
     );

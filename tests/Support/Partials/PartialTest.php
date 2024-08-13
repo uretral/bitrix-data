@@ -1,9 +1,9 @@
 <?php
 
-use Spatie\LaravelData\Support\Partials\Partial;
-use Spatie\LaravelData\Support\Partials\Segments\AllPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\FieldsPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\NestedPartialSegment;
+use Uretral\BitrixData\Support\Partials\Partial;
+use Uretral\BitrixData\Support\Partials\Segments\AllPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\FieldsPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\NestedPartialSegment;
 
 it('can parse partials', function (string $partialString, array $segments) {
     expect(Partial::create($partialString)->segments)->toEqual($segments);

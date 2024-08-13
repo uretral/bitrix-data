@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Models;
+namespace Uretral\BitrixData\Tests\Fakes\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Spatie\LaravelData\Tests\Factories\FakeNestedModelFactory;
+use Uretral\BitrixData\Tests\Factories\FakeNestedModelFactory;
 
 class FakeNestedModel extends Model
 {

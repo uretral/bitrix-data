@@ -2,11 +2,11 @@
 
 use Illuminate\Support\Collection;
 use phpDocumentor\Reflection\TypeResolver;
-use Spatie\LaravelData\Resolvers\ContextResolver;
-use Spatie\LaravelData\Support\Annotations\CollectionAnnotation;
-use Spatie\LaravelData\Support\Annotations\CollectionAnnotationReader;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Resolvers\ContextResolver;
+use Uretral\BitrixData\Support\Annotations\CollectionAnnotation;
+use Uretral\BitrixData\Support\Annotations\CollectionAnnotationReader;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 beforeEach(function () {
     CollectionAnnotationReader::clearCache();
@@ -126,7 +126,7 @@ it('can caches the result', function (string $className) {
 
 /**
  * @template TKey of array-key
- * @template TData of \Spatie\LaravelData\Tests\Fakes\SimpleData
+ * @template TData of \Uretral\BitrixData\Tests\Fakes\SimpleData
  *
  * @extends \Illuminate\Support\Collection<TKey, TData>
  */
@@ -135,35 +135,35 @@ class DataCollectionWithTemplate extends Collection
 }
 
 /**
- * @extends \Illuminate\Support\Collection<array-key, \Spatie\LaravelData\Tests\Fakes\SimpleData>
+ * @extends \Illuminate\Support\Collection<array-key, \Uretral\BitrixData\Tests\Fakes\SimpleData>
  */
 class DataCollectionWithoutTemplate extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<array-key, \Spatie\LaravelData\Tests\Fakes\SimpleData|\Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum>
+ * @extends \Illuminate\Support\Collection<array-key, \Uretral\BitrixData\Tests\Fakes\SimpleData|\Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum>
  */
 class DataCollectionWithCombinationType extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<int, \Spatie\LaravelData\Tests\Fakes\SimpleData>
+ * @extends \Illuminate\Support\Collection<int, \Uretral\BitrixData\Tests\Fakes\SimpleData>
  */
 class DataCollectionWithIntegerKey extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<int|string, \Spatie\LaravelData\Tests\Fakes\SimpleData>
+ * @extends \Illuminate\Support\Collection<int|string, \Uretral\BitrixData\Tests\Fakes\SimpleData>
  */
 class DataCollectionWithCombinationKey extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<\Spatie\LaravelData\Tests\Fakes\SimpleData>
+ * @extends \Illuminate\Support\Collection<\Uretral\BitrixData\Tests\Fakes\SimpleData>
  */
 class DataCollectionWithoutKey extends Collection
 {
@@ -171,7 +171,7 @@ class DataCollectionWithoutKey extends Collection
 
 /**
  * @template TKey of array-key
- * @template TValue of \Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum
+ * @template TValue of \Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum
  *
  * @extends \Illuminate\Support\Collection<TKey, TValue>
  */
@@ -180,42 +180,42 @@ class NonDataCollectionWithTemplate extends Collection
 }
 
 /**
- * @extends \Illuminate\Support\Collection<array-key, \Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum>
+ * @extends \Illuminate\Support\Collection<array-key, \Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum>
  */
 class NonDataCollectionWithoutTemplate extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<array-key, \Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum|\Spatie\LaravelData\Tests\Fakes\SimpleData>
+ * @extends \Illuminate\Support\Collection<array-key, \Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum|\Uretral\BitrixData\Tests\Fakes\SimpleData>
  */
 class NonDataCollectionWithCombinationType extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<int, \Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum>
+ * @extends \Illuminate\Support\Collection<int, \Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum>
  */
 class NonDataCollectionWithIntegerKey extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<int|string, \Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum>
+ * @extends \Illuminate\Support\Collection<int|string, \Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum>
  */
 class NonDataCollectionWithCombinationKey extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<\Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum>
+ * @extends \Illuminate\Support\Collection<\Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum>
  */
 class NonDataCollectionWithoutKey extends Collection
 {
 }
 
 /**
- * @extends \Illuminate\Support\Collection<array-key, \Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum>
+ * @extends \Illuminate\Support\Collection<array-key, \Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum>
  */
 class CollectionWhoImplementsIterator implements Iterator
 {
@@ -238,7 +238,7 @@ class CollectionWhoImplementsIterator implements Iterator
 }
 
 /**
- * @extends \Illuminate\Support\Collection<array-key, \Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum>
+ * @extends \Illuminate\Support\Collection<array-key, \Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum>
  */
 class CollectionWhoImplementsIteratorAggregate implements IteratorAggregate
 {
@@ -249,7 +249,7 @@ class CollectionWhoImplementsIteratorAggregate implements IteratorAggregate
 }
 
 /**
- * @extends \Illuminate\Support\Collection<array-key, \Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum>
+ * @extends \Illuminate\Support\Collection<array-key, \Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum>
  */
 class CollectionWhoImplementsNothing
 {

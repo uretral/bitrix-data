@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\DataCollections;
+namespace Uretral\BitrixData\Tests\Fakes\DataCollections;
 
-use Spatie\LaravelData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
 
 class CustomCursorPaginatedDataCollection extends CursorPaginatedDataCollection
 {

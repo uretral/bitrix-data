@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Resource;
+use Uretral\BitrixData\Resource;
 
 class SimpleResource extends Resource
 {

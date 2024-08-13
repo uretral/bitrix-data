@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 abstract class ObjectValidationAttribute extends ValidationAttribute
 {

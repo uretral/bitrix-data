@@ -1,11 +1,11 @@
 <?php
 
 
-use Spatie\LaravelData\Resolvers\DecoupledPartialResolver;
-use Spatie\LaravelData\Support\Partials\Partial;
-use Spatie\LaravelData\Support\Partials\Segments\AllPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\FieldsPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\NestedPartialSegment;
+use Uretral\BitrixData\Resolvers\DecoupledPartialResolver;
+use Uretral\BitrixData\Support\Partials\Partial;
+use Uretral\BitrixData\Support\Partials\Segments\AllPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\FieldsPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\NestedPartialSegment;
 
 it('can decouple a partial with no further fields, resulting in null', function () {
     $decoupled = Partial::create('name')->next();

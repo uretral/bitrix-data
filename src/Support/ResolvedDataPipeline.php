@@ -1,18 +1,18 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
 use Illuminate\Container\Container;
-use Spatie\LaravelData\Exceptions\CannotCreateData;
-use Spatie\LaravelData\Normalizers\Normalized\Normalized;
-use Spatie\LaravelData\Normalizers\Normalized\UnknownProperty;
-use Spatie\LaravelData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Exceptions\CannotCreateData;
+use Uretral\BitrixData\Normalizers\Normalized\Normalized;
+use Uretral\BitrixData\Normalizers\Normalized\UnknownProperty;
+use Uretral\BitrixData\Support\Creation\CreationContext;
 
 class ResolvedDataPipeline
 {
     /**
-     * @param array<\Spatie\LaravelData\Normalizers\Normalizer> $normalizers
-     * @param array<\Spatie\LaravelData\DataPipes\DataPipe> $pipes
+     * @param array<\Uretral\BitrixData\Normalizers\Normalizer> $normalizers
+     * @param array<\Uretral\BitrixData\DataPipes\DataPipe> $pipes
      */
     public function __construct(
         protected array $normalizers,

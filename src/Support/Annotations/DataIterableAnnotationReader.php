@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Annotations;
+namespace Uretral\BitrixData\Support\Annotations;
 
 use Illuminate\Support\Arr;
 use phpDocumentor\Reflection\FqsenResolver;
@@ -9,7 +9,7 @@ use phpDocumentor\Reflection\Types\ContextFactory;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionProperty;
-use Spatie\LaravelData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseData;
 
 /**
  * @note To myself, always use the fully qualified class names in pest tests when using anonymous classes

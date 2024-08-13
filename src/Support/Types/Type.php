@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Types;
+namespace Uretral\BitrixData\Support\Types;
 
 abstract class Type
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Validation\References;
+namespace Uretral\BitrixData\Support\Validation\References;
 
-use Spatie\LaravelData\Exceptions\CannotResolveRouteParameterReference;
+use Uretral\BitrixData\Exceptions\CannotResolveRouteParameterReference;
 use Stringable;
 
 class RouteParameterReference implements Stringable

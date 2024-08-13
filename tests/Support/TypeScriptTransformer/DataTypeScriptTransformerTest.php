@@ -2,19 +2,19 @@
 
 use Illuminate\Pagination\CursorPaginator;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\MapOutputName;
-use Spatie\LaravelData\CursorPaginatedDataCollection;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Mappers\SnakeCaseMapper;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\PaginatedDataCollection;
-use Spatie\LaravelData\Support\Lazy\ClosureLazy;
-use Spatie\LaravelData\Support\TypeScriptTransformer\DataTypeScriptTransformer;
-use Spatie\LaravelData\Tests\Fakes\DataWithMapper;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\MapOutputName;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Mappers\SnakeCaseMapper;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\PaginatedDataCollection;
+use Uretral\BitrixData\Support\Lazy\ClosureLazy;
+use Uretral\BitrixData\Support\TypeScriptTransformer\DataTypeScriptTransformer;
+use Uretral\BitrixData\Tests\Fakes\DataWithMapper;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 use function Spatie\Snapshots\assertMatchesSnapshot as baseAssertMatchesSnapshot;
 
@@ -44,9 +44,9 @@ it('can convert a data object to Typescript', function () {
             public Lazy|string $lazy,
             public ClosureLazy|string $closureLazy,
             public SimpleData $simpleData,
-            /** @var \Spatie\LaravelData\Tests\Fakes\SimpleData[] */
+            /** @var \Uretral\BitrixData\Tests\Fakes\SimpleData[] */
             public DataCollection $dataCollection,
-            /** @var DataCollection<\Spatie\LaravelData\Tests\Fakes\SimpleData> */
+            /** @var DataCollection<\Uretral\BitrixData\Tests\Fakes\SimpleData> */
             public DataCollection $dataCollectionAlternative,
             #[DataCollectionOf(SimpleData::class)]
             public DataCollection $dataCollectionWithAttribute,
@@ -279,10 +279,10 @@ it('can transform a collection as a TypeScript record', function () {
     $config = TypeScriptTransformerConfig::create();
 
     $data = new class () extends Data {
-        /** @var \Spatie\LaravelData\Tests\Fakes\SimpleData[] */
+        /** @var \Uretral\BitrixData\Tests\Fakes\SimpleData[] */
         public array $collectionAsArray;
 
-        /** @var array<string, \Spatie\LaravelData\Tests\Fakes\SimpleData> */
+        /** @var array<string, \Uretral\BitrixData\Tests\Fakes\SimpleData> */
         public array $collectionAsRecord;
     };
 
@@ -293,8 +293,8 @@ it('can transform a collection as a TypeScript record', function () {
     $this->assertEquals(
         <<<TXT
         {
-        collectionAsArray: Array<{%Spatie\LaravelData\Tests\Fakes\SimpleData%}>;
-        collectionAsRecord: { [key: string]: {%Spatie\LaravelData\Tests\Fakes\SimpleData%} };
+        collectionAsArray: Array<{%Uretral\BitrixData\Tests\Fakes\SimpleData%}>;
+        collectionAsRecord: { [key: string]: {%Uretral\BitrixData\Tests\Fakes\SimpleData%} };
         }
         TXT,
         $transformer->transform($reflection, 'DataObject')->transformed
@@ -305,7 +305,7 @@ it('will transform a collection with int key as an array', function () {
     $config = TypeScriptTransformerConfig::create();
 
     $data = new class () extends Data {
-        /** @var array<int, \Spatie\LaravelData\Tests\Fakes\SimpleData> */
+        /** @var array<int, \Uretral\BitrixData\Tests\Fakes\SimpleData> */
         public array $collection;
     };
 
@@ -316,7 +316,7 @@ it('will transform a collection with int key as an array', function () {
     $this->assertEquals(
         <<<TXT
         {
-        collection: Array<{%Spatie\LaravelData\Tests\Fakes\SimpleData%}>;
+        collection: Array<{%Uretral\BitrixData\Tests\Fakes\SimpleData%}>;
         }
         TXT,
         $transformer->transform($reflection, 'DataObject')->transformed

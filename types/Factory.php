@@ -2,12 +2,12 @@
 
 /** @noinspection PhpExpressionResultUnusedInspection */
 
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDto;
-use Spatie\LaravelData\Tests\Fakes\SimpleResource;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDto;
+use Uretral\BitrixData\Tests\Fakes\SimpleResource;
 use function PHPStan\Testing\assertType;
 
 $factory = SimpleData::factory();

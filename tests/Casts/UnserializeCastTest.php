@@ -1,10 +1,10 @@
 <?php
 
-use Spatie\LaravelData\Casts\Uncastable;
-use Spatie\LaravelData\Casts\UnserializeCast;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Casts\Uncastable;
+use Uretral\BitrixData\Casts\UnserializeCast;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
 
 it('will unserialize an object', function () {
     $class = new class () {

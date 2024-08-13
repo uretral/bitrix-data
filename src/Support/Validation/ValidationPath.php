@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Validation;
+namespace Uretral\BitrixData\Support\Validation;
 
 use Stringable;
 

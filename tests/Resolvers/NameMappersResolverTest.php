@@ -1,13 +1,13 @@
 <?php
 
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Attributes\MapInputName;
-use Spatie\LaravelData\Attributes\MapName;
-use Spatie\LaravelData\Attributes\MapOutputName;
-use Spatie\LaravelData\Mappers\CamelCaseMapper;
-use Spatie\LaravelData\Mappers\ProvidedNameMapper;
-use Spatie\LaravelData\Mappers\SnakeCaseMapper;
-use Spatie\LaravelData\Resolvers\NameMappersResolver;
+use Uretral\BitrixData\Attributes\MapInputName;
+use Uretral\BitrixData\Attributes\MapName;
+use Uretral\BitrixData\Attributes\MapOutputName;
+use Uretral\BitrixData\Mappers\CamelCaseMapper;
+use Uretral\BitrixData\Mappers\ProvidedNameMapper;
+use Uretral\BitrixData\Mappers\SnakeCaseMapper;
+use Uretral\BitrixData\Resolvers\NameMappersResolver;
 
 function getAttributes(object $class): Collection
 {

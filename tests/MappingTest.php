@@ -1,18 +1,18 @@
 <?php
 
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\MapInputName;
-use Spatie\LaravelData\Attributes\MapName;
-use Spatie\LaravelData\Attributes\MapOutputName;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Mappers\CamelCaseMapper;
-use Spatie\LaravelData\Mappers\ProvidedNameMapper;
-use Spatie\LaravelData\Mappers\SnakeCaseMapper;
-use Spatie\LaravelData\Mappers\StudlyCaseMapper;
-use Spatie\LaravelData\Support\Transformation\TransformationContextFactory;
-use Spatie\LaravelData\Tests\Fakes\DataWithMapper;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithMappedProperty;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\MapInputName;
+use Uretral\BitrixData\Attributes\MapName;
+use Uretral\BitrixData\Attributes\MapOutputName;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Mappers\CamelCaseMapper;
+use Uretral\BitrixData\Mappers\ProvidedNameMapper;
+use Uretral\BitrixData\Mappers\SnakeCaseMapper;
+use Uretral\BitrixData\Mappers\StudlyCaseMapper;
+use Uretral\BitrixData\Support\Transformation\TransformationContextFactory;
+use Uretral\BitrixData\Tests\Fakes\DataWithMapper;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithMappedProperty;
 
 it('can map property names when transforming', function () {
     $data = new SimpleDataWithMappedProperty('hello');

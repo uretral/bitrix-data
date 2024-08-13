@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\DataContainer;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataContainer;
 
 class ExceptData extends Data
 {

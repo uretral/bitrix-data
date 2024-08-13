@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
-use Spatie\LaravelData\Concerns\EmptyData;
-use Spatie\LaravelData\Exceptions\DataPropertyCanOnlyHaveOneType;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Types\CombinationType;
+use Uretral\BitrixData\Concerns\EmptyData;
+use Uretral\BitrixData\Exceptions\DataPropertyCanOnlyHaveOneType;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Types\CombinationType;
 use Traversable;
 
 class EmptyDataResolver

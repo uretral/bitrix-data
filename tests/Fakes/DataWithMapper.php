@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\MapName;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Mappers\SnakeCaseMapper;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\MapName;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Mappers\SnakeCaseMapper;
 
 #[MapName(SnakeCaseMapper::class)]
 class DataWithMapper extends Data

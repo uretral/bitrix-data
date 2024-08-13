@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Livewire;
+namespace Uretral\BitrixData\Tests\Fakes\Livewire;
 
 use Livewire\Component;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Tests\Fakes\LazyData;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Tests\Fakes\LazyData;
 
 class SimpleDataComponent extends Component
 {

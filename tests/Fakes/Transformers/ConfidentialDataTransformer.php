@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Transformers;
+namespace Uretral\BitrixData\Tests\Fakes\Transformers;
 
 use function collect;
 
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Support\DataProperty;
 
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Transformers\Transformer;
 
 class ConfidentialDataTransformer implements Transformer
 {
     public function transform(DataProperty $property, mixed $value, TransformationContext $context): mixed
     {
-        /** @var \Spatie\LaravelData\Data $value */
+        /** @var \Uretral\BitrixData\Data $value */
         return collect($value->toArray())->map(fn (mixed $value) => 'CONFIDENTIAL')->toArray();
     }
 }

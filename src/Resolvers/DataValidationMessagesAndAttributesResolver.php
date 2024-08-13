@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Arr;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 class DataValidationMessagesAndAttributesResolver
 {

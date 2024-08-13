@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Lazy;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Lazy;
 
 class PartialClassConditionalData extends Data
 {

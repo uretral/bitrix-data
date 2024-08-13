@@ -10,7 +10,7 @@ First, you should [install the package](/docs/laravel-data/v4/installation-setup
 We will create a blog with different posts, so let's start with the `PostData` object. A post has a title, some content, a status and a date when it was published:
 
 ```php
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Data;
 
 class PostData extends Data
 {
@@ -269,7 +269,7 @@ It is possible to define casts within the `data.php` config file. By default, th
 
 ```php
 'casts' => [
-    DateTimeInterface::class => Spatie\LaravelData\Casts\DateTimeInterfaceCast::class,
+    DateTimeInterface::class => Uretral\BitrixData\Casts\DateTimeInterfaceCast::class,
 ],
 ```
 
@@ -303,9 +303,9 @@ Let's create a cast for this:
 
 ```php
 use Illuminate\Http\UploadedFile;
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Casts\Uncastable;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Casts\Uncastable;
+use Uretral\BitrixData\Support\DataProperty;
 use Str;
 
 class ImageCast implements Cast
@@ -416,7 +416,7 @@ would be mapped onto a data object.
 Now that we have a fully functional post-data object. We're going to create a new data object, `AuthorData`, that will store the name of an author and an array of posts the author wrote:
 
 ```php
-use Spatie\LaravelData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
 
 class AuthorData extends Data
 {
@@ -677,8 +677,8 @@ This `DateTimeInterfaceTransformer` is registered in the `data.php` config file 
 
 ```php
 'transformers' => [
-    DateTimeInterface::class => \Spatie\LaravelData\Transformers\DateTimeInterfaceTransformer::class,
-    \Illuminate\Contracts\Support\Arrayable::class => \Spatie\LaravelData\Transformers\ArrayableTransformer::class,
+    DateTimeInterface::class => \Uretral\BitrixData\Transformers\DateTimeInterfaceTransformer::class,
+    \Illuminate\Contracts\Support\Arrayable::class => \Uretral\BitrixData\Transformers\ArrayableTransformer::class,
 ],
 ```
 

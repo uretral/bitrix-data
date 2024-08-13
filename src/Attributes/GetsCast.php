@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes;
+namespace Uretral\BitrixData\Attributes;
 
-use Spatie\LaravelData\Casts\Cast;
+use Uretral\BitrixData\Casts\Cast;
 
 interface GetsCast
 {

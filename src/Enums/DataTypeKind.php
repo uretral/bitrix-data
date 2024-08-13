@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Enums;
+namespace Uretral\BitrixData\Enums;
 
 use Exception;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Factories;
+namespace Uretral\BitrixData\Support\Factories;
 
 use Exception;
 use Illuminate\Support\Collection;
@@ -12,25 +12,25 @@ use ReflectionParameter;
 use ReflectionProperty;
 use ReflectionType;
 use ReflectionUnionType;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Exceptions\CannotFindDataClass;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\Annotations\DataIterableAnnotation;
-use Spatie\LaravelData\Support\Annotations\DataIterableAnnotationReader;
-use Spatie\LaravelData\Support\DataPropertyType;
-use Spatie\LaravelData\Support\DataType;
-use Spatie\LaravelData\Support\Lazy\ClosureLazy;
-use Spatie\LaravelData\Support\Lazy\ConditionalLazy;
-use Spatie\LaravelData\Support\Lazy\DefaultLazy;
-use Spatie\LaravelData\Support\Lazy\InertiaLazy;
-use Spatie\LaravelData\Support\Lazy\RelationalLazy;
-use Spatie\LaravelData\Support\Types\IntersectionType;
-use Spatie\LaravelData\Support\Types\NamedType;
-use Spatie\LaravelData\Support\Types\Storage\AcceptedTypesStorage;
-use Spatie\LaravelData\Support\Types\Type;
-use Spatie\LaravelData\Support\Types\UnionType;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Exceptions\CannotFindDataClass;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\Annotations\DataIterableAnnotation;
+use Uretral\BitrixData\Support\Annotations\DataIterableAnnotationReader;
+use Uretral\BitrixData\Support\DataPropertyType;
+use Uretral\BitrixData\Support\DataType;
+use Uretral\BitrixData\Support\Lazy\ClosureLazy;
+use Uretral\BitrixData\Support\Lazy\ConditionalLazy;
+use Uretral\BitrixData\Support\Lazy\DefaultLazy;
+use Uretral\BitrixData\Support\Lazy\InertiaLazy;
+use Uretral\BitrixData\Support\Lazy\RelationalLazy;
+use Uretral\BitrixData\Support\Types\IntersectionType;
+use Uretral\BitrixData\Support\Types\NamedType;
+use Uretral\BitrixData\Support\Types\Storage\AcceptedTypesStorage;
+use Uretral\BitrixData\Support\Types\Type;
+use Uretral\BitrixData\Support\Types\UnionType;
 
 class DataTypeFactory
 {

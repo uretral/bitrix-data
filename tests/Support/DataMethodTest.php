@@ -3,13 +3,13 @@
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Enumerable;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Enums\CustomCreationMethodType;
-use Spatie\LaravelData\Support\DataParameter;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Tests\Fakes\DataWithMultipleArgumentCreationMethod;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Enums\CustomCreationMethodType;
+use Uretral\BitrixData\Support\DataParameter;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Tests\Fakes\DataWithMultipleArgumentCreationMethod;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('can create a data method from a constructor', function () {
     $class = new class () extends Data {

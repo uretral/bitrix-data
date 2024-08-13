@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData;
+namespace Uretral\BitrixData;
 
 class Optional
 {

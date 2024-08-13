@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Casts;
+namespace Uretral\BitrixData\Casts;
 
 use DateTimeInterface;
 use DateTimeZone;
-use Spatie\LaravelData\Exceptions\CannotCastDate;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Exceptions\CannotCastDate;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataProperty;
 
 class DateTimeInterfaceCast implements Cast, IterableItemCast
 {

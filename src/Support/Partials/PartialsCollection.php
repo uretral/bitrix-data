@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Partials;
+namespace Uretral\BitrixData\Support\Partials;
 
 use SplObjectStorage;
 use Stringable;

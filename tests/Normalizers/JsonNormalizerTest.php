@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\LaravelData\Exceptions\CannotCreateData;
-use Spatie\LaravelData\Tests\Fakes\MultiData;
+use Uretral\BitrixData\Exceptions\CannotCreateData;
+use Uretral\BitrixData\Tests\Fakes\MultiData;
 
 it('can create a data object from JSON', function () {
     $originalData = new MultiData('Hello', 'World');

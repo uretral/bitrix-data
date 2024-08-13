@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Creation;
+namespace Uretral\BitrixData\Support\Creation;
 
 use Illuminate\Contracts\Pagination\CursorPaginator;
 use Illuminate\Contracts\Pagination\Paginator;

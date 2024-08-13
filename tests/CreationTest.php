@@ -13,48 +13,48 @@ use Illuminate\Validation\ValidationException;
 
 use function Pest\Laravel\postJson;
 
-use Spatie\LaravelData\Attributes\Computed;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\Validation\Min;
-use Spatie\LaravelData\Attributes\WithCast;
-use Spatie\LaravelData\Attributes\WithCastable;
-use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
-use Spatie\LaravelData\Casts\Uncastable;
-use Spatie\LaravelData\Concerns\WithDeprecatedCollectionMethod;
-use Spatie\LaravelData\Contracts\DeprecatedData as DeprecatedDataContract;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\DataPipeline;
-use Spatie\LaravelData\DataPipes\DataPipe;
-use Spatie\LaravelData\Exceptions\CannotCreateData;
-use Spatie\LaravelData\Exceptions\CannotSetComputedValue;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Tests\Fakes\Castables\SimpleCastable;
-use Spatie\LaravelData\Tests\Fakes\Casts\ConfidentialDataCast;
-use Spatie\LaravelData\Tests\Fakes\Casts\ConfidentialDataCollectionCast;
-use Spatie\LaravelData\Tests\Fakes\Casts\ContextAwareCast;
-use Spatie\LaravelData\Tests\Fakes\Casts\MeaningOfLifeCast;
-use Spatie\LaravelData\Tests\Fakes\Casts\StringToUpperCast;
-use Spatie\LaravelData\Tests\Fakes\Casts\ValueDefinedCast;
-use Spatie\LaravelData\Tests\Fakes\Collections\CustomCollection;
-use Spatie\LaravelData\Tests\Fakes\ComplicatedData;
-use Spatie\LaravelData\Tests\Fakes\DataCollections\CustomCursorPaginatedDataCollection;
-use Spatie\LaravelData\Tests\Fakes\DataCollections\CustomDataCollection;
-use Spatie\LaravelData\Tests\Fakes\DataCollections\CustomPaginatedDataCollection;
-use Spatie\LaravelData\Tests\Fakes\EnumData;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
-use Spatie\LaravelData\Tests\Fakes\ModelData;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModel;
-use Spatie\LaravelData\Tests\Fakes\MultiData;
-use Spatie\LaravelData\Tests\Fakes\NestedData;
-use Spatie\LaravelData\Tests\Fakes\NestedLazyData;
-use Spatie\LaravelData\Tests\Fakes\NestedModelCollectionData;
-use Spatie\LaravelData\Tests\Fakes\NestedModelData;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithoutConstructor;
+use Uretral\BitrixData\Attributes\Computed;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\Validation\Min;
+use Uretral\BitrixData\Attributes\WithCast;
+use Uretral\BitrixData\Attributes\WithCastable;
+use Uretral\BitrixData\Casts\DateTimeInterfaceCast;
+use Uretral\BitrixData\Casts\Uncastable;
+use Uretral\BitrixData\Concerns\WithDeprecatedCollectionMethod;
+use Uretral\BitrixData\Contracts\DeprecatedData as DeprecatedDataContract;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\DataPipeline;
+use Uretral\BitrixData\DataPipes\DataPipe;
+use Uretral\BitrixData\Exceptions\CannotCreateData;
+use Uretral\BitrixData\Exceptions\CannotSetComputedValue;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Tests\Fakes\Castables\SimpleCastable;
+use Uretral\BitrixData\Tests\Fakes\Casts\ConfidentialDataCast;
+use Uretral\BitrixData\Tests\Fakes\Casts\ConfidentialDataCollectionCast;
+use Uretral\BitrixData\Tests\Fakes\Casts\ContextAwareCast;
+use Uretral\BitrixData\Tests\Fakes\Casts\MeaningOfLifeCast;
+use Uretral\BitrixData\Tests\Fakes\Casts\StringToUpperCast;
+use Uretral\BitrixData\Tests\Fakes\Casts\ValueDefinedCast;
+use Uretral\BitrixData\Tests\Fakes\Collections\CustomCollection;
+use Uretral\BitrixData\Tests\Fakes\ComplicatedData;
+use Uretral\BitrixData\Tests\Fakes\DataCollections\CustomCursorPaginatedDataCollection;
+use Uretral\BitrixData\Tests\Fakes\DataCollections\CustomDataCollection;
+use Uretral\BitrixData\Tests\Fakes\DataCollections\CustomPaginatedDataCollection;
+use Uretral\BitrixData\Tests\Fakes\EnumData;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Tests\Fakes\ModelData;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModel;
+use Uretral\BitrixData\Tests\Fakes\MultiData;
+use Uretral\BitrixData\Tests\Fakes\NestedData;
+use Uretral\BitrixData\Tests\Fakes\NestedLazyData;
+use Uretral\BitrixData\Tests\Fakes\NestedModelCollectionData;
+use Uretral\BitrixData\Tests\Fakes\NestedModelData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithoutConstructor;
 
 it('can use default types to create data objects', function () {
     $data = ComplicatedData::from([
@@ -747,14 +747,14 @@ it('throws a readable exception message when the constructor fails', function (
 
     throw new Exception('We should not reach this point');
 })->with(fn () => [
-    yield 'no params' => [[], 'Could not create `Spatie\LaravelData\Tests\Fakes\MultiData`: the constructor requires 2 parameters, 0 given. Parameters missing: first, second.'],
-    yield 'one param' => [['first' => 'First'], 'Could not create `Spatie\LaravelData\Tests\Fakes\MultiData`: the constructor requires 2 parameters, 1 given. Parameters given: first. Parameters missing: second.'],
+    yield 'no params' => [[], 'Could not create `Uretral\BitrixData\Tests\Fakes\MultiData`: the constructor requires 2 parameters, 0 given. Parameters missing: first, second.'],
+    yield 'one param' => [['first' => 'First'], 'Could not create `Uretral\BitrixData\Tests\Fakes\MultiData`: the constructor requires 2 parameters, 1 given. Parameters given: first. Parameters missing: second.'],
 ]);
 
 it('throws a readable exception message when the constructor of a nested data object fails', function () {
     expect(fn () => NestedData::from([
         'simple' => [],
-    ]))->toThrow(CannotCreateData::class, 'Could not create `Spatie\LaravelData\Tests\Fakes\SimpleData`: the constructor requires 1 parameters, 0 given. Parameters missing: string.');
+    ]))->toThrow(CannotCreateData::class, 'Could not create `Uretral\BitrixData\Tests\Fakes\SimpleData`: the constructor requires 1 parameters, 0 given. Parameters missing: string.');
 });
 
 it('a can create a collection of data objects', function () {
@@ -834,7 +834,7 @@ it('will allow a nested data object to cast properties however it wants', functi
         ->toBeInstanceOf(NestedModelData::class)
         ->model->id->toEqual(10);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\NestedModelData $data */
+    /** @var \Uretral\BitrixData\Tests\Fakes\NestedModelData $data */
     $withModelData = NestedModelData::from([
         'model' => $model,
     ]);
@@ -1030,7 +1030,7 @@ it('will cast array items when an iterable interface type is defined that can be
         /** @var array<DateTime> */
         public array $dates;
 
-        /** @var array<Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum> */
+        /** @var array<Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum> */
         public array $enums;
     };
 

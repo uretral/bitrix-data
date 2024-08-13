@@ -47,12 +47,12 @@
     },
     "autoload" : {
         "psr-4" : {
-            "Spatie\\LaravelData\\" : "src/"
+            "Uretral\\BitrixData\\" : "src/"
         }
     },
     "autoload-dev" : {
         "psr-4" : {
-            "Spatie\\LaravelData\\Tests\\" : "tests/"
+            "Uretral\\BitrixData\\Tests\\" : "tests/"
         }
     },
     "scripts" : {
@@ -73,7 +73,7 @@
     "extra" : {
         "laravel" : {
             "providers" : [
-                "Spatie\\LaravelData\\LaravelDataServiceProvider"
+                "Uretral\\BitrixlData\\LaravelDataServiceProvider"
             ]
         }
     },

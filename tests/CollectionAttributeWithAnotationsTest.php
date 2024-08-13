@@ -1,9 +1,9 @@
 <?php
 
-use Spatie\LaravelData\Tests\Fakes\Collections\SimpleDataCollectionWithAnotations;
-use Spatie\LaravelData\Tests\Fakes\DataWithSimpleDataCollectionWithAnotations;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\TestSupport\DataValidationAsserter;
+use Uretral\BitrixData\Tests\Fakes\Collections\SimpleDataCollectionWithAnotations;
+use Uretral\BitrixData\Tests\Fakes\DataWithSimpleDataCollectionWithAnotations;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\TestSupport\DataValidationAsserter;
 
 beforeEach(function () {
     $this->payload = [

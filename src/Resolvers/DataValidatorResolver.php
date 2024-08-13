@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\Validator as ValidatorFacade;
 use Illuminate\Validation\Validator;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\ValidateableData;
-use Spatie\LaravelData\Support\Validation\DataRules;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\ValidateableData;
+use Uretral\BitrixData\Support\Validation\DataRules;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 class DataValidatorResolver
 {

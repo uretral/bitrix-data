@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Arr;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataPipeline;
-use Spatie\LaravelData\DataPipes\AuthorizedDataPipe;
-use Spatie\LaravelData\DataPipes\CastPropertiesDataPipe;
-use Spatie\LaravelData\DataPipes\DefaultValuesDataPipe;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataPipeline;
+use Uretral\BitrixData\DataPipes\AuthorizedDataPipe;
+use Uretral\BitrixData\DataPipes\CastPropertiesDataPipe;
+use Uretral\BitrixData\DataPipes\DefaultValuesDataPipe;
 
 it('can prepend a data pipe at the beginning of the pipeline', function () {
     $pipeline = DataPipeline::create()

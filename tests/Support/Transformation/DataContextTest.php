@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Support\Transformation;
+namespace Uretral\BitrixData\Tests\Support\Transformation;
 
-use Spatie\LaravelData\Support\Partials\Partial;
-use Spatie\LaravelData\Support\Partials\PartialsCollection;
-use Spatie\LaravelData\Support\Transformation\DataContext;
-use Spatie\LaravelData\Support\Wrapping\Wrap;
-use Spatie\LaravelData\Support\Wrapping\WrapType;
+use Uretral\BitrixData\Support\Partials\Partial;
+use Uretral\BitrixData\Support\Partials\PartialsCollection;
+use Uretral\BitrixData\Support\Transformation\DataContext;
+use Uretral\BitrixData\Support\Wrapping\Wrap;
+use Uretral\BitrixData\Support\Wrapping\WrapType;
 
 it('can serialize and deserialize a data context', function () {
     $context = new DataContext(

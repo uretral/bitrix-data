@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\LaravelData\RuleInferrers;
+namespace Uretral\BitrixData\RuleInferrers;
 
-use Spatie\LaravelData\Attributes\Validation\Present;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Validation\PropertyRules;
-use Spatie\LaravelData\Support\Validation\RequiringRule;
-use Spatie\LaravelData\Support\Validation\RuleNormalizer;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
-use Spatie\LaravelData\Support\Validation\ValidationRule;
+use Uretral\BitrixData\Attributes\Validation\Present;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Validation\PropertyRules;
+use Uretral\BitrixData\Support\Validation\RequiringRule;
+use Uretral\BitrixData\Support\Validation\RuleNormalizer;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Support\Validation\ValidationRule;
 
 class AttributesRuleInferrer implements RuleInferrer
 {

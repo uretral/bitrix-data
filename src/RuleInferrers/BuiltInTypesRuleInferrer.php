@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\LaravelData\RuleInferrers;
+namespace Uretral\BitrixData\RuleInferrers;
 
 use BackedEnum;
-use Spatie\LaravelData\Attributes\Validation\ArrayType;
-use Spatie\LaravelData\Attributes\Validation\BooleanType;
-use Spatie\LaravelData\Attributes\Validation\Enum;
-use Spatie\LaravelData\Attributes\Validation\Numeric;
-use Spatie\LaravelData\Attributes\Validation\StringType;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Validation\PropertyRules;
-use Spatie\LaravelData\Support\Validation\RequiringRule;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Attributes\Validation\ArrayType;
+use Uretral\BitrixData\Attributes\Validation\BooleanType;
+use Uretral\BitrixData\Attributes\Validation\Enum;
+use Uretral\BitrixData\Attributes\Validation\Numeric;
+use Uretral\BitrixData\Attributes\Validation\StringType;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Validation\PropertyRules;
+use Uretral\BitrixData\Support\Validation\RequiringRule;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
 
 class BuiltInTypesRuleInferrer implements RuleInferrer
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Models;
+namespace Uretral\BitrixData\Tests\Fakes\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataCollection;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithDefaultValue;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataCollection;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithDefaultValue;
 
 class DummyModelWithDefaultCasts extends Model
 {

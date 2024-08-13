@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Annotations;
+namespace Uretral\BitrixData\Support\Annotations;
 
 use Iterator;
 use IteratorAggregate;
@@ -9,8 +9,8 @@ use phpDocumentor\Reflection\DocBlockFactory;
 use phpDocumentor\Reflection\TypeResolver;
 use phpDocumentor\Reflection\Types\Context;
 use ReflectionClass;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Resolvers\ContextResolver;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Resolvers\ContextResolver;
 
 class CollectionAnnotationReader
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Enums;
+namespace Uretral\BitrixData\Tests\Fakes\Enums;
 
 enum DummyBackedEnum: string
 {

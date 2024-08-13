@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData;
+namespace Uretral\BitrixData;
 
 use Illuminate\Container\Container;
-use Spatie\LaravelData\DataPipes\DataPipe;
-use Spatie\LaravelData\Normalizers\Normalizer;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\ResolvedDataPipeline;
+use Uretral\BitrixData\DataPipes\DataPipe;
+use Uretral\BitrixData\Normalizers\Normalizer;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\ResolvedDataPipeline;
 
 class DataPipeline
 {
@@ -62,13 +62,13 @@ class DataPipeline
             $this->classString::normalizers()
         );
 
-        /** @var \Spatie\LaravelData\Normalizers\Normalizer[] $normalizers */
+        /** @var \Uretral\BitrixData\Normalizers\Normalizer[] $normalizers */
         $normalizers = array_map(
             fn (string|Normalizer $normalizer) => is_string($normalizer) ?  Container::getInstance()->make($normalizer) : $normalizer,
             $normalizers
         );
 
-        /** @var \Spatie\LaravelData\DataPipes\DataPipe[] $pipes */
+        /** @var \Uretral\BitrixData\DataPipes\DataPipe[] $pipes */
         $pipes = array_map(
             fn (string|DataPipe $pipe) => is_string($pipe) ?  Container::getInstance()->make($pipe) : $pipe,
             $this->pipes

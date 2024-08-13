@@ -142,7 +142,7 @@ objects. This is no longer the case, but there are still valid use cases for the
 You can create a DataCollection like this:
 
 ```php
-use Spatie\LaravelData\DataCollection;
+use Uretral\BitrixData\DataCollection;
 
 SongData::collect(Song::all(), DataCollection::class);
 ```
@@ -150,7 +150,7 @@ SongData::collect(Song::all(), DataCollection::class);
 A PaginatedDataCollection can be created like this:
 
 ```php
-use Spatie\LaravelData\PaginatedDataCollection;
+use Uretral\BitrixData\PaginatedDataCollection;
 
 SongData::collect(Song::paginate(), PaginatedDataCollection::class);
 ````
@@ -158,7 +158,7 @@ SongData::collect(Song::paginate(), PaginatedDataCollection::class);
 And a CursorPaginatedCollection can be created like this:
 
 ```php
-use Spatie\LaravelData\CursorPaginatedCollection;
+use Uretral\BitrixData\CursorPaginatedCollection;
 
 SongData::collect(Song::cursorPaginate(), CursorPaginatedCollection::class);
 ```
@@ -252,7 +252,7 @@ This method was removed with version v4 of the package in favor for the more pow
 method can still be used by using the `WithDeprecatedCollectionMethod` trait:
 
 ```php
-use Spatie\LaravelData\WithDeprecatedCollectionMethod;
+use Uretral\BitrixData\WithDeprecatedCollectionMethod;
 
 class SongData extends Data
 {

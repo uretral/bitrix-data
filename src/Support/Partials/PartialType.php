@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Partials;
+namespace Uretral\BitrixData\Support\Partials;
 
-use Spatie\LaravelData\Support\DataClass;
+use Uretral\BitrixData\Support\DataClass;
 
 enum PartialType
 {

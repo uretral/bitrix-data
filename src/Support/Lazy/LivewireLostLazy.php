@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Lazy;
+namespace Uretral\BitrixData\Support\Lazy;
 
 use Exception;
-use Spatie\LaravelData\Lazy;
+use Uretral\BitrixData\Lazy;
 
 class LivewireLostLazy extends Lazy
 {

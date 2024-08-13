@@ -120,8 +120,8 @@ Sometimes you want to use camelCase property names in your data object, but the 
 an `MapInputName` to map the property names:
 
 ```php
-use Spatie\LaravelData\Attributes\MapInputName;
-use Spatie\LaravelData\Mappers\SnakeCaseMapper;
+use Uretral\BitrixData\Attributes\MapInputName;
+use Uretral\BitrixData\Mappers\SnakeCaseMapper;
 
 class ArtistData extends Data
 {

@@ -38,9 +38,9 @@ return [
      * types.
      */
     'transformers' => [
-        DateTimeInterface::class => \Spatie\LaravelData\Transformers\DateTimeInterfaceTransformer::class,
-        \Illuminate\Contracts\Support\Arrayable::class => \Spatie\LaravelData\Transformers\ArrayableTransformer::class,
-        BackedEnum::class => Spatie\LaravelData\Transformers\EnumTransformer::class,
+        DateTimeInterface::class => \Uretral\BitrixData\Transformers\DateTimeInterfaceTransformer::class,
+        \Illuminate\Contracts\Support\Arrayable::class => \Uretral\BitrixData\Transformers\ArrayableTransformer::class,
+        BackedEnum::class => Uretral\BitrixData\Transformers\EnumTransformer::class,
     ],
 
     /**
@@ -48,9 +48,9 @@ return [
      * object from simple types.
      */
     'casts' => [
-        DateTimeInterface::class => Spatie\LaravelData\Casts\DateTimeInterfaceCast::class,
-        BackedEnum::class => Spatie\LaravelData\Casts\EnumCast::class,
-//        Enumerable::class => Spatie\LaravelData\Casts\EnumerableCast::class,
+        DateTimeInterface::class => Uretral\BitrixData\Casts\DateTimeInterfaceCast::class,
+        BackedEnum::class => Uretral\BitrixData\Casts\EnumCast::class,
+//        Enumerable::class => Uretral\BitrixData\Casts\EnumerableCast::class,
     ],
 
     /**
@@ -59,11 +59,11 @@ return [
      * the type of the property.
      */
     'rule_inferrers' => [
-        Spatie\LaravelData\RuleInferrers\SometimesRuleInferrer::class,
-        Spatie\LaravelData\RuleInferrers\NullableRuleInferrer::class,
-        Spatie\LaravelData\RuleInferrers\RequiredRuleInferrer::class,
-        Spatie\LaravelData\RuleInferrers\BuiltInTypesRuleInferrer::class,
-        Spatie\LaravelData\RuleInferrers\AttributesRuleInferrer::class,
+        Uretral\BitrixData\RuleInferrers\SometimesRuleInferrer::class,
+        Uretral\BitrixData\RuleInferrers\NullableRuleInferrer::class,
+        Uretral\BitrixData\RuleInferrers\RequiredRuleInferrer::class,
+        Uretral\BitrixData\RuleInferrers\BuiltInTypesRuleInferrer::class,
+        Uretral\BitrixData\RuleInferrers\AttributesRuleInferrer::class,
     ],
 
     /**
@@ -72,12 +72,12 @@ return [
      * every data object, unless overridden in a specific data object class.
      */
     'normalizers' => [
-        Spatie\LaravelData\Normalizers\ModelNormalizer::class,
-        // Spatie\LaravelData\Normalizers\FormRequestNormalizer::class,
-        Spatie\LaravelData\Normalizers\ArrayableNormalizer::class,
-        Spatie\LaravelData\Normalizers\ObjectNormalizer::class,
-        Spatie\LaravelData\Normalizers\ArrayNormalizer::class,
-        Spatie\LaravelData\Normalizers\JsonNormalizer::class,
+        Uretral\BitrixData\Normalizers\ModelNormalizer::class,
+        // Uretral\BitrixData\Normalizers\FormRequestNormalizer::class,
+        Uretral\BitrixData\Normalizers\ArrayableNormalizer::class,
+        Uretral\BitrixData\Normalizers\ObjectNormalizer::class,
+        Uretral\BitrixData\Normalizers\ArrayNormalizer::class,
+        Uretral\BitrixData\Normalizers\JsonNormalizer::class,
     ],
 
     /**
@@ -126,7 +126,7 @@ return [
      * method. By default, only when a request is passed the data is being validated. This
      * behaviour can be changed to always validate or to completely disable validation.
      */
-    'validation_strategy' => \Spatie\LaravelData\Support\Creation\ValidationStrategy::OnlyRequests->value,
+    'validation_strategy' => \Uretral\BitrixData\Support\Creation\ValidationStrategy::OnlyRequests->value,
 
     /**
      * When using an invalid include, exclude, only or except partial, the package will

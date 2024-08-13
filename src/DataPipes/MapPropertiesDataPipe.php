@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\DataPipes;
+namespace Uretral\BitrixData\DataPipes;
 
 use Illuminate\Support\Arr;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataProperty;
 
 class MapPropertiesDataPipe implements DataPipe
 {

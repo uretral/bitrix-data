@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Annotations;
+namespace Uretral\BitrixData\Support\Annotations;
 
 class CollectionAnnotation
 {

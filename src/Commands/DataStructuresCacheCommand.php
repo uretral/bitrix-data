@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Commands;
+namespace Uretral\BitrixData\Commands;
 
 use Illuminate\Console\Command;
 use ReflectionClass;
-use Spatie\LaravelData\Support\Caching\CachedDataConfig;
-use Spatie\LaravelData\Support\Caching\DataClassFinder;
-use Spatie\LaravelData\Support\Caching\DataStructureCache;
-use Spatie\LaravelData\Support\Factories\DataClassFactory;
+use Uretral\BitrixData\Support\Caching\CachedDataConfig;
+use Uretral\BitrixData\Support\Caching\DataClassFinder;
+use Uretral\BitrixData\Support\Caching\DataStructureCache;
+use Uretral\BitrixData\Support\Factories\DataClassFactory;
 
 class DataStructuresCacheCommand extends Command
 {

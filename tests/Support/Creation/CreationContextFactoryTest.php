@@ -1,12 +1,12 @@
 <?php
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Support\Creation\GlobalCastsCollection;
-use Spatie\LaravelData\Support\Creation\ValidationStrategy;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Tests\Fakes\Casts\StringToUpperCast;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Support\Creation\GlobalCastsCollection;
+use Uretral\BitrixData\Support\Creation\ValidationStrategy;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Tests\Fakes\Casts\StringToUpperCast;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 it('creates a context from the config', function () {
     $context = CreationContextFactory::createFromConfig(

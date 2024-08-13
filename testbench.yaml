@@ -1,2 +1,2 @@
 providers:
-  - Spatie\LaravelData\LaravelDataServiceProvider
+  - Uretral\BitrixData\LaravelDataServiceProvider

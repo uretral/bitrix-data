@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Collections;
+namespace Uretral\BitrixData\Tests\Fakes\Collections;
 
 use Illuminate\Support\Collection;
 

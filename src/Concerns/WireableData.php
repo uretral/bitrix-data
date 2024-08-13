@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
 
 trait WireableData
 {

@@ -51,8 +51,8 @@ Global transformers are defined in the `data.php` config file and are used when 
 
 ```php
 use Illuminate\Contracts\Support\Arrayable;
-use Spatie\LaravelData\Transformers\ArrayableTransformer;
-use Spatie\LaravelData\Transformers\DateTimeInterfaceTransformer;
+use Uretral\BitrixData\Transformers\ArrayableTransformer;
+use Uretral\BitrixData\Transformers\DateTimeInterfaceTransformer;
 
 /*
  * Global transformers will take complex types and transform them into simple
@@ -98,7 +98,7 @@ Producing the following result:
 It is possible to disable the transformation of values, which will make the `transform` method behave like the `all` method:
 
 ```php
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
 
 ArtistData::from($artist)->transform(
     TransformationContextFactory::create()->withoutValueTransformation()
@@ -125,7 +125,7 @@ ArtistData::from($artist)->transform(
 It is possible to enable [wrapping](/docs/laravel-data/v4/as-a-resource/wrapping-data) the data object:
 
 ```php
-use Spatie\LaravelData\Support\Wrapping\WrapExecutionType;
+use Uretral\BitrixData\Support\Wrapping\WrapExecutionType;
 
 ArtistData::from($artist)->transform(
     TransformationContextFactory::create()->withWrapping()

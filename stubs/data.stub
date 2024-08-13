@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Data;
 
 class DummyClass extends Data
 {

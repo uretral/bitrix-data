@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
 use Illuminate\Support\Collection;
 
@@ -9,7 +9,7 @@ use Illuminate\Support\Collection;
  * @property  Collection<string, DataProperty> $properties
  * @property  Collection<string, DataMethod> $methods
  * @property  Collection<string, object> $attributes
- * @property  array<string, \Spatie\LaravelData\Support\Annotations\DataIterableAnnotation> $dataCollectablePropertyAnnotations
+ * @property  array<string, \Uretral\BitrixData\Support\Annotations\DataIterableAnnotation> $dataCollectablePropertyAnnotations
  */
 class DataClass
 {

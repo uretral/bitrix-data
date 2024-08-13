@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Contracts;
+namespace Uretral\BitrixData\Contracts;
 
-use Spatie\LaravelData\Support\Transformation\DataContext;
+use Uretral\BitrixData\Support\Transformation\DataContext;
 
 interface ContextableData
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
-use Spatie\LaravelData\Support\Validation\ValidationPath;
-use Spatie\LaravelData\Support\Validation\ValidationRule;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\Validation\ValidationRule;
 
 abstract class CustomValidationAttribute extends ValidationRule
 {

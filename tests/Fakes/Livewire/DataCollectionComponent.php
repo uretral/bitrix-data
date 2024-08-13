@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Livewire;
+namespace Uretral\BitrixData\Tests\Fakes\Livewire;
 
 use Livewire\Component;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 class DataCollectionComponent extends Component
 {

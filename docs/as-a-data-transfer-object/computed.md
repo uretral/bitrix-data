@@ -6,7 +6,7 @@ weight: 8
 Earlier we saw how default values can be set for a data object, sometimes you want to set a default value based on other properties. For example, you might want to set a `full_name` property based on a `first_name` and `last_name` property. You can do this by using a computed property:
 
 ```php
-use Spatie\LaravelData\Attributes\Computed;
+use Uretral\BitrixData\Attributes\Computed;
 
 class SongData extends Data
 {

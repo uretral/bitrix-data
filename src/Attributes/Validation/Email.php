@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 use Attribute;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Exceptions\CannotBuildValidationRule;
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Exceptions\CannotBuildValidationRule;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
 
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 class Email extends StringValidationAttribute

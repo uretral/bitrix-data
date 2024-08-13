@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Tests;
+namespace Uretral\BitrixData\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\LaravelData\LaravelDataServiceProvider;
+use Uretral\BitrixData\LaravelDataServiceProvider;
 
 class TestCase extends Orchestra
 {

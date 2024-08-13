@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Mappers;
+namespace Uretral\BitrixData\Mappers;
 
 use Illuminate\Support\Str;
 

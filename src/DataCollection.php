@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData;
+namespace Uretral\BitrixData;
 
 use ArrayAccess;
 use Countable;
@@ -8,22 +8,22 @@ use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Enumerable;
 use IteratorAggregate;
-use Spatie\LaravelData\Concerns\BaseDataCollectable;
-use Spatie\LaravelData\Concerns\ContextableData;
-use Spatie\LaravelData\Concerns\EnumerableMethods;
-use Spatie\LaravelData\Concerns\IncludeableData;
-use Spatie\LaravelData\Concerns\ResponsableData;
-use Spatie\LaravelData\Concerns\TransformableData;
-use Spatie\LaravelData\Concerns\WrappableData;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\BaseDataCollectable as BaseDataCollectableContract;
-use Spatie\LaravelData\Contracts\IncludeableData as IncludeableDataContract;
-use Spatie\LaravelData\Contracts\ResponsableData as ResponsableDataContract;
-use Spatie\LaravelData\Contracts\TransformableData as TransformableDataContract;
-use Spatie\LaravelData\Contracts\WrappableData as WrappableDataContract;
-use Spatie\LaravelData\Exceptions\CannotCastData;
-use Spatie\LaravelData\Exceptions\InvalidDataCollectionOperation;
-use Spatie\LaravelData\Support\EloquentCasts\DataCollectionEloquentCast;
+use Uretral\BitrixData\Concerns\BaseDataCollectable;
+use Uretral\BitrixData\Concerns\ContextableData;
+use Uretral\BitrixData\Concerns\EnumerableMethods;
+use Uretral\BitrixData\Concerns\IncludeableData;
+use Uretral\BitrixData\Concerns\ResponsableData;
+use Uretral\BitrixData\Concerns\TransformableData;
+use Uretral\BitrixData\Concerns\WrappableData;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseDataCollectable as BaseDataCollectableContract;
+use Uretral\BitrixData\Contracts\IncludeableData as IncludeableDataContract;
+use Uretral\BitrixData\Contracts\ResponsableData as ResponsableDataContract;
+use Uretral\BitrixData\Contracts\TransformableData as TransformableDataContract;
+use Uretral\BitrixData\Contracts\WrappableData as WrappableDataContract;
+use Uretral\BitrixData\Exceptions\CannotCastData;
+use Uretral\BitrixData\Exceptions\InvalidDataCollectionOperation;
+use Uretral\BitrixData\Support\EloquentCasts\DataCollectionEloquentCast;
 
 /**
  * @template TKey of array-key
@@ -34,7 +34,7 @@ use Spatie\LaravelData\Support\EloquentCasts\DataCollectionEloquentCast;
  */
 class DataCollection implements Responsable, BaseDataCollectableContract, TransformableDataContract, ResponsableDataContract, IncludeableDataContract, WrappableDataContract, IteratorAggregate, Countable, ArrayAccess
 {
-    /** @use \Spatie\LaravelData\Concerns\BaseDataCollectable<TKey, TValue> */
+    /** @use \Uretral\BitrixData\Concerns\BaseDataCollectable<TKey, TValue> */
     use BaseDataCollectable;
     use ResponsableData;
     use IncludeableData;
@@ -42,7 +42,7 @@ class DataCollection implements Responsable, BaseDataCollectableContract, Transf
     use TransformableData;
     use ContextableData;
 
-    /** @use \Spatie\LaravelData\Concerns\EnumerableMethods<TKey, TValue> */
+    /** @use \Uretral\BitrixData\Concerns\EnumerableMethods<TKey, TValue> */
     use EnumerableMethods;
 
     /** @var Enumerable<TKey, TValue> */

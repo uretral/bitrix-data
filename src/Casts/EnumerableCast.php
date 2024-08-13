@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Casts;
+namespace Uretral\BitrixData\Casts;
 
 use Illuminate\Support\Enumerable;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataProperty;
 
 /** @deprecated enable the iterable casts  */
 class EnumerableCast implements Cast

@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData;
+namespace Uretral\BitrixData;
 
-use Spatie\LaravelData\Concerns\BaseData;
-use Spatie\LaravelData\Concerns\ValidateableData;
-use Spatie\LaravelData\Contracts\BaseData as BaseDataContract;
-use Spatie\LaravelData\Contracts\ValidateableData as ValidateableDataContract;
+use Uretral\BitrixData\Concerns\BaseData;
+use Uretral\BitrixData\Concerns\ValidateableData;
+use Uretral\BitrixData\Contracts\BaseData as BaseDataContract;
+use Uretral\BitrixData\Contracts\ValidateableData as ValidateableDataContract;
 
 class Dto implements ValidateableDataContract, BaseDataContract
 {

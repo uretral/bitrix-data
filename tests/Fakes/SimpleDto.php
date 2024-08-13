@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Dto;
+use Uretral\BitrixData\Dto;
 
 class SimpleDto extends Dto
 {

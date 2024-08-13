@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
 use Carbon\CarbonImmutable;
 use DateTime;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\WithCast;
-use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Optional;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\WithCast;
+use Uretral\BitrixData\Casts\DateTimeInterfaceCast;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Optional;
 
 class ComplicatedData extends Data
 {
@@ -27,7 +27,7 @@ class ComplicatedData extends Data
         public  $explicitCast,
         public DateTime $defaultCast,
         public ?SimpleData $nestedData,
-        /** @var \Spatie\LaravelData\Tests\Fakes\SimpleData[] */
+        /** @var \Uretral\BitrixData\Tests\Fakes\SimpleData[] */
         public ?DataCollection $nestedCollection,
         #[DataCollectionOf(SimpleData::class)]
         public array $nestedArray,

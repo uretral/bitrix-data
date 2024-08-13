@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Livewire;
+namespace Uretral\BitrixData\Support\Livewire;
 
 use Illuminate\Container\Container;
 use Livewire\Mechanisms\HandleComponents\ComponentContext;
 use Livewire\Mechanisms\HandleComponents\Synthesizers\Synth;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\ContextableData;
-use Spatie\LaravelData\Contracts\TransformableData;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\Lazy\LivewireLostLazy;
-use Spatie\LaravelData\Support\Transformation\TransformationContextFactory;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\ContextableData;
+use Uretral\BitrixData\Contracts\TransformableData;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\Lazy\LivewireLostLazy;
+use Uretral\BitrixData\Support\Transformation\TransformationContextFactory;
 
 class LivewireDataSynth extends Synth
 {

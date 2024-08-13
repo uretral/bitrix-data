@@ -1,21 +1,21 @@
 <?php
 
-namespace Spatie\LaravelData\Support\EloquentCasts;
+namespace Uretral\BitrixData\Support\EloquentCasts;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Support\Facades\Crypt;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\TransformableData;
-use Spatie\LaravelData\Exceptions\CannotCastData;
-use Spatie\LaravelData\Support\DataConfig;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\TransformableData;
+use Uretral\BitrixData\Exceptions\CannotCastData;
+use Uretral\BitrixData\Support\DataConfig;
 
 class DataEloquentCast implements CastsAttributes
 {
     protected DataConfig $dataConfig;
 
     public function __construct(
-        /** @var class-string<\Spatie\LaravelData\Contracts\BaseData> $dataClass */
+        /** @var class-string<\Uretral\BitrixData\Contracts\BaseData> $dataClass */
         protected string $dataClass,
         /** @var string[] $arguments */
         protected array $arguments = []

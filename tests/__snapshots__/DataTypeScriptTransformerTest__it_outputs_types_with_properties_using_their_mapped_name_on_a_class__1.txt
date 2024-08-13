@@ -1,5 +1,5 @@
 {
 cased_property: string;
-data_cased_property: {%Spatie\LaravelData\Tests\Fakes\SimpleData%};
-data_collection_cased_property: Array<{%Spatie\LaravelData\Tests\Fakes\SimpleData%}>;
+data_cased_property: {%Uretral\BitrixData\Tests\Fakes\SimpleData%};
+data_collection_cased_property: Array<{%Uretral\BitrixData\Tests\Fakes\SimpleData%}>;
 }

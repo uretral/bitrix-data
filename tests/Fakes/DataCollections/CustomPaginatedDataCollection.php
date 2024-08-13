@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\DataCollections;
+namespace Uretral\BitrixData\Tests\Fakes\DataCollections;
 
-use Spatie\LaravelData\PaginatedDataCollection;
+use Uretral\BitrixData\PaginatedDataCollection;
 
 class CustomPaginatedDataCollection extends PaginatedDataCollection
 {

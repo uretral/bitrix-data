@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Normalizers\Normalized;
+namespace Uretral\BitrixData\Normalizers\Normalized;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Spatie\LaravelData\Attributes\LoadRelation;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Attributes\LoadRelation;
+use Uretral\BitrixData\Support\DataProperty;
 
 class NormalizedModel implements Normalized
 {

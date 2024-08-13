@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Data;
 
 it('can append data via method overwriting', function () {
     $data = new class ('Freek') extends Data {

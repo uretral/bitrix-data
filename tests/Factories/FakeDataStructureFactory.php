@@ -1,22 +1,22 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Factories;
+namespace Uretral\BitrixData\Tests\Factories;
 
 use Illuminate\Support\Collection;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionParameter;
 use ReflectionProperty;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataMethod;
-use Spatie\LaravelData\Support\DataParameter;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Factories\DataClassFactory;
-use Spatie\LaravelData\Support\Factories\DataMethodFactory;
-use Spatie\LaravelData\Support\Factories\DataParameterFactory;
-use Spatie\LaravelData\Support\Factories\DataPropertyFactory;
-use Spatie\LaravelData\Support\Factories\DataReturnTypeFactory;
-use Spatie\LaravelData\Support\Factories\DataTypeFactory;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataMethod;
+use Uretral\BitrixData\Support\DataParameter;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Factories\DataClassFactory;
+use Uretral\BitrixData\Support\Factories\DataMethodFactory;
+use Uretral\BitrixData\Support\Factories\DataParameterFactory;
+use Uretral\BitrixData\Support\Factories\DataPropertyFactory;
+use Uretral\BitrixData\Support\Factories\DataReturnTypeFactory;
+use Uretral\BitrixData\Support\Factories\DataTypeFactory;
 
 class FakeDataStructureFactory
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Partials\Segments;
+namespace Uretral\BitrixData\Support\Partials\Segments;
 
 class FieldsPartialSegment extends PartialSegment
 {

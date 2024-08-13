@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
 use Illuminate\Container\Container;
-use Spatie\LaravelData\Resolvers\EmptyDataResolver;
+use Uretral\BitrixData\Resolvers\EmptyDataResolver;
 
 trait EmptyData
 {

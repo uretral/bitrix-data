@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
 
 class EnumData extends Data
 {

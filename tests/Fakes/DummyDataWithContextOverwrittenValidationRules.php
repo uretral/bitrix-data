@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Attributes\Validation\Required;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Attributes\Validation\Required;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
 
 class DummyDataWithContextOverwrittenValidationRules extends Data
 {

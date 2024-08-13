@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\DataPipes;
+namespace Uretral\BitrixData\DataPipes;
 
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataClass;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataClass;
 
 class DefaultValuesDataPipe implements DataPipe
 {

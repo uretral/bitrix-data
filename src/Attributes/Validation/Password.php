@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 use Attribute;
 use Exception;
 use Illuminate\Validation\Rules\Password as BasePassword;
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 class Password extends ObjectValidationAttribute

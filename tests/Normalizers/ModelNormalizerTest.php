@@ -2,16 +2,16 @@
 
 use Illuminate\Database\LazyLoadingViolationException;
 use Illuminate\Support\Facades\DB;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\LoadRelation;
-use Spatie\LaravelData\Attributes\MapInputName;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Mappers\SnakeCaseMapper;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Tests\Fakes\FakeModelData;
-use Spatie\LaravelData\Tests\Fakes\FakeNestedModelData;
-use Spatie\LaravelData\Tests\Fakes\Models\FakeModel;
-use Spatie\LaravelData\Tests\Fakes\Models\FakeNestedModel;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\LoadRelation;
+use Uretral\BitrixData\Attributes\MapInputName;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Mappers\SnakeCaseMapper;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Tests\Fakes\FakeModelData;
+use Uretral\BitrixData\Tests\Fakes\FakeNestedModelData;
+use Uretral\BitrixData\Tests\Fakes\Models\FakeModel;
+use Uretral\BitrixData\Tests\Fakes\Models\FakeNestedModel;
 
 it('can get a data object from model', function () {
     $model = FakeModel::factory()->create();

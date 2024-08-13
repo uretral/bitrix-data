@@ -47,13 +47,13 @@ SongData::validateAndCreate(
 It is possible to validate all payloads injected or passed to the `from` method by setting the `validation_strategy` config option to `Always`:
 
 ```php
-'validation_strategy' => \Spatie\LaravelData\Support\Creation\ValidationStrategy::Always->value,
+'validation_strategy' => \Uretral\BitrixData\Support\Creation\ValidationStrategy::Always->value,
 ```
 
 Completely disabling validation can be done by setting the `validation_strategy` config option to `Disabled`:
 
 ```php
-'validation_strategy' => \Spatie\LaravelData\Support\Creation\ValidationStrategy::Disabled->value,
+'validation_strategy' => \Uretral\BitrixData\Support\Creation\ValidationStrategy::Disabled->value,
 ```
 
 If you require a more fine-grained control over when validation should happen, you can use [data factories](/docs/laravel-data/v4/as-a-data-transfer-object/factories) to manually specify the validation strategy.

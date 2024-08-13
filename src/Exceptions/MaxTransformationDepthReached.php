@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Exceptions;
+namespace Uretral\BitrixData\Exceptions;
 
 use Exception;
 

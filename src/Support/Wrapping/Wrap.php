@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Wrapping;
+namespace Uretral\BitrixData\Support\Wrapping;
 
 use TypeError;
 

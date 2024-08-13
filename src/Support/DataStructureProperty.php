@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
 /**
  * @template T

@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
 use Illuminate\Contracts\Pagination\CursorPaginator;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Pagination\AbstractCursorPaginator;
 use Illuminate\Pagination\AbstractPaginator;
 use Illuminate\Support\Enumerable;
-use Spatie\LaravelData\CursorPaginatedDataCollection;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\PaginatedDataCollection;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\PaginatedDataCollection;
 
 /**
  * @property class-string<DataCollection> $_collectionClass

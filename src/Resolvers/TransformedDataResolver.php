@@ -1,23 +1,23 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Illuminate\Support\Arr;
-use Spatie\LaravelData\Contracts\AppendableData;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\TransformableData;
-use Spatie\LaravelData\Contracts\WrappableData;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Resolvers\Concerns\ChecksTransformationDepth;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\DataContainer;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
-use Spatie\LaravelData\Support\Wrapping\WrapExecutionType;
-use Spatie\LaravelData\Transformers\ArrayableTransformer;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Contracts\AppendableData;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\TransformableData;
+use Uretral\BitrixData\Contracts\WrappableData;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Resolvers\Concerns\ChecksTransformationDepth;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataContainer;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\Wrapping\WrapExecutionType;
+use Uretral\BitrixData\Transformers\ArrayableTransformer;
+use Uretral\BitrixData\Transformers\Transformer;
 
 class TransformedDataResolver
 {

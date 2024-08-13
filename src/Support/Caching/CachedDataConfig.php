@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Caching;
+namespace Uretral\BitrixData\Support\Caching;
 
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataConfig;
 
 class CachedDataConfig extends DataConfig
 {

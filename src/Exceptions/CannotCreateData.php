@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Exceptions;
+namespace Uretral\BitrixData\Exceptions;
 
 use Exception;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataParameter;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataParameter;
+use Uretral\BitrixData\Support\DataProperty;
 use Throwable;
 
 class CannotCreateData extends Exception

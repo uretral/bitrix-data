@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Support\Types\Type;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Support\Types\Type;
 
 class DataPropertyType extends DataType
 {

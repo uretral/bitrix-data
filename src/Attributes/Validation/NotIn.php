@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 use Attribute;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Rules\NotIn as BaseNotIn;
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 class NotIn extends ObjectValidationAttribute

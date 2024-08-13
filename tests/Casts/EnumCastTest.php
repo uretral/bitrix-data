@@ -1,11 +1,11 @@
 <?php
 
-use Spatie\LaravelData\Casts\EnumCast;
-use Spatie\LaravelData\Casts\Uncastable;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyUnitEnum;
+use Uretral\BitrixData\Casts\EnumCast;
+use Uretral\BitrixData\Casts\Uncastable;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyUnitEnum;
 
 beforeEach(function () {
     $this->caster = new EnumCast();

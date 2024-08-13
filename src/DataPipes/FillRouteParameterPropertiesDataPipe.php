@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\LaravelData\DataPipes;
+namespace Uretral\BitrixData\DataPipes;
 
 use Illuminate\Http\Request;
-use Spatie\LaravelData\Attributes\FromRouteParameter;
-use Spatie\LaravelData\Attributes\FromRouteParameterProperty;
-use Spatie\LaravelData\Exceptions\CannotFillFromRouteParameterPropertyUsingScalarValue;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Attributes\FromRouteParameter;
+use Uretral\BitrixData\Attributes\FromRouteParameterProperty;
+use Uretral\BitrixData\Exceptions\CannotFillFromRouteParameterPropertyUsingScalarValue;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataProperty;
 
 class FillRouteParameterPropertiesDataPipe implements DataPipe
 {

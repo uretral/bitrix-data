@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
 use Illuminate\Support\Str;
 use phpDocumentor\Reflection\FqsenResolver;
 use phpDocumentor\Reflection\Types\ContextFactory;
 use ReflectionProperty;
-use Spatie\LaravelData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseData;
 
 class DataCollectionAnnotationReader
 {

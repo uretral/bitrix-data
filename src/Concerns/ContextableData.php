@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
-use Spatie\LaravelData\Contracts\IncludeableData as IncludeableDataContract;
-use Spatie\LaravelData\Contracts\WrappableData as WrappableDataContract;
-use Spatie\LaravelData\Support\Partials\Partial;
-use Spatie\LaravelData\Support\Partials\PartialsCollection;
-use Spatie\LaravelData\Support\Transformation\DataContext;
-use Spatie\LaravelData\Support\Wrapping\Wrap;
-use Spatie\LaravelData\Support\Wrapping\WrapType;
+use Uretral\BitrixData\Contracts\IncludeableData as IncludeableDataContract;
+use Uretral\BitrixData\Contracts\WrappableData as WrappableDataContract;
+use Uretral\BitrixData\Support\Partials\Partial;
+use Uretral\BitrixData\Support\Partials\PartialsCollection;
+use Uretral\BitrixData\Support\Transformation\DataContext;
+use Uretral\BitrixData\Support\Wrapping\Wrap;
+use Uretral\BitrixData\Support\Wrapping\WrapType;
 
 trait ContextableData
 {

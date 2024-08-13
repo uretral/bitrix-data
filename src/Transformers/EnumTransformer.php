@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Transformers;
+namespace Uretral\BitrixData\Transformers;
 
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
 
 class EnumTransformer implements Transformer
 {

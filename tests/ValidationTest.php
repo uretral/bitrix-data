@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Tests;
+namespace Uretral\BitrixData\Tests;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
@@ -17,52 +17,52 @@ use Illuminate\Validation\Validator;
 use function Pest\Laravel\mock;
 use function PHPUnit\Framework\assertFalse;
 
-use Spatie\LaravelData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
 
-use Spatie\LaravelData\Attributes\MapInputName;
+use Uretral\BitrixData\Attributes\MapInputName;
 
-use Spatie\LaravelData\Attributes\MapName;
-use Spatie\LaravelData\Attributes\Validation\ArrayType;
-use Spatie\LaravelData\Attributes\Validation\Bail;
-use Spatie\LaravelData\Attributes\Validation\BooleanType;
-use Spatie\LaravelData\Attributes\Validation\Exists;
-use Spatie\LaravelData\Attributes\Validation\In;
-use Spatie\LaravelData\Attributes\Validation\IntegerType;
-use Spatie\LaravelData\Attributes\Validation\Max;
-use Spatie\LaravelData\Attributes\Validation\Min;
-use Spatie\LaravelData\Attributes\Validation\Nullable;
-use Spatie\LaravelData\Attributes\Validation\Present;
-use Spatie\LaravelData\Attributes\Validation\Required;
-use Spatie\LaravelData\Attributes\Validation\RequiredIf;
-use Spatie\LaravelData\Attributes\Validation\RequiredUnless;
-use Spatie\LaravelData\Attributes\Validation\RequiredWith;
-use Spatie\LaravelData\Attributes\Validation\RequiredWithout;
-use Spatie\LaravelData\Attributes\Validation\StringType;
-use Spatie\LaravelData\Attributes\Validation\Unique;
-use Spatie\LaravelData\Attributes\WithoutValidation;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Mappers\SnakeCaseMapper;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\Creation\ValidationStrategy;
-use Spatie\LaravelData\Support\Validation\References\FieldReference;
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
-use Spatie\LaravelData\Tests\Fakes\CircData;
-use Spatie\LaravelData\Tests\Fakes\DataWithMapper;
-use Spatie\LaravelData\Tests\Fakes\DataWithReferenceFieldValidationAttribute;
-use Spatie\LaravelData\Tests\Fakes\DummyDataWithContextOverwrittenValidationRules;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModel;
-use Spatie\LaravelData\Tests\Fakes\MultiData;
-use Spatie\LaravelData\Tests\Fakes\NestedData;
-use Spatie\LaravelData\Tests\Fakes\NestedNullableData;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithExplicitValidationRuleAttributeData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithOverwrittenRules;
-use Spatie\LaravelData\Tests\Fakes\Support\FakeInjectable;
-use Spatie\LaravelData\Tests\Fakes\ValidationAttributes\PassThroughCustomValidationAttribute;
-use Spatie\LaravelData\Tests\TestSupport\DataValidationAsserter;
+use Uretral\BitrixData\Attributes\MapName;
+use Uretral\BitrixData\Attributes\Validation\ArrayType;
+use Uretral\BitrixData\Attributes\Validation\Bail;
+use Uretral\BitrixData\Attributes\Validation\BooleanType;
+use Uretral\BitrixData\Attributes\Validation\Exists;
+use Uretral\BitrixData\Attributes\Validation\In;
+use Uretral\BitrixData\Attributes\Validation\IntegerType;
+use Uretral\BitrixData\Attributes\Validation\Max;
+use Uretral\BitrixData\Attributes\Validation\Min;
+use Uretral\BitrixData\Attributes\Validation\Nullable;
+use Uretral\BitrixData\Attributes\Validation\Present;
+use Uretral\BitrixData\Attributes\Validation\Required;
+use Uretral\BitrixData\Attributes\Validation\RequiredIf;
+use Uretral\BitrixData\Attributes\Validation\RequiredUnless;
+use Uretral\BitrixData\Attributes\Validation\RequiredWith;
+use Uretral\BitrixData\Attributes\Validation\RequiredWithout;
+use Uretral\BitrixData\Attributes\Validation\StringType;
+use Uretral\BitrixData\Attributes\Validation\Unique;
+use Uretral\BitrixData\Attributes\WithoutValidation;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Mappers\SnakeCaseMapper;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\Creation\ValidationStrategy;
+use Uretral\BitrixData\Support\Validation\References\FieldReference;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Tests\Fakes\CircData;
+use Uretral\BitrixData\Tests\Fakes\DataWithMapper;
+use Uretral\BitrixData\Tests\Fakes\DataWithReferenceFieldValidationAttribute;
+use Uretral\BitrixData\Tests\Fakes\DummyDataWithContextOverwrittenValidationRules;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModel;
+use Uretral\BitrixData\Tests\Fakes\MultiData;
+use Uretral\BitrixData\Tests\Fakes\NestedData;
+use Uretral\BitrixData\Tests\Fakes\NestedNullableData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithExplicitValidationRuleAttributeData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithOverwrittenRules;
+use Uretral\BitrixData\Tests\Fakes\Support\FakeInjectable;
+use Uretral\BitrixData\Tests\Fakes\ValidationAttributes\PassThroughCustomValidationAttribute;
+use Uretral\BitrixData\Tests\TestSupport\DataValidationAsserter;
 
 it('can validate a string', function () {
     $dataClass = new class () extends Data {
@@ -270,7 +270,7 @@ it('will never add extra require rules when not required', function () {
     ]);
 
     DataValidationAsserter::for(new class () extends Data {
-        #[\Spatie\LaravelData\Attributes\Validation\Rule('required_with:other')]
+        #[\Uretral\BitrixData\Attributes\Validation\Rule('required_with:other')]
         public string $property;
     })->assertRules([
         'property' => ['string', 'required_with:other'],
@@ -1457,7 +1457,7 @@ it('will merge overwritten rules on inherited data objects', function () {
     $data = new class () extends Data {
         public SimpleDataWithOverwrittenRules $nested;
 
-        /** @var DataCollection<\Spatie\LaravelData\Tests\Fakes\SimpleDataWithOverwrittenRules> */
+        /** @var DataCollection<\Uretral\BitrixData\Tests\Fakes\SimpleDataWithOverwrittenRules> */
         public DataCollection $collection;
     };
 

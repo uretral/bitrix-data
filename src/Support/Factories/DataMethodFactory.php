@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Factories;
+namespace Uretral\BitrixData\Support\Factories;
 
 use Illuminate\Support\Collection;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionParameter;
-use Spatie\LaravelData\Enums\CustomCreationMethodType;
-use Spatie\LaravelData\Support\DataMethod;
-use Spatie\LaravelData\Support\DataType;
+use Uretral\BitrixData\Enums\CustomCreationMethodType;
+use Uretral\BitrixData\Support\DataMethod;
+use Uretral\BitrixData\Support\DataType;
 
 class DataMethodFactory
 {

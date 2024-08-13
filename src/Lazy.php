@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelData;
+namespace Uretral\BitrixData;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Traits\Macroable;
-use Spatie\LaravelData\Support\Lazy\ClosureLazy;
-use Spatie\LaravelData\Support\Lazy\ConditionalLazy;
-use Spatie\LaravelData\Support\Lazy\DefaultLazy;
-use Spatie\LaravelData\Support\Lazy\InertiaLazy;
-use Spatie\LaravelData\Support\Lazy\RelationalLazy;
+use Uretral\BitrixData\Support\Lazy\ClosureLazy;
+use Uretral\BitrixData\Support\Lazy\ConditionalLazy;
+use Uretral\BitrixData\Support\Lazy\DefaultLazy;
+use Uretral\BitrixData\Support\Lazy\InertiaLazy;
+use Uretral\BitrixData\Support\Lazy\RelationalLazy;
 
 abstract class Lazy
 {

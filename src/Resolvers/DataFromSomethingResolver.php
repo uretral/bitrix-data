@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Illuminate\Http\Request;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Enums\CustomCreationMethodType;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataConfig;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Enums\CustomCreationMethodType;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataConfig;
 
 /**
  * @template TData of BaseData

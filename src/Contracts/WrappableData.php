@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Contracts;
+namespace Uretral\BitrixData\Contracts;
 
-use Spatie\LaravelData\Support\Wrapping\Wrap;
+use Uretral\BitrixData\Support\Wrapping\Wrap;
 
 interface WrappableData extends ContextableData
 {

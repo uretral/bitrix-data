@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Normalizers;
+namespace Uretral\BitrixData\Normalizers;
 
 use JsonException;
 

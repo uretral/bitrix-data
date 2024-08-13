@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Partials;
+namespace Uretral\BitrixData\Support\Partials;
 
 use Closure;
 use Laravel\SerializableClosure\SerializableClosure;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\BaseDataCollectable;
-use Spatie\LaravelData\Support\Partials\Segments\AllPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\FieldsPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\NestedPartialSegment;
-use Spatie\LaravelData\Support\Partials\Segments\PartialSegment;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseDataCollectable;
+use Uretral\BitrixData\Support\Partials\Segments\AllPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\FieldsPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\NestedPartialSegment;
+use Uretral\BitrixData\Support\Partials\Segments\PartialSegment;
 use Stringable;
 
 class Partial implements Stringable

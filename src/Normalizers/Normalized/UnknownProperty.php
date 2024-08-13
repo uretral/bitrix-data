@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Normalizers\Normalized;
+namespace Uretral\BitrixData\Normalizers\Normalized;
 
 class UnknownProperty
 {

@@ -1,11 +1,11 @@
 <?php
 
 
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Support\Lazy\DefaultLazy;
-use Spatie\LaravelData\Tests\Fakes\LazyData;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Support\Lazy\DefaultLazy;
+use Uretral\BitrixData\Tests\Fakes\LazyData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 use function Spatie\Snapshots\assertMatchesSnapshot;
 

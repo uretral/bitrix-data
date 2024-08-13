@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
-use Spatie\LaravelData\DataCollection;
+use Uretral\BitrixData\DataCollection;
 
 /**
  * @template TKey of array-key

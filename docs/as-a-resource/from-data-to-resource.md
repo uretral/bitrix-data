@@ -179,7 +179,7 @@ When a resource is being returned from a controller, the status code of the resp
 To make it a bit more clear that a data object is a resource, you can use the `Resource` class instead of the `Data` class:
 
 ```php
-use Spatie\LaravelData\Resource;
+use Uretral\BitrixData\Resource;
 
 class SongResource extends Resource
 {

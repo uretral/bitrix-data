@@ -6,14 +6,14 @@ use Illuminate\Support\Facades\DB;
 
 use function Pest\Laravel\assertDatabaseHas;
 
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Tests\Fakes\AbstractData\AbstractDataA;
-use Spatie\LaravelData\Tests\Fakes\AbstractData\AbstractDataB;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCasts;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithDefaultCasts;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithEncryptedCasts;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\SimpleDataWithDefaultValue;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Tests\Fakes\AbstractData\AbstractDataA;
+use Uretral\BitrixData\Tests\Fakes\AbstractData\AbstractDataB;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCasts;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithDefaultCasts;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithEncryptedCasts;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\SimpleDataWithDefaultValue;
 
 beforeEach(function () {
     DummyModelWithCasts::migrate();
@@ -44,7 +44,7 @@ it('can load a data object', function () {
         'data' => json_encode(['string' => 'Test']),
     ]);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCasts $model */
+    /** @var \Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCasts $model */
     $model = DummyModelWithCasts::first();
 
     expect($model->data)->toEqual(new SimpleData('Test'));
@@ -65,7 +65,7 @@ it('can load null as a value', function () {
         'data' => null,
     ]);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCasts $model */
+    /** @var \Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCasts $model */
     $model = DummyModelWithCasts::first();
 
     expect($model->data)->toBeNull();
@@ -76,7 +76,7 @@ it('loads a cast object when nullable argument used and value is null in databas
         'data' => null,
     ]);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithDefaultCasts $model */
+    /** @var \Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithDefaultCasts $model */
     $model = DummyModelWithDefaultCasts::first();
 
     expect($model->data)
@@ -154,7 +154,7 @@ it('can load an encrypted data object', function () {
         'data' => new SimpleData('Test'),
     ]);
 
-    /** @var \Spatie\LaravelData\Tests\Fakes\Models\DummyModelWithCasts $model */
+    /** @var \Uretral\BitrixData\Tests\Fakes\Models\DummyModelWithCasts $model */
     $model = DummyModelWithEncryptedCasts::first();
 
     expect($model->data)->toEqual(new SimpleData('Test'));

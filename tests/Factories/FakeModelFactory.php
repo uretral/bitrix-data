@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Factories;
+namespace Uretral\BitrixData\Tests\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Spatie\LaravelData\Tests\Fakes\Models\FakeModel;
+use Uretral\BitrixData\Tests\Fakes\Models\FakeModel;
 
 class FakeModelFactory extends Factory
 {

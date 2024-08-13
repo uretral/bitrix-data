@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Livewire;
+namespace Uretral\BitrixData\Tests\Fakes\Livewire;
 
 use Livewire\Component;
-use Spatie\LaravelData\Tests\Fakes\ComputedData;
+use Uretral\BitrixData\Tests\Fakes\ComputedData;
 
 class ComputedDataComponent extends Component
 {

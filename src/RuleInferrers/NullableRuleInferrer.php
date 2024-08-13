@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\RuleInferrers;
+namespace Uretral\BitrixData\RuleInferrers;
 
-use Spatie\LaravelData\Attributes\Validation\Nullable;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Validation\PropertyRules;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Attributes\Validation\Nullable;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Validation\PropertyRules;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
 
 class NullableRuleInferrer implements RuleInferrer
 {

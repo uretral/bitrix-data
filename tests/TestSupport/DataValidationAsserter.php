@@ -1,26 +1,26 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\TestSupport;
+namespace Uretral\BitrixData\Tests\TestSupport;
 
 use Illuminate\Validation\ValidationException;
 use Illuminate\Validation\ValidationRuleParser;
 
 use function PHPUnit\Framework\assertTrue;
 
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Data;
 
-use Spatie\LaravelData\DataPipeline;
+use Uretral\BitrixData\DataPipeline;
 
-use Spatie\LaravelData\DataPipes\MapPropertiesDataPipe;
+use Uretral\BitrixData\DataPipes\MapPropertiesDataPipe;
 
-use Spatie\LaravelData\DataPipes\ValidatePropertiesDataPipe;
-use Spatie\LaravelData\Normalizers\ArrayNormalizer;
-use Spatie\LaravelData\Resolvers\DataValidationRulesResolver;
-use Spatie\LaravelData\Resolvers\DataValidatorResolver;
-use Spatie\LaravelData\Support\Creation\CreationContextFactory;
-use Spatie\LaravelData\Support\Validation\DataRules;
+use Uretral\BitrixData\DataPipes\ValidatePropertiesDataPipe;
+use Uretral\BitrixData\Normalizers\ArrayNormalizer;
+use Uretral\BitrixData\Resolvers\DataValidationRulesResolver;
+use Uretral\BitrixData\Resolvers\DataValidatorResolver;
+use Uretral\BitrixData\Support\Creation\CreationContextFactory;
+use Uretral\BitrixData\Support\Validation\DataRules;
 
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 /**
  * @property class-string<Data::class> $dataClass

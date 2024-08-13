@@ -2,14 +2,14 @@
 
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\MapOutputName;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Exceptions\DataPropertyCanOnlyHaveOneType;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Resolvers\EmptyDataResolver;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Attributes\MapOutputName;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Exceptions\DataPropertyCanOnlyHaveOneType;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Resolvers\EmptyDataResolver;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 function assertEmptyPropertyValue(
     mixed $expected,

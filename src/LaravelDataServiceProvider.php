@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\LaravelData;
+namespace Uretral\BitrixData;
 
 use Livewire\Livewire;
-use Spatie\LaravelData\Commands\DataMakeCommand;
-use Spatie\LaravelData\Commands\DataStructuresCacheCommand;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Support\Caching\DataStructureCache;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\Livewire\LivewireDataCollectionSynth;
-use Spatie\LaravelData\Support\Livewire\LivewireDataSynth;
-use Spatie\LaravelData\Support\VarDumper\VarDumperManager;
+use Uretral\BitrixData\Commands\DataMakeCommand;
+use Uretral\BitrixData\Commands\DataStructuresCacheCommand;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Support\Caching\DataStructureCache;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\Livewire\LivewireDataCollectionSynth;
+use Uretral\BitrixData\Support\Livewire\LivewireDataSynth;
+use Uretral\BitrixData\Support\VarDumper\VarDumperManager;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

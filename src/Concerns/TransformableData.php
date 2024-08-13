@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelData\Concerns;
+namespace Uretral\BitrixData\Concerns;
 
 use Exception;
-use Spatie\LaravelData\Contracts\BaseData as BaseDataContract;
-use Spatie\LaravelData\Contracts\BaseDataCollectable as BaseDataCollectableContract;
-use Spatie\LaravelData\Contracts\IncludeableData as IncludeableDataContract;
-use Spatie\LaravelData\Support\DataContainer;
-use Spatie\LaravelData\Support\EloquentCasts\DataEloquentCast;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
-use Spatie\LaravelData\Support\Transformation\TransformationContextFactory;
+use Uretral\BitrixData\Contracts\BaseData as BaseDataContract;
+use Uretral\BitrixData\Contracts\BaseDataCollectable as BaseDataCollectableContract;
+use Uretral\BitrixData\Contracts\IncludeableData as IncludeableDataContract;
+use Uretral\BitrixData\Support\DataContainer;
+use Uretral\BitrixData\Support\EloquentCasts\DataEloquentCast;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\Transformation\TransformationContextFactory;
 
 trait TransformableData
 {

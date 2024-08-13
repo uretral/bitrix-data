@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Transformers;
+namespace Uretral\BitrixData\Transformers;
 
 use DateTimeInterface;
 use DateTimeZone;
 use Illuminate\Support\Arr;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
 
 class DateTimeInterfaceTransformer implements Transformer
 {

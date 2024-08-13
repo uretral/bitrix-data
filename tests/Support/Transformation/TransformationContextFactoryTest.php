@@ -1,10 +1,10 @@
 <?php
 
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
-use Spatie\LaravelData\Support\Transformation\TransformationContextFactory;
-use Spatie\LaravelData\Support\Wrapping\WrapExecutionType;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Tests\Fakes\Transformers\StringToUpperTransformer;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Support\Transformation\TransformationContextFactory;
+use Uretral\BitrixData\Support\Wrapping\WrapExecutionType;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Tests\Fakes\Transformers\StringToUpperTransformer;
 
 it('can create a transformation context', function () {
     $context = TransformationContextFactory::create()->get(

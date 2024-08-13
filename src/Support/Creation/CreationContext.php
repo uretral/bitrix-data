@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Creation;
+namespace Uretral\BitrixData\Support\Creation;
 
 use Illuminate\Contracts\Pagination\CursorPaginator as CursorPaginatorContract;
 use Illuminate\Contracts\Pagination\Paginator as PaginatorContract;
@@ -12,11 +12,11 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Enumerable;
 use Illuminate\Support\LazyCollection;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\CursorPaginatedDataCollection;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\PaginatedDataCollection;
-use Spatie\LaravelData\Support\DataContainer;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\PaginatedDataCollection;
+use Uretral\BitrixData\Support\DataContainer;
 
 /**
  * @template TData of BaseData

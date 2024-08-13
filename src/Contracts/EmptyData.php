@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Contracts;
+namespace Uretral\BitrixData\Contracts;
 
 interface EmptyData
 {

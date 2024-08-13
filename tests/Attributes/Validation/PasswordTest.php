@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Validation\Rules\Password as ValidationPassword;
-use Spatie\LaravelData\Attributes\Validation\Password;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Attributes\Validation\Password;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 test(
     'password rule returns preconfigured password validators',

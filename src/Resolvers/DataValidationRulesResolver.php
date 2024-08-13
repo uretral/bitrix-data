@@ -1,22 +1,22 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
-use Spatie\LaravelData\Attributes\Validation\ArrayType;
-use Spatie\LaravelData\Attributes\Validation\Present;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Validation\DataRules;
-use Spatie\LaravelData\Support\Validation\PropertyRules;
-use Spatie\LaravelData\Support\Validation\RuleDenormalizer;
-use Spatie\LaravelData\Support\Validation\RuleNormalizer;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Attributes\Validation\ArrayType;
+use Uretral\BitrixData\Attributes\Validation\Present;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Validation\DataRules;
+use Uretral\BitrixData\Support\Validation\PropertyRules;
+use Uretral\BitrixData\Support\Validation\RuleDenormalizer;
+use Uretral\BitrixData\Support\Validation\RuleNormalizer;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
 
 class DataValidationRulesResolver
 {

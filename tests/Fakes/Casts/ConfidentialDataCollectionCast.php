@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Casts;
+namespace Uretral\BitrixData\Tests\Fakes\Casts;
 
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 class ConfidentialDataCollectionCast implements Cast
 {

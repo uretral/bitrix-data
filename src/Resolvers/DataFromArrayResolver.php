@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use ArgumentCountError;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Exceptions\CannotCreateData;
-use Spatie\LaravelData\Exceptions\CannotSetComputedValue;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataConfig;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Exceptions\CannotCreateData;
+use Uretral\BitrixData\Exceptions\CannotSetComputedValue;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataConfig;
 
 /**
  * @template TData of BaseData

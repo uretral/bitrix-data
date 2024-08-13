@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 use Attribute;
 use DateTimeInterface;
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
 
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 class DateEquals extends StringValidationAttribute

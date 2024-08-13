@@ -1,18 +1,18 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use ErrorException;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Exceptions\CannotPerformPartialOnDataField;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Support\DataClass;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Lazy\ConditionalLazy;
-use Spatie\LaravelData\Support\Lazy\RelationalLazy;
-use Spatie\LaravelData\Support\Partials\PartialType;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Exceptions\CannotPerformPartialOnDataField;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Support\DataClass;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Lazy\ConditionalLazy;
+use Uretral\BitrixData\Support\Lazy\RelationalLazy;
+use Uretral\BitrixData\Support\Partials\PartialType;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
 
 class VisibleDataFieldsResolver
 {

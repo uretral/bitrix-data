@@ -2,13 +2,13 @@
 
 use Illuminate\Contracts\Validation\Rule as CustomRuleContract;
 use Illuminate\Validation\Rules\Exists as BaseExists;
-use Spatie\LaravelData\Attributes\Validation\Dimensions;
-use Spatie\LaravelData\Attributes\Validation\Exists;
-use Spatie\LaravelData\Attributes\Validation\Min;
-use Spatie\LaravelData\Attributes\Validation\Regex;
-use Spatie\LaravelData\Attributes\Validation\Required;
-use Spatie\LaravelData\Attributes\Validation\Rule;
-use Spatie\LaravelData\Support\Validation\RuleNormalizer;
+use Uretral\BitrixData\Attributes\Validation\Dimensions;
+use Uretral\BitrixData\Attributes\Validation\Exists;
+use Uretral\BitrixData\Attributes\Validation\Min;
+use Uretral\BitrixData\Attributes\Validation\Regex;
+use Uretral\BitrixData\Attributes\Validation\Required;
+use Uretral\BitrixData\Attributes\Validation\Rule;
+use Uretral\BitrixData\Support\Validation\RuleNormalizer;
 
 beforeEach(function () {
     $this->mapper = resolve(RuleNormalizer::class);

@@ -2,9 +2,9 @@
 
 namespace DummyNamespace;
 
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Transformers\Transformer;
 
 class DummyClass implements Transformer
 {

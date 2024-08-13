@@ -133,7 +133,7 @@ class Record extends Model
 By default, the `type` key in the JSON string will be the fully qualified class name of the child data object. This can break your application quite easily when you refactor your code. To prevent this, you can add a morph map like with [Eloquent models](https://laravel.com/docs/eloquent-relationships#polymorphic-relationships). Within your `AppServiceProvivder` you can add the following mapping:
 
 ```php
-use Spatie\LaravelData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataConfig;
 
 app(DataConfig::class)->enforceMorphMap([
     'cd_record_config' => CdRecordConfig::class,

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Lazy;
+namespace Uretral\BitrixData\Support\Lazy;
 
 use Closure;
 

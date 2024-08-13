@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Transformers\Transformer;
 
 /**
  * @property Collection<string, object> $attributes

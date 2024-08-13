@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\TypeScriptTransformer;
+namespace Uretral\BitrixData\Support\TypeScriptTransformer;
 
 use Exception;
 use phpDocumentor\Reflection\Type;
@@ -9,7 +9,7 @@ use phpDocumentor\Reflection\Types\Object_;
 use ReflectionMethod;
 use ReflectionParameter;
 use ReflectionProperty;
-use Spatie\LaravelData\Lazy;
+use Uretral\BitrixData\Lazy;
 use Spatie\TypeScriptTransformer\Structures\MissingSymbolsCollection;
 use Spatie\TypeScriptTransformer\TypeProcessors\TypeProcessor;
 

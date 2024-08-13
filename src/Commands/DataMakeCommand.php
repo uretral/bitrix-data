@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Commands;
+namespace Uretral\BitrixData\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;

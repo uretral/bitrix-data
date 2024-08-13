@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\CastTransformers;
+namespace Uretral\BitrixData\Tests\Fakes\CastTransformers;
 
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Transformation\TransformationContext;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Transformation\TransformationContext;
+use Uretral\BitrixData\Transformers\Transformer;
 
 class FakeCastTransformer implements Cast, Transformer
 {

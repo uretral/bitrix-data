@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Data;
+use Uretral\BitrixData\Attributes\DataCollectionOf;
+use Uretral\BitrixData\Data;
 
 class MultiNestedData extends Data
 {

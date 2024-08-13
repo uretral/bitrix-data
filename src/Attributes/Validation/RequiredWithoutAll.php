@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes\Validation;
+namespace Uretral\BitrixData\Attributes\Validation;
 
 use Attribute;
 use Illuminate\Support\Arr;
-use Spatie\LaravelData\Support\Validation\References\FieldReference;
-use Spatie\LaravelData\Support\Validation\RequiringRule;
+use Uretral\BitrixData\Support\Validation\References\FieldReference;
+use Uretral\BitrixData\Support\Validation\RequiringRule;
 
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 class RequiredWithoutAll extends StringValidationAttribute implements RequiringRule

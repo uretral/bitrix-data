@@ -1,9 +1,9 @@
 <?php
 
 use Carbon\CarbonImmutable;
-use Spatie\LaravelData\Attributes\Validation\StringType;
-use Spatie\LaravelData\Attributes\Validation\StringValidationAttribute;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Attributes\Validation\StringType;
+use Uretral\BitrixData\Attributes\Validation\StringValidationAttribute;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
 
 it('can get a string representation of rules', function () {
     $rule = new StringType();

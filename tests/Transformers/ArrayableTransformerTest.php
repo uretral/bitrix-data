@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\Transformation\TransformationContextFactory;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Transformers\ArrayableTransformer;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Support\Transformation\TransformationContextFactory;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Transformers\ArrayableTransformer;
 
 it('can transform an arrayable', function () {
     $transformer = new ArrayableTransformer();

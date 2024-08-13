@@ -104,7 +104,7 @@ requests the includes should be permanent.
 It is possible to query lazy nested data objects, it is however not possible to query lazy properties which are not a data:
 
 ```php
-use Spatie\LaravelData\Lazy;
+use Uretral\BitrixData\Lazy;
 
 class LazySongData extends Data
 {

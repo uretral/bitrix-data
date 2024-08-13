@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Closure;
 use Exception;
@@ -10,18 +10,18 @@ use Illuminate\Pagination\AbstractCursorPaginator;
 use Illuminate\Pagination\AbstractPaginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Enumerable;
-use Spatie\LaravelData\CursorPaginatedDataCollection;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Enums\CustomCreationMethodType;
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Exceptions\CannotCreateDataCollectable;
-use Spatie\LaravelData\PaginatedDataCollection;
-use Spatie\LaravelData\Support\Creation\CollectableMetaData;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\DataMethod;
-use Spatie\LaravelData\Support\Factories\DataReturnTypeFactory;
-use Spatie\LaravelData\Support\Types\NamedType;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Enums\CustomCreationMethodType;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Exceptions\CannotCreateDataCollectable;
+use Uretral\BitrixData\PaginatedDataCollection;
+use Uretral\BitrixData\Support\Creation\CollectableMetaData;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataMethod;
+use Uretral\BitrixData\Support\Factories\DataReturnTypeFactory;
+use Uretral\BitrixData\Support\Types\NamedType;
 
 class DataCollectableFromSomethingResolver
 {

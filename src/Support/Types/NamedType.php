@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Types;
+namespace Uretral\BitrixData\Support\Types;
 
-use Spatie\LaravelData\Casts\Castable;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\Types\Storage\AcceptedTypesStorage;
+use Uretral\BitrixData\Casts\Castable;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\Types\Storage\AcceptedTypesStorage;
 
 class NamedType extends Type
 {

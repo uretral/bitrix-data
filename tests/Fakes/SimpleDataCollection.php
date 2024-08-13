@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
-use Spatie\LaravelData\DataCollection;
+use Uretral\BitrixData\DataCollection;
 
 class SimpleDataCollection extends DataCollection
 {

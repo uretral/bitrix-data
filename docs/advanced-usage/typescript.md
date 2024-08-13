@@ -22,7 +22,7 @@ class DataObject extends Data
         public Lazy|string $lazy,
         public Optional|string $optional,
         public SimpleData $simpleData,
-        /** @var \Spatie\LaravelData\Tests\Fakes\SimpleData[] */
+        /** @var \Uretral\BitrixData\Tests\Fakes\SimpleData[] */
         public DataCollection $dataCollection,
     )
     {
@@ -61,7 +61,7 @@ Next, publish the config file of the typescript-transformer package with:
 php artisan vendor:publish --tag=typescript-transformer-config
 ```
 
-Finally, add the `Spatie\LaravelData\Support\TypeScriptTransformer\DataTypeScriptTransformer` transformer to the
+Finally, add the `Uretral\BitrixData\Support\TypeScriptTransformer\DataTypeScriptTransformer` transformer to the
 transformers in the `typescript-transformer.php` config file. 
 
 If you're using the `DtoTransformer` provided by the package, then be sure to put the `DataTypeScriptTransformer` before the `DtoTransformer`.

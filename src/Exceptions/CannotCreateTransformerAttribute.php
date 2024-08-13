@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Exceptions;
+namespace Uretral\BitrixData\Exceptions;
 
 use Exception;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Transformers\Transformer;
 
 class CannotCreateTransformerAttribute extends Exception
 {

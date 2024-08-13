@@ -1,17 +1,17 @@
 <?php
 
-use Spatie\LaravelData\Attributes\MapName;
-use Spatie\LaravelData\Attributes\WithCast;
-use Spatie\LaravelData\Attributes\WithTransformer;
-use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Mappers\SnakeCaseMapper;
-use Spatie\LaravelData\Support\DataMethod;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Tests\Fakes\DataWithMapper;
-use Spatie\LaravelData\Tests\Fakes\Models\DummyModel;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
-use Spatie\LaravelData\Transformers\DateTimeInterfaceTransformer;
+use Uretral\BitrixData\Attributes\MapName;
+use Uretral\BitrixData\Attributes\WithCast;
+use Uretral\BitrixData\Attributes\WithTransformer;
+use Uretral\BitrixData\Casts\DateTimeInterfaceCast;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Mappers\SnakeCaseMapper;
+use Uretral\BitrixData\Support\DataMethod;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Tests\Fakes\DataWithMapper;
+use Uretral\BitrixData\Tests\Fakes\Models\DummyModel;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Transformers\DateTimeInterfaceTransformer;
 
 it('keeps track of a global map from attribute', function () {
     $dataClass = FakeDataStructureFactory::class(DataWithMapper::class);
@@ -51,7 +51,7 @@ it('will populate defaults to properties when they exist ', function () {
         }
     };
 
-    /** @var \Spatie\LaravelData\Support\DataProperty[] $properties */
+    /** @var \Uretral\BitrixData\Support\DataProperty[] $properties */
     $properties = FakeDataStructureFactory::class($dataClass::class)->properties->values();
 
     expect($properties[0])

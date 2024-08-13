@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\Livewire;
+namespace Uretral\BitrixData\Tests\Fakes\Livewire;
 
 use Livewire\Component;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Tests\Fakes\NestedLazyData;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Tests\Fakes\NestedLazyData;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 
 class NestedDataComponent extends Component
 {

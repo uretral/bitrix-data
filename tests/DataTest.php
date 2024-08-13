@@ -2,28 +2,28 @@
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Validation\ValidationException;
-use Spatie\LaravelData\Concerns\AppendableData;
-use Spatie\LaravelData\Concerns\BaseData;
-use Spatie\LaravelData\Concerns\ContextableData;
-use Spatie\LaravelData\Concerns\EmptyData;
-use Spatie\LaravelData\Concerns\IncludeableData;
-use Spatie\LaravelData\Concerns\ResponsableData;
-use Spatie\LaravelData\Concerns\TransformableData;
-use Spatie\LaravelData\Concerns\ValidateableData;
-use Spatie\LaravelData\Concerns\WrappableData;
-use Spatie\LaravelData\Contracts\AppendableData as AppendableDataContract;
-use Spatie\LaravelData\Contracts\BaseData as BaseDataContract;
-use Spatie\LaravelData\Contracts\EmptyData as EmptyDataContract;
-use Spatie\LaravelData\Contracts\IncludeableData as IncludeableDataContract;
-use Spatie\LaravelData\Contracts\ResponsableData as ResponsableDataContract;
-use Spatie\LaravelData\Contracts\TransformableData as TransformableDataContract;
-use Spatie\LaravelData\Contracts\ValidateableData as ValidateableDataContract;
-use Spatie\LaravelData\Contracts\WrappableData as WrappableDataContract;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Dto;
-use Spatie\LaravelData\Resource;
-use Spatie\LaravelData\Tests\Fakes\SimpleDto;
-use Spatie\LaravelData\Tests\Fakes\SimpleResource;
+use Uretral\BitrixData\Concerns\AppendableData;
+use Uretral\BitrixData\Concerns\BaseData;
+use Uretral\BitrixData\Concerns\ContextableData;
+use Uretral\BitrixData\Concerns\EmptyData;
+use Uretral\BitrixData\Concerns\IncludeableData;
+use Uretral\BitrixData\Concerns\ResponsableData;
+use Uretral\BitrixData\Concerns\TransformableData;
+use Uretral\BitrixData\Concerns\ValidateableData;
+use Uretral\BitrixData\Concerns\WrappableData;
+use Uretral\BitrixData\Contracts\AppendableData as AppendableDataContract;
+use Uretral\BitrixData\Contracts\BaseData as BaseDataContract;
+use Uretral\BitrixData\Contracts\EmptyData as EmptyDataContract;
+use Uretral\BitrixData\Contracts\IncludeableData as IncludeableDataContract;
+use Uretral\BitrixData\Contracts\ResponsableData as ResponsableDataContract;
+use Uretral\BitrixData\Contracts\TransformableData as TransformableDataContract;
+use Uretral\BitrixData\Contracts\ValidateableData as ValidateableDataContract;
+use Uretral\BitrixData\Contracts\WrappableData as WrappableDataContract;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Dto;
+use Uretral\BitrixData\Resource;
+use Uretral\BitrixData\Tests\Fakes\SimpleDto;
+use Uretral\BitrixData\Tests\Fakes\SimpleResource;
 
 it('also works by using traits and interfaces, skipping the base data class', function () {
     $data = new class ('') implements Responsable, AppendableDataContract, BaseDataContract, TransformableDataContract, IncludeableDataContract, ResponsableDataContract, ValidateableDataContract, WrappableDataContract, EmptyDataContract {

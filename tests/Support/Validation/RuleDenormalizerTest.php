@@ -7,21 +7,21 @@ use Illuminate\Validation\Rule as LaravelRule;
 
 use function Pest\Laravel\mock;
 
-use Spatie\LaravelData\Attributes\Validation\AcceptedIf;
-use Spatie\LaravelData\Attributes\Validation\After;
-use Spatie\LaravelData\Attributes\Validation\EndsWith;
-use Spatie\LaravelData\Attributes\Validation\ExcludeWithout;
-use Spatie\LaravelData\Attributes\Validation\In;
-use Spatie\LaravelData\Attributes\Validation\Min;
-use Spatie\LaravelData\Attributes\Validation\Required;
-use Spatie\LaravelData\Attributes\Validation\Rule as RuleAttribute;
-use Spatie\LaravelData\Support\Validation\References\FieldReference;
-use Spatie\LaravelData\Support\Validation\References\RouteParameterReference;
-use Spatie\LaravelData\Support\Validation\RuleDenormalizer;
-use Spatie\LaravelData\Support\Validation\ValidationPath;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
-use Spatie\LaravelData\Tests\Fakes\Rules\CustomInvokableLaravelRule;
-use Spatie\LaravelData\Tests\Fakes\Rules\CustomLaravelRule;
+use Uretral\BitrixData\Attributes\Validation\AcceptedIf;
+use Uretral\BitrixData\Attributes\Validation\After;
+use Uretral\BitrixData\Attributes\Validation\EndsWith;
+use Uretral\BitrixData\Attributes\Validation\ExcludeWithout;
+use Uretral\BitrixData\Attributes\Validation\In;
+use Uretral\BitrixData\Attributes\Validation\Min;
+use Uretral\BitrixData\Attributes\Validation\Required;
+use Uretral\BitrixData\Attributes\Validation\Rule as RuleAttribute;
+use Uretral\BitrixData\Support\Validation\References\FieldReference;
+use Uretral\BitrixData\Support\Validation\References\RouteParameterReference;
+use Uretral\BitrixData\Support\Validation\RuleDenormalizer;
+use Uretral\BitrixData\Support\Validation\ValidationPath;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Tests\Fakes\Rules\CustomInvokableLaravelRule;
+use Uretral\BitrixData\Tests\Fakes\Rules\CustomLaravelRule;
 
 it('can denormalize rules', function ($rule, $expected, $path = null) {
     $denormalizer = new RuleDenormalizer();

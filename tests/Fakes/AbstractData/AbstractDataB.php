@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes\AbstractData;
+namespace Uretral\BitrixData\Tests\Fakes\AbstractData;
 
 class AbstractDataB extends AbstractData
 {

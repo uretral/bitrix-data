@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes;
+namespace Uretral\BitrixData\Attributes;
 
 use Attribute;
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Exceptions\CannotCreateCastAttribute;
-use Spatie\LaravelData\Exceptions\CannotCreateTransformerAttribute;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Exceptions\CannotCreateCastAttribute;
+use Uretral\BitrixData\Exceptions\CannotCreateTransformerAttribute;
+use Uretral\BitrixData\Transformers\Transformer;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_PROPERTY)]
 class WithCastAndTransformer implements GetsCast

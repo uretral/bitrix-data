@@ -9,11 +9,11 @@ use Illuminate\Pagination\AbstractPaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Enumerable;
 use Illuminate\Support\LazyCollection;
-use Spatie\LaravelData\CursorPaginatedDataCollection;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\PaginatedDataCollection;
-use Spatie\LaravelData\Tests\Fakes\Models\FakeModel;
-use Spatie\LaravelData\Tests\Fakes\SimpleData;
+use Uretral\BitrixData\CursorPaginatedDataCollection;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\PaginatedDataCollection;
+use Uretral\BitrixData\Tests\Fakes\Models\FakeModel;
+use Uretral\BitrixData\Tests\Fakes\SimpleData;
 use function PHPStan\Testing\assertType;
 
 // Regular collections

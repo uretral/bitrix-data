@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Support\Transformation;
+namespace Uretral\BitrixData\Support\Transformation;
 
 use ArrayIterator;
 use IteratorAggregate;
-use Spatie\LaravelData\Transformers\Transformer;
+use Uretral\BitrixData\Transformers\Transformer;
 use Traversable;
 
 class GlobalTransformersCollection implements IteratorAggregate

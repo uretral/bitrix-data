@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Fakes;
+namespace Uretral\BitrixData\Tests\Fakes;
 
 use Carbon\CarbonImmutable;
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Lazy;
-use Spatie\LaravelData\Optional;
-use Spatie\LaravelData\Tests\Fakes\Models\FakeNestedModel;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Lazy;
+use Uretral\BitrixData\Optional;
+use Uretral\BitrixData\Tests\Fakes\Models\FakeNestedModel;
 
 class FakeNestedModelData extends Data
 {

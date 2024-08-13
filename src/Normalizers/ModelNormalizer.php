@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Normalizers;
+namespace Uretral\BitrixData\Normalizers;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\LaravelData\Normalizers\Normalized\Normalized;
-use Spatie\LaravelData\Normalizers\Normalized\NormalizedModel;
+use Uretral\BitrixData\Normalizers\Normalized\Normalized;
+use Uretral\BitrixData\Normalizers\Normalized\NormalizedModel;
 
 class ModelNormalizer implements Normalizer
 {

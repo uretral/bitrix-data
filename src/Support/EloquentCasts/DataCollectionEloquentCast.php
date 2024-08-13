@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\LaravelData\Support\EloquentCasts;
+namespace Uretral\BitrixData\Support\EloquentCasts;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\Crypt;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\BaseDataCollectable;
-use Spatie\LaravelData\Contracts\TransformableData;
-use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Exceptions\CannotCastData;
-use Spatie\LaravelData\Support\DataConfig;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\BaseDataCollectable;
+use Uretral\BitrixData\Contracts\TransformableData;
+use Uretral\BitrixData\DataCollection;
+use Uretral\BitrixData\Exceptions\CannotCastData;
+use Uretral\BitrixData\Support\DataConfig;
 
 class DataCollectionEloquentCast implements CastsAttributes
 {

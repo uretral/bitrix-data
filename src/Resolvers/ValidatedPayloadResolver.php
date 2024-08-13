@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Resolvers;
+namespace Uretral\BitrixData\Resolvers;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Validation\ValidationException;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Contracts\ValidateableData;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Contracts\ValidateableData;
 
 class ValidatedPayloadResolver
 {

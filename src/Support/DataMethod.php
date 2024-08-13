@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelData\Support;
+namespace Uretral\BitrixData\Support;
 
 use Illuminate\Support\Collection;
-use Spatie\LaravelData\Enums\CustomCreationMethodType;
+use Uretral\BitrixData\Enums\CustomCreationMethodType;
 
 /**
  * @property Collection<DataParameter|DataProperty> $parameters

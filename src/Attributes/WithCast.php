@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\Attributes;
+namespace Uretral\BitrixData\Attributes;
 
 use Attribute;
-use Spatie\LaravelData\Casts\Cast;
-use Spatie\LaravelData\Exceptions\CannotCreateCastAttribute;
+use Uretral\BitrixData\Casts\Cast;
+use Uretral\BitrixData\Exceptions\CannotCreateCastAttribute;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_PROPERTY)]
 class WithCast implements GetsCast
@@ -12,7 +12,7 @@ class WithCast implements GetsCast
     public array $arguments;
 
     public function __construct(
-        /** @var class-string<\Spatie\LaravelData\Casts\Cast> $castClass */
+        /** @var class-string<\Uretral\BitrixData\Casts\Cast> $castClass */
         public string $castClass,
         mixed ...$arguments
     ) {

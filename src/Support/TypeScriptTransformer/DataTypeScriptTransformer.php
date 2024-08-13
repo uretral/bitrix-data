@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelData\Support\TypeScriptTransformer;
+namespace Uretral\BitrixData\Support\TypeScriptTransformer;
 
 use Illuminate\Container\Container;
 use phpDocumentor\Reflection\Fqsen;
@@ -15,11 +15,11 @@ use phpDocumentor\Reflection\Types\String_;
 use ReflectionClass;
 use ReflectionProperty;
 use RuntimeException;
-use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Enums\DataTypeKind;
-use Spatie\LaravelData\Support\DataConfig;
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Lazy\ClosureLazy;
+use Uretral\BitrixData\Contracts\BaseData;
+use Uretral\BitrixData\Enums\DataTypeKind;
+use Uretral\BitrixData\Support\DataConfig;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Lazy\ClosureLazy;
 use Spatie\LaravelTypeScriptTransformer\Transformers\DtoTransformer;
 use Spatie\TypeScriptTransformer\Attributes\Hidden;
 use Spatie\TypeScriptTransformer\Attributes\Optional as TypeScriptOptional;
@@ -61,7 +61,7 @@ class DataTypeScriptTransformer extends DtoTransformer
         return array_reduce(
             $this->resolveProperties($class),
             function (string $carry, ReflectionProperty $property) use ($isOptional, $dataClass, $missingSymbols) {
-                /** @var \Spatie\LaravelData\Support\DataProperty $dataProperty */
+                /** @var \Uretral\BitrixData\Support\DataProperty $dataProperty */
                 $dataProperty = $dataClass->properties[$property->getName()];
 
                 $type = $this->resolveTypeForProperty($property, $dataProperty, $missingSymbols);

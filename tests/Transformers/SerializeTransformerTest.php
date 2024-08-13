@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelData\Tests\Transformers;
+namespace Uretral\BitrixData\Tests\Transformers;
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\Transformation\TransformationContextFactory;
-use Spatie\LaravelData\Tests\Factories\FakeDataStructureFactory;
-use Spatie\LaravelData\Tests\Fakes\Enums\DummyBackedEnum;
-use Spatie\LaravelData\Transformers\SerializeTransformer;
+use Uretral\BitrixData\Data;
+use Uretral\BitrixData\Support\Transformation\TransformationContextFactory;
+use Uretral\BitrixData\Tests\Factories\FakeDataStructureFactory;
+use Uretral\BitrixData\Tests\Fakes\Enums\DummyBackedEnum;
+use Uretral\BitrixData\Transformers\SerializeTransformer;
 
 it('can transform using a serializer', function () {
     $transformer = new SerializeTransformer();

@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelData\Casts;
+namespace Uretral\BitrixData\Casts;
 
 use BackedEnum;
-use Spatie\LaravelData\Exceptions\CannotCastEnum;
-use Spatie\LaravelData\Support\Creation\CreationContext;
-use Spatie\LaravelData\Support\DataProperty;
+use Uretral\BitrixData\Exceptions\CannotCastEnum;
+use Uretral\BitrixData\Support\Creation\CreationContext;
+use Uretral\BitrixData\Support\DataProperty;
 use Throwable;
 
 class EnumCast implements Cast, IterableItemCast

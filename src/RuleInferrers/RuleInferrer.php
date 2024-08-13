@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelData\RuleInferrers;
+namespace Uretral\BitrixData\RuleInferrers;
 
-use Spatie\LaravelData\Support\DataProperty;
-use Spatie\LaravelData\Support\Validation\PropertyRules;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
+use Uretral\BitrixData\Support\DataProperty;
+use Uretral\BitrixData\Support\Validation\PropertyRules;
+use Uretral\BitrixData\Support\Validation\ValidationContext;
 
 interface RuleInferrer
 {
