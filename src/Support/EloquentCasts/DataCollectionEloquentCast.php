@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Support\EloquentCasts;
 
+use Illuminate\Container\Container;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\Crypt;
@@ -21,7 +22,7 @@ class DataCollectionEloquentCast implements CastsAttributes
         protected string $dataCollectionClass = DataCollection::class,
         protected array $arguments = []
     ) {
-        $this->dataConfig = app(DataConfig::class);
+        $this->dataConfig =  Container::getInstance()->make(DataConfig::class);
     }
 
     public function get($model, string $key, $value, array $attributes): ?DataCollection

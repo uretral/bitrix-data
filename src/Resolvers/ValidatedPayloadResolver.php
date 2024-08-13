@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Resolvers;
 
+use Illuminate\Container\Container;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Validation\ValidationException;
 use Spatie\LaravelData\Contracts\BaseData;
@@ -18,15 +19,15 @@ class ValidatedPayloadResolver
             $validator->validate();
         } catch (ValidationException $exception) {
             if (method_exists($dataClass, 'redirect')) {
-                $exception->redirectTo(app()->call([$dataClass, 'redirect']));
+                $exception->redirectTo( Container::getInstance()->make()->call([$dataClass, 'redirect']));
             }
 
             if (method_exists($dataClass, 'redirectRoute')) {
-                $exception->redirectTo(route(app()->call([$dataClass, 'redirectRoute'])));
+                $exception->redirectTo(route( Container::getInstance()->make()->call([$dataClass, 'redirectRoute'])));
             }
 
             if (method_exists($dataClass, 'errorBag')) {
-                $exception->errorBag(app()->call([$dataClass, 'errorBag']));
+                $exception->errorBag( Container::getInstance()->make()->call([$dataClass, 'errorBag']));
             }
 
             throw $exception;

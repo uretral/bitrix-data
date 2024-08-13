@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Support;
 
+use Illuminate\Container\Container;
 use Spatie\LaravelData\Exceptions\CannotCreateData;
 use Spatie\LaravelData\Normalizers\Normalized\Normalized;
 use Spatie\LaravelData\Normalizers\Normalized\UnknownProperty;
@@ -25,7 +26,8 @@ class ResolvedDataPipeline
         $properties = null;
 
         foreach ($this->normalizers as $normalizer) {
-            $properties = $normalizer->normalize($value);
+
+            $properties = ($normalizer)->normalize($value);
 
             if ($properties !== null) {
                 break;

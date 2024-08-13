@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Resolvers;
 
+use Illuminate\Container\Container;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
@@ -240,7 +241,7 @@ class DataValidationRulesResolver
             $path
         );
 
-        $overwrittenRules = app()->call([$class->name, 'rules'], ['context' => $validationContext]);
+        $overwrittenRules =  Container::getInstance()->make()->call([$class->name, 'rules'], ['context' => $validationContext]);
 
         foreach ($overwrittenRules as $key => $rules) {
             if (in_array($key, $withoutValidationProperties)) {

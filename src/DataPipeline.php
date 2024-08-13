@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData;
 
+use Illuminate\Container\Container;
 use Spatie\LaravelData\DataPipes\DataPipe;
 use Spatie\LaravelData\Normalizers\Normalizer;
 use Spatie\LaravelData\Support\DataConfig;
@@ -23,7 +24,7 @@ class DataPipeline
 
     public static function create(): static
     {
-        return app(static::class);
+        return Container::getInstance()->make(static::class);
     }
 
     public function into(string $classString): static
@@ -63,13 +64,13 @@ class DataPipeline
 
         /** @var \Spatie\LaravelData\Normalizers\Normalizer[] $normalizers */
         $normalizers = array_map(
-            fn (string|Normalizer $normalizer) => is_string($normalizer) ? app($normalizer) : $normalizer,
+            fn (string|Normalizer $normalizer) => is_string($normalizer) ?  Container::getInstance()->make($normalizer) : $normalizer,
             $normalizers
         );
 
         /** @var \Spatie\LaravelData\DataPipes\DataPipe[] $pipes */
         $pipes = array_map(
-            fn (string|DataPipe $pipe) => is_string($pipe) ? app($pipe) : $pipe,
+            fn (string|DataPipe $pipe) => is_string($pipe) ?  Container::getInstance()->make($pipe) : $pipe,
             $this->pipes
         );
 

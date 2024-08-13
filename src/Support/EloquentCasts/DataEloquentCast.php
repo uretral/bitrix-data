@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Support\EloquentCasts;
 
+use Illuminate\Container\Container;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Support\Facades\Crypt;
 use Spatie\LaravelData\Contracts\BaseData;
@@ -19,7 +20,7 @@ class DataEloquentCast implements CastsAttributes
         /** @var string[] $arguments */
         protected array $arguments = []
     ) {
-        $this->dataConfig = app(DataConfig::class);
+        $this->dataConfig =  Container::getInstance()->make(DataConfig::class);
     }
 
     public function get($model, string $key, $value, array $attributes): ?BaseData

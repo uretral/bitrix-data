@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Concerns;
 
+use Illuminate\Container\Container;
 use Illuminate\Contracts\Pagination\CursorPaginator as CursorPaginatorContract;
 use Illuminate\Contracts\Pagination\Paginator as PaginatorContract;
 use Illuminate\Pagination\AbstractCursorPaginator;
@@ -62,7 +63,14 @@ trait BaseData
 
     public static function normalizers(): array
     {
-        return config('data.normalizers');
+        return  [
+            \Spatie\LaravelData\Normalizers\ModelNormalizer::class,
+            // Spatie\LaravelData\Normalizers\FormRequestNormalizer::class,
+            \Spatie\LaravelData\Normalizers\ArrayableNormalizer::class,
+            \Spatie\LaravelData\Normalizers\ObjectNormalizer::class,
+            \Spatie\LaravelData\Normalizers\ArrayNormalizer::class,
+            \Spatie\LaravelData\Normalizers\JsonNormalizer::class,
+        ];
     }
 
     public static function pipeline(): DataPipeline
@@ -84,7 +92,7 @@ trait BaseData
 
     public function __sleep(): array
     {
-        $dataClass = app(DataConfig::class)->getDataClass(static::class);
+        $dataClass =  Container::getInstance()->make(DataConfig::class)->getDataClass(static::class);
 
         return $dataClass
             ->properties

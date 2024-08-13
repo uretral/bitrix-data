@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Resolvers;
 
+use Illuminate\Container\Container;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\Validator as ValidatorFacade;
 use Illuminate\Validation\Validator;
@@ -46,7 +47,7 @@ class DataValidatorResolver
         );
 
         if (method_exists($dataClass, 'stopOnFirstFailure')) {
-            $validator->stopOnFirstFailure(app()->call([$dataClass, 'stopOnFirstFailure']));
+            $validator->stopOnFirstFailure( Container::getInstance()->make()->call([$dataClass, 'stopOnFirstFailure']));
         }
 
         $dataClass::withValidator($validator);

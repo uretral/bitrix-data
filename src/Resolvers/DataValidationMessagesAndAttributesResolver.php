@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Resolvers;
 
+use Illuminate\Container\Container;
 use Illuminate\Support\Arr;
 use Spatie\LaravelData\Support\DataConfig;
 use Spatie\LaravelData\Support\Validation\ValidationPath;
@@ -65,7 +66,7 @@ class DataValidationMessagesAndAttributesResolver
         }
 
         if (method_exists($class, 'messages')) {
-            $messages = collect(app()->call([$class, 'messages']))
+            $messages = collect( Container::getInstance()->make()->call([$class, 'messages']))
                 ->keyBy(
                     fn (mixed $messages, string $key) => ! str_contains($key, '.') && is_string($messages)
                     ? $path->property("*.{$key}")->get()
@@ -76,7 +77,7 @@ class DataValidationMessagesAndAttributesResolver
         }
 
         if (method_exists($class, 'attributes')) {
-            $attributes = collect(app()->call([$class, 'attributes']))
+            $attributes = collect( Container::getInstance()->make()->call([$class, 'attributes']))
                 ->keyBy(fn (mixed $messages, string $key) => $path->property($key)->get())
                 ->merge($attributes)
                 ->all();

@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Support\TypeScriptTransformer;
 
+use Illuminate\Container\Container;
 use phpDocumentor\Reflection\Fqsen;
 use phpDocumentor\Reflection\Type;
 use phpDocumentor\Reflection\Types\Array_;
@@ -51,7 +52,7 @@ class DataTypeScriptTransformer extends DtoTransformer
         ReflectionClass $class,
         MissingSymbolsCollection $missingSymbols
     ): string {
-        $dataClass = app(DataConfig::class)->getDataClass($class->getName());
+        $dataClass =  Container::getInstance()->make(DataConfig::class)->getDataClass($class->getName());
 
         $isOptional = $dataClass->attributes->contains(
             fn (object $attribute) => $attribute instanceof TypeScriptOptional

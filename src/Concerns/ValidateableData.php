@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Concerns;
 
+use Illuminate\Container\Container;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Validation\Validator;
 use Spatie\LaravelData\Resolvers\DataValidationRulesResolver;
@@ -46,7 +47,7 @@ trait ValidateableData
 
     public static function getValidationRules(array $payload): array
     {
-        return app(DataValidationRulesResolver::class)->execute(
+        return  Container::getInstance()->make(DataValidationRulesResolver::class)->execute(
             static::class,
             $payload,
             ValidationPath::create(),

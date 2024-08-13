@@ -22,8 +22,8 @@ trait TransformableData
             $transformationContext instanceof TransformationContext => $transformationContext,
             $transformationContext instanceof TransformationContextFactory => $transformationContext->get($this),
             $transformationContext === null => new TransformationContext(
-                maxDepth: config('data.max_transformation_depth'),
-                throwWhenMaxDepthReached: config('data.throw_when_max_transformation_depth_reached')
+                maxDepth: null,
+                throwWhenMaxDepthReached: true
             )
         };
 

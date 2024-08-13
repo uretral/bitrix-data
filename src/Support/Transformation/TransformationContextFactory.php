@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Support\Transformation;
 
+use Illuminate\Container\Container;
 use Spatie\LaravelData\Contracts\BaseData;
 use Spatie\LaravelData\Contracts\BaseDataCollectable;
 use Spatie\LaravelData\Support\Partials\ForwardsToPartialsDefinition;
@@ -32,8 +33,8 @@ class TransformationContextFactory
         public ?PartialsCollection $onlyPartials = null,
         public ?PartialsCollection $exceptPartials = null,
     ) {
-        $this->maxDepth = config('data.max_transformation_depth', null);
-        $this->throwWhenMaxDepthReached = config('data.throw_when_max_transformation_depth_reached', true);
+        $this->maxDepth = null;
+        $this->throwWhenMaxDepthReached = true;
     }
 
     public function get(
@@ -153,7 +154,7 @@ class TransformationContextFactory
 
     public function withTransformer(string $transformable, Transformer|string $transformer): static
     {
-        $transformer = is_string($transformer) ? app($transformer) : $transformer;
+        $transformer = is_string($transformer) ?  Container::getInstance()->make($transformer) : $transformer;
 
         if ($this->transformers === null) {
             $this->transformers = new GlobalTransformersCollection();

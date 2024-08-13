@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Support;
 
+use Illuminate\Container\Container;
 use ReflectionClass;
 use Spatie\LaravelData\Contracts\BaseData;
 use Spatie\LaravelData\RuleInferrers\RuleInferrer;
@@ -15,20 +16,20 @@ class DataConfig
         $dataClasses = [];
 
         $ruleInferrers = array_map(
-            fn (string $ruleInferrerClass) => app($ruleInferrerClass),
+            fn (string $ruleInferrerClass) =>  Container::getInstance()->make($ruleInferrerClass),
             $config['rule_inferrers'] ?? []
         );
 
         $transformers = new GlobalTransformersCollection();
 
         foreach ($config['transformers'] ?? [] as $transformable => $transformer) {
-            $transformers->add($transformable, app($transformer));
+            $transformers->add($transformable,  Container::getInstance()->make($transformer));
         }
 
         $casts = new GlobalCastsCollection();
 
         foreach ($config['casts'] ?? [] as $castable => $cast) {
-            $casts->add($castable, app($cast));
+            $casts->add($castable,  Container::getInstance()->make($cast));
         }
 
         $morphMap = new DataClassMorphMap();

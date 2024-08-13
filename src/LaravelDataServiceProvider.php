@@ -6,7 +6,6 @@ use Livewire\Livewire;
 use Spatie\LaravelData\Commands\DataMakeCommand;
 use Spatie\LaravelData\Commands\DataStructuresCacheCommand;
 use Spatie\LaravelData\Contracts\BaseData;
-use Spatie\LaravelData\Resolvers\ContextResolver;
 use Spatie\LaravelData\Support\Caching\DataStructureCache;
 use Spatie\LaravelData\Support\DataConfig;
 use Spatie\LaravelData\Support\Livewire\LivewireDataCollectionSynth;
@@ -43,8 +42,6 @@ class LaravelDataServiceProvider extends PackageServiceProvider
                 return $this->app->make(DataStructureCache::class)->getConfig() ?? DataConfig::createFromConfig(config('data'));
             }
         );
-
-        $this->app->singleton(ContextResolver::class);
 
         $this->app->beforeResolving(BaseData::class, function ($class, $parameters, $app) {
             if ($app->has($class)) {

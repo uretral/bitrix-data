@@ -1,6 +1,7 @@
 <?php
 
 use Carbon\CarbonImmutable;
+use Illuminate\Container\Container;
 use Illuminate\Support\Collection;
 use Orchestra\Testbench\Concerns\CreatesApplication;
 use PhpBench\Attributes\Assert;
@@ -33,7 +34,7 @@ class DataBench
     public function __construct()
     {
         $this->createApplication();
-        $this->dataConfig = app(DataConfig::class);
+        $this->dataConfig = Container::getInstance()->make(DataConfig::class);
     }
 
     protected function getPackageProviders($app)

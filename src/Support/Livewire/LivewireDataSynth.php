@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Support\Livewire;
 
+use Illuminate\Container\Container;
 use Livewire\Mechanisms\HandleComponents\ComponentContext;
 use Livewire\Mechanisms\HandleComponents\Synthesizers\Synth;
 use Spatie\LaravelData\Contracts\BaseData;
@@ -20,7 +21,7 @@ class LivewireDataSynth extends Synth
 
     public function __construct(ComponentContext $context, $path)
     {
-        $this->dataConfig = app(DataConfig::class);
+        $this->dataConfig =  Container::getInstance()->make(DataConfig::class);
 
         parent::__construct($context, $path);
     }

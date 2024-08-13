@@ -2,6 +2,7 @@
 
 namespace Spatie\LaravelData\Support;
 
+use Illuminate\Container\Container;
 use Spatie\LaravelData\Resolvers\DataCollectableFromSomethingResolver;
 use Spatie\LaravelData\Resolvers\DataFromSomethingResolver;
 use Spatie\LaravelData\Resolvers\DataValidatorResolver;
@@ -11,6 +12,7 @@ use Spatie\LaravelData\Resolvers\TransformedDataCollectableResolver;
 use Spatie\LaravelData\Resolvers\TransformedDataResolver;
 use Spatie\LaravelData\Resolvers\ValidatedPayloadResolver;
 use Spatie\LaravelData\Support\Factories\DataClassFactory;
+
 
 class DataContainer
 {
@@ -49,47 +51,49 @@ class DataContainer
 
     public function transformedDataResolver(): TransformedDataResolver
     {
-        return $this->transformedDataResolver ??= app(TransformedDataResolver::class);
+        return $this->transformedDataResolver ??=  Container::getInstance()->make(TransformedDataResolver::class);
     }
 
     public function transformedDataCollectableResolver(): TransformedDataCollectableResolver
     {
-        return $this->transformedDataCollectableResolver ??= app(TransformedDataCollectableResolver::class);
+        return $this->transformedDataCollectableResolver ??=  Container::getInstance()->make(TransformedDataCollectableResolver::class);
     }
 
     public function requestQueryStringPartialsResolver(): RequestQueryStringPartialsResolver
     {
-        return $this->requestQueryStringPartialsResolver ??= app(RequestQueryStringPartialsResolver::class);
+        return $this->requestQueryStringPartialsResolver ??=  Container::getInstance()->make(RequestQueryStringPartialsResolver::class);
     }
 
     public function dataFromSomethingResolver(): DataFromSomethingResolver
     {
-        return $this->dataFromSomethingResolver ??= app(DataFromSomethingResolver::class);
+        $container = Container::getInstance();
+        return $this->dataFromSomethingResolver ??= $container->make(DataFromSomethingResolver::class);
     }
 
     public function dataValidatorResolver(): DataValidatorResolver
     {
-        return $this->dataValidatorResolver ??= app(DataValidatorResolver::class);
+        return $this->dataValidatorResolver ??=  Container::getInstance()->make(DataValidatorResolver::class);
     }
 
     public function validatedPayloadResolver(): ValidatedPayloadResolver
     {
-        return $this->validatedPayloadResolver ??= app(ValidatedPayloadResolver::class);
+        return $this->validatedPayloadResolver ??=  Container::getInstance()->make(ValidatedPayloadResolver::class);
     }
 
     public function dataCollectableFromSomethingResolver(): DataCollectableFromSomethingResolver
     {
-        return $this->dataCollectableFromSomethingResolver ??= app(DataCollectableFromSomethingResolver::class);
+        return $this->dataCollectableFromSomethingResolver ??=  Container::getInstance()->make(DataCollectableFromSomethingResolver::class);
     }
 
     public function dataClassFactory(): DataClassFactory
     {
-        return $this->dataClassFactory ??= app(DataClassFactory::class);
+        $container = Container::getInstance();
+        return $this->dataClassFactory ??= $container->make(DataClassFactory::class);
     }
 
     public function decoupledPartialResolver(): DecoupledPartialResolver
     {
-        return $this->decoupledPartialResolver ??= app(DecoupledPartialResolver::class);
+        return $this->decoupledPartialResolver ??=  Container::getInstance()->make(DecoupledPartialResolver::class);
     }
 
     public function reset()
